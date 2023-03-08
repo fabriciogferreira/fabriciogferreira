@@ -1,14 +1,13 @@
 ## Hi, Welcome to my profile! 👋
 <div align="center">
-    <a href="https://github.com/fabriciogferreira</a>
-    <img height="150em" src="https://github-readme-stats.vercel.app/api?username=fabriciogferreira&show_icons=true&theme=cobalt&include_all_commits=true&count_private=true%22%3E
-    <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fabriciogferreira&layout=compact&langs_count=4&theme=cobalt%22%3E
+    <a href="https://github.com/fabriciogferreira"></a>
+    <img height="150em" src="https://github-readme-stats.vercel.app/api?username=fabriciogferreira&show_icons=true&theme=cobalt&include_all_commits=true&count_private=true%22%3E">
+    <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=fabriciogferreira&layout=compact&langs_count=4&theme=cobalt%22%3E"/>
 </div>
-
 
 ## Languages and Tools:
 <div style="display: inline_block">
-	<img align="center" alt="React" height="45" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons//-.svg" />          
+	<img align="center" alt="HTML" height="45" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />         
 </div>
 
 ## Contact Me:
