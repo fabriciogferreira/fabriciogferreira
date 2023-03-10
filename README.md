@@ -32,4 +32,66 @@
       <td>Referência</td>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      <td>1</td> 
+      <td>1</td> 
+      <td>01.01.00.00.0000</td> 
+      <td>Primeiro passos no Git e GitHub</td> 
+      <td>Git and GitHub</td> 
+      <td>Utilizando comandos simples do git e GitHub, git config, init, status, commit, log, remote, push e clone</td> 
+      <td>Livro</td> 
+      <td>Controlando versões com Git e GitHub</td> 
+      <td>Alexandre Aquiles e Rodrigo Ferreira</td> 
+      <td>978-8566250534</td> 
+    </tr>
+    <tr>
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+    </tr>
+    <tr>
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+    </tr>
+    <tr>
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+    </tr>
+    <tr>
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+      <td></td> 
+    </tr>
+  </tbody>
 </table>
