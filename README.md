@@ -46,52 +46,64 @@
       <td>978-8566250534</td> 
     </tr>
     <tr>
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
+      <td>2</td> 
+      <td>2</td> 
+      <td>01.01.01.00.00.0000</td> 
+      <td>Olá mundo</td> 
+      <td>HTML5</td> 
+      <td>Estrtura básica e primeiras tag's</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
     </tr>
     <tr>
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
+      <td>3</td> 
+      <td>3</td> 
+      <td>01.01.01.00.00.0001</td> 
+      <td>Paragrafos e quebras</td> 
+      <td>HTML5</td> 
+      <td>Entendendo paragrafos e quebras de linhas</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
     </tr>
     <tr>
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
+      <td>4</td> 
+      <td>4</td> 
+      <td>01.01.01.00.00.0002</td> 
+      <td>Símbolos e Emojis</td> 
+      <td>HTML5</td> 
+      <td>Funcionamento dos símbolos e emoji</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
     </tr>
     <tr>
+      <td>5</td> 
+      <td>5</td> 
+      <td>01.01.01.00.00.0003</td> 
+      <td>Imagens</td> 
+      <td>HTML5</td> 
+      <td>Formatos, tag, tamanho e qualidade</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>2</td> 
+      <td>2</td> 
+      <td>01.01.01.00.00.0000</td> 
       <td></td> 
+      <td>HTML5</td> 
       <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
-      <td></td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
     </tr>
   </tbody>
 </table>
