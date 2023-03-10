@@ -16,17 +16,17 @@
   <a href="https://www.linkedin.com/in/fabriciogferreira/" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
-##Lista dos meus Exercícios
+## Tabela de Exercícios
 <table>
   <thead>
     <tr>
-      <td>Numeração</td>
+      <td>Id</td>
       <td>Ordem</td>
       <td>Código</td>
       <td>Nome</td>
-      <td>Tec. e Ling.</td>
+      <td>Tecnologias e Linguagens</td>
       <td>Descrição</td>
-      <td>Tipo de Ref.</td>
+      <td>Material</td>
       <td>Título e Subtítulo</td>
       <td>Autor</td>
       <td>Referência</td>
