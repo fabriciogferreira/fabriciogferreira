@@ -94,6 +94,54 @@
       <td>https://www.cursoemvideo.com/</td> 
     </tr>
     <tr>
+      <td>6</td> 
+      <td>6</td> 
+      <td>01.01.01.00.00.0004</td> 
+      <td>Favicon</td> 
+      <td>HTML5</td> 
+      <td>Sites e formato</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>7</td> 
+      <td>7</td> 
+      <td>01.01.01.00.00.0005</td> 
+      <td>Hierarquia dos títulos</td> 
+      <td>HTML5</td> 
+      <td>Tamanho ou sentido?</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>8</td> 
+      <td>8</td> 
+      <td>01.01.01.00.00.0006</td> 
+      <td>Semântica</td> 
+      <td>HTML5</td> 
+      <td>Entendendo a importância da semântica e o ramo da HTML5</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>9</td> 
+      <td>9</td> 
+      <td>01.01.01.00.00.0007</td> 
+      <td>Negrito, itálicos e outra tag's</td> 
+      <td>HTML5</td> 
+      <td>Diferença entre formato e semântica</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
       <td>2</td> 
       <td>2</td> 
       <td>01.01.01.00.00.0000</td> 
