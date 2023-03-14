@@ -142,8 +142,44 @@
       <td>https://www.cursoemvideo.com/</td> 
     </tr>
     <tr>
-      <td>2</td> 
-      <td>2</td> 
+      <td>10</td> 
+      <td>10</td> 
+      <td>01.01.01.00.00.0008</td> 
+      <td>Citações e Códigos</td> 
+      <td>HTML5</td> 
+      <td>Códigos e citações em sites de forma bonita e semântica</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>11</td> 
+      <td>11</td> 
+      <td>01.01.01.00.00.0009</td> 
+      <td>Listas</td> 
+      <td>HTML5</td> 
+      <td>Listas ordenadas, não ordenadas e de definição</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>12</td> 
+      <td>12</td> 
+      <td>01.01.01.00.00.0000</td> 
+      <td>Links</td> 
+      <td>HTML5</td> 
+      <td>O começo de tudo da HTML</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>10</td> 
+      <td>10</td> 
       <td>01.01.01.00.00.0000</td> 
       <td></td> 
       <td>HTML5</td> 
