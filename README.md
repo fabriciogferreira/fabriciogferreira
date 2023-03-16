@@ -168,10 +168,34 @@
     <tr>
       <td>12</td> 
       <td>12</td> 
-      <td>01.01.01.00.00.0000</td> 
+      <td>01.01.01.00.00.0010</td> 
       <td>Links</td> 
       <td>HTML5</td> 
       <td>O começo de tudo da HTML</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>13</td> 
+      <td>13</td> 
+      <td>01.01.01.00.00.0011</td> 
+      <td>Midias</td> 
+      <td>HTML5</td> 
+      <td>Imagens adaptativas e aúdios</td> 
+      <td>Site</td> 
+      <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
+      <td>Gustavo Guanabara</td> 
+      <td>https://www.cursoemvideo.com/</td> 
+    </tr>
+    <tr>
+      <td>14</td> 
+      <td>14</td> 
+      <td>01.01.01.00.00.0012</td> 
+      <td>Vídeos</td> 
+      <td>HTML5</td> 
+      <td>Como colocar vídeos no seu site</td> 
       <td>Site</td> 
       <td>Curso HTML5 e CSS3: módulo 1 de 5 [40 HORAS]</td> 
       <td>Gustavo Guanabara</td> 
