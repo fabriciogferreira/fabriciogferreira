@@ -1,0 +1,15 @@
+services:
+  frontend:
+    container_name: ${CONTAINER_FRONTEND_NAME}
+    build: 
+      context: ${HOST_FRONTEND_FOLDER_PATH}
+      args:
+        - FROM=${FRONTEND_IMAGE}
+    image: ${CONTAINER_FRONTEND_NAME}:${IMAGE_VERSION}
+    working_dir: ${CONTAINER_FRONTEND_FOLDER_PATH}
+    ports:
+      - ${CUSTOM_FRONTEND_PORT_MAPPING:-DEFAULT_FRONTEND_PORT_MAPPING}:${CONTAINER_FRONTEND_PORT}
+    volumes:
+      - ${HOST_FRONTEND_FOLDER_PATH}:${CONTAINER_FRONTEND_FOLDER_PATH}
+      - .env.example:${CONTAINER_FRONTEND_FOLDER_PATH}.env.local
+    command: ${FRONTEND_SERVICE_COMMAND}
