@@ -1,11 +1,13 @@
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 export default function HeroSection(){
     return (
         <section>
             <div className="flex">
-                <figure>
-                    <img src="imagem.jpg" alt="Foto de perfil" />
-                    <figcaption>Foto de perfil</figcaption>
-                </figure>
+                <Avatar>
+                    <AvatarImage src="https://github.com/shadcn.png" />
+                    <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
                 <div>
                     <h1>Fabrício Ferreira</h1>
                     <h2>Desenvolvedor Java</h2>
