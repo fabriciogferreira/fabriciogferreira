@@ -1,5 +1,6 @@
 import { EnumSectionsIds } from "@/enums/EnumSectionsId";
 import Nav from "@/components/Nav";
+import HeroSection from "@/app/_components/HeroSection";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <Nav listClass="flex-col"/>
       </aside>
       <main>
-        <section id={EnumSectionsIds.HeroSection} className="h-screen bg-slate-500"></section>
+        <HeroSection />
         <section id={EnumSectionsIds.Skills} className="bg-red-100 h-96"></section>
         <section id={EnumSectionsIds.Statistics} className="bg-red-300 h-96"></section>
         <section id={EnumSectionsIds.Jobs} className="bg-red-500 h-96"></section>
