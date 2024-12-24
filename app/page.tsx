@@ -1,3 +1,32 @@
+import { EnumSectionsIds } from "@/enums/EnumSectionsId";
+import Nav from "@/components/Nav";
+
 export default function Home() {
-  return "Hello world"
+  return (
+    <>
+      <header className="sm:hidden">
+        <Nav />
+      </header>
+      <aside className="hidden sm:flex fixed top-0 right-0 h-full">
+        <Nav listClass="flex-col"/>
+      </aside>
+      <main>
+        <section id={EnumSectionsIds.HeroSection} className="h-screen bg-slate-500"></section>
+        <section id={EnumSectionsIds.Skills} className="bg-red-100 h-96"></section>
+        <section id={EnumSectionsIds.Statistics} className="bg-red-300 h-96"></section>
+        <section id={EnumSectionsIds.Jobs} className="bg-red-500 h-96"></section>
+        <section id={EnumSectionsIds.Education} className="bg-red-700 h-96"></section>
+        <section id={EnumSectionsIds.Activities} className="bg-red-900 h-96"></section>
+        <section id={EnumSectionsIds.Downloads} className="bg-red-100 h-96"></section>
+        <section id={EnumSectionsIds.Contact} className="bg-red-300 h-96"></section>
+        <section id={EnumSectionsIds.Testimonials} className="bg-red-500 h-96"></section>
+        <section id={EnumSectionsIds.BooksRead} className="bg-red-700 h-96"></section>
+        <section id={EnumSectionsIds.Articles} className="bg-red-900 h-96"></section>
+        <section id={EnumSectionsIds.AbouteMe} className="bg-red-100 h-96"></section>
+      </main>
+      <footer>
+
+      </footer>
+    </>
+  );
 }
