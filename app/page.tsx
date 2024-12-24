@@ -2,6 +2,7 @@ import { EnumSectionsIds } from "@/enums/EnumSectionsId";
 import Nav from "@/components/Nav";
 import HeroSection from "@/app/_components/HeroSection";
 import Skills from "@/app/_components/Skills";
+import Jobs from "@/app/_components/Jobs";
 
 export default function Home() {
   return (
@@ -15,9 +16,8 @@ export default function Home() {
       <main>
         <HeroSection />
         <Skills />
-        <section id={EnumSectionsIds.Skills} className="bg-red-100 h-96"></section>
         <section id={EnumSectionsIds.Statistics} className="bg-red-300 h-96"></section>
-        <section id={EnumSectionsIds.Jobs} className="bg-red-500 h-96"></section>
+        <Jobs />
         <section id={EnumSectionsIds.Education} className="bg-red-700 h-96"></section>
         <section id={EnumSectionsIds.Activities} className="bg-red-900 h-96"></section>
         <section id={EnumSectionsIds.Downloads} className="bg-red-100 h-96"></section>
