@@ -28,8 +28,27 @@ export default function Home() {
         <section id={EnumSectionsIds.Articles} className="bg-red-900 h-96"></section>
         <section id={EnumSectionsIds.AbouteMe} className="bg-red-100 h-96"></section>
       </main>
-      <footer>
+      <footer className="flex justify-around">
+        <div className="flex gap-2">
+          <p>
+            Nome/Marca
+          </p>
+          <p>
+            Direito autorais
+          </p>
+        </div>
 
+        <div>
+          <p>
+            Develop by
+          </p>
+          <ul className="flex">
+            <li>Social </li>
+            <li>Social </li>
+            <li>Social </li>
+            <li>Social </li>
+          </ul>
+        </div>
       </footer>
     </>
   );
