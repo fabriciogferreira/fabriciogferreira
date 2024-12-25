@@ -4,7 +4,7 @@ import HeroSection from "@/app/_components/HeroSection";
 import Skills from "@/app/_components/Skills";
 import Jobs from "@/app/_components/Jobs";
 import Contact from "@/app/_components/Contact";
-
+import BooksRead from "@/app/_components/BooksRead";
 export default function Home() {
   return (
     <>
@@ -24,7 +24,7 @@ export default function Home() {
         <section id={EnumSectionsIds.Downloads} className="bg-red-100 h-96"></section>
         <Contact /> 
         <section id={EnumSectionsIds.Testimonials} className="bg-red-500 h-96"></section>
-        <section id={EnumSectionsIds.BooksRead} className="bg-red-700 h-96"></section>
+        <BooksRead />
         <section id={EnumSectionsIds.Articles} className="bg-red-900 h-96"></section>
         <section id={EnumSectionsIds.AbouteMe} className="bg-red-100 h-96"></section>
       </main>
