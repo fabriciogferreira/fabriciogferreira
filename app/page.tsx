@@ -8,6 +8,7 @@ import Articles from "@/app/_components/Articles";
 import BooksRead from "@/app/_components/BooksRead";
 import Testimonials from "@/app/_components/Testimonials";
 import SwitchTheme from "@/components/SwitchTheme";
+import AboutMe from "@/app/_components/AboutMe";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
         <Testimonials />
         <BooksRead />
         <Articles />
-        <section id={EnumSectionsIds.AbouteMe} className="bg-red-100 h-96"></section>
+        <AboutMe />
       </main>
       <footer className="flex justify-around">
         <div className="flex gap-2">
