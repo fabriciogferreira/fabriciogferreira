@@ -17,7 +17,7 @@ export default function Nav({menuClass, listClass, itemClass}: props){
     const [currentPath, setPath] = useState(EnumSectionsIds.HeroSection);
 
     return (
-        <NavigationMenu className={cn(menuClass)}>
+        <NavigationMenu className={cn("grow-0", menuClass)}>
             <NavigationMenuList className={cn("items-start space-x-0 gap-2", listClass)}>
                 {Object.values(EnumSectionsIds).map((id) =>{
                     return (

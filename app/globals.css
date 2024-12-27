@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -68,5 +74,63 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* SWITCH THEME */
+.switch-theme-label {
+  position: relative;
+  display: block;
+  background: url('@/public/switch-theme/light.gif') center center;
+  background-size: cover;
+  border: 10px solid rgba(198, 247, 253, 0.3);
+  aspect-ratio: 8/3;
+  cursor: pointer;
+  transition: 1s ease;
+  border-radius: 9999px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.switch-theme-label::after, .switch-theme-label::before {
+  content: '';
+  position: absolute;
+  width: 23%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  transition: 0.8s ease;
+  transform: translate(-50%, -50%);
+}
+
+.switch-theme-label::after {
+  top: 50%;
+  left: 15%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #f2f2f2;
+}
+
+.switch-theme-label::before {
+  top: 44%;
+  left: 14%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.18);
+  border: 10px solid rgba(198, 247, 253, 0.4);
+}
+
+[data-theme='dark'] {
+  .switch-theme-label {
+    background: url('@/public/switch-theme/dark.gif') center center;
+    background-size: cover;
+  }
+
+  .switch-theme-label::before {
+    left: 86%;
+  }
+
+  .switch-theme-label::after {
+    left: 85%;
+    background: #777ba5;
+  }
+
+  .switch-theme-label, .switch-theme-label::before {
+    border: 10px solid rgba(90, 79, 136, 0.4);
   }
 }

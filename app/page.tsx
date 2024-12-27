@@ -6,15 +6,18 @@ import Jobs from "@/app/_components/Jobs";
 import Contact from "@/app/_components/Contact";
 import BooksRead from "@/app/_components/BooksRead";
 import Testimonials from "@/app/_components/Testimonials";
+import SwitchTheme from "@/components/SwitchTheme";
 
 export default function Home() {
   return (
     <>
       <header className="sm:hidden">
         <Nav />
+        <SwitchTheme />
       </header>
-      <aside className="hidden sm:flex fixed top-0 right-0 h-full">
+      <aside className="hidden sm:flex fixed top-0 right-0 h-full flex-col justify-center">
         <Nav listClass="flex-col"/>
+        <SwitchTheme />
       </aside>
       <main>
         <HeroSection />
