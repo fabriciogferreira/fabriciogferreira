@@ -4,6 +4,7 @@ import HeroSection from "@/app/_components/HeroSection";
 import Skills from "@/app/_components/Skills";
 import Jobs from "@/app/_components/Jobs";
 import Contact from "@/app/_components/Contact";
+import Articles from "@/app/_components/Articles";
 import BooksRead from "@/app/_components/BooksRead";
 import Testimonials from "@/app/_components/Testimonials";
 import SwitchTheme from "@/components/SwitchTheme";
@@ -30,7 +31,7 @@ export default function Home() {
         <Contact />
         <Testimonials />
         <BooksRead />
-        <section id={EnumSectionsIds.Articles} className="bg-red-900 h-96"></section>
+        <Articles />
         <section id={EnumSectionsIds.AbouteMe} className="bg-red-100 h-96"></section>
       </main>
       <footer className="flex justify-around">
