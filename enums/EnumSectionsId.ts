@@ -4,7 +4,7 @@ export enum EnumSectionsIds {
     Statistics = "statistics",
     Jobs = "jobs",
     Education = "education",
-    Activities = "activities",
+    Projects = "projects",
     Downloads = "downloads",
     Contact = "contact",
     Testimonials = "testimonials",

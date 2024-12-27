@@ -10,6 +10,7 @@ import Testimonials from "@/app/_components/Testimonials";
 import SwitchTheme from "@/components/SwitchTheme";
 import AboutMe from "@/app/_components/AboutMe";
 import Downloads from "@/app/_components/Donwloads";
+import Projects from "@/app/_components/Projects";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         <section id={EnumSectionsIds.Statistics} className="bg-red-300 h-96"></section>
         <Jobs />
          <section id={EnumSectionsIds.Education} className="bg-red-700 h-96"></section>
-        <section id={EnumSectionsIds.Activities} className="bg-red-900 h-96"></section>
+        <Projects />
         <Downloads />
         <Contact />
         <Testimonials />
