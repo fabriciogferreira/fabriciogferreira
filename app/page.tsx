@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav";
+import Header from "@/app/_components/Header";
 
 import HeroSection from "@/app/_components/HeroSection";
 import Skills from "@/app/_components/Skills";
@@ -7,26 +8,18 @@ import Contact from "@/app/_components/Contact";
 import Articles from "@/app/_components/Articles";
 import BooksRead from "@/app/_components/BooksRead";
 import Testimonials from "@/app/_components/Testimonials";
-import SwitchTheme from "@/components/SwitchTheme";
 import AboutMe from "@/app/_components/AboutMe";
 import Downloads from "@/app/_components/Donwloads";
 import Projects from "@/app/_components/Projects";
 import Education from "@/app/_components/Education";
 import Statistics from "@/app/_components/Statistics";
 
+import SwitchTheme from "@/components/SwitchTheme";
+
 export default function Home() {
   return (
     <>
-      <header className="sm:hidden fixed w-full h-screen justify-between">
-        <Nav listClass="flex-col" itemClass="text-[4.5vh]"/>
-        <div className="flex justify-around items-center">
-          <SwitchTheme/>
-          <div>
-            Change Language
-          </div>
-        </div>
-        <i className="fa-solid fa-bars absolute top-0 right-0"></i>
-      </header>
+      <Header />
       <aside className="hidden sm:flex fixed top-0 right-0 h-full flex-col justify-center">
         <Nav listClass="flex-col"/>
         <SwitchTheme />
