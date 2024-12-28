@@ -12,6 +12,8 @@ import AboutMe from "@/app/_components/AboutMe";
 import Downloads from "@/app/_components/Donwloads";
 import Projects from "@/app/_components/Projects";
 import Education from "@/app/_components/Education";
+import Statistics from "@/app/_components/Statistics";
+
 export default function Home() {
   return (
     <>
@@ -26,7 +28,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <Skills />
-        <section id={EnumSectionsIds.Statistics} className="bg-red-300 h-96"></section>
+        <Statistics />
         <Jobs />
         <Education />
         <Projects />
