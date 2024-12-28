@@ -1,19 +1,21 @@
 'use client'
 
 import { useTheme } from 'next-themes'
+import { cn, cnType } from '@/lib/utils'
 
 type props = {
-    labelClass?: string
+    rootClass?: cnType
+    labelClass?: cnType
 }
 
-export default function SwitchTheme({labelClass = 'w-24'}: props){
+export default function SwitchTheme({rootClass, labelClass}: props){
     const { theme, setTheme } = useTheme()
 
     return (
-        <div id="switch-theme" className="w-min">
+        <div id="switch-theme" className={cn("w-24", rootClass)}>
             <label
                 id="switch-theme-label"
-                className={"switch-theme-label " + labelClass}
+                className={cn("switch-theme-label", labelClass)}
                 onClick={() => setTheme(theme == 'dark' ? 'light' : 'dark')}
             >
             </label>
@@ -24,6 +26,8 @@ export default function SwitchTheme({labelClass = 'w-24'}: props){
 //CREDITS
 //https://www.youtube.com/@hellocodelab/shorts
 //https://github.com/hellocodelab/dark-mode-toggle-button/blob/main/style.css
+
+//OPCAO PARA CRESCER DE ACORDO A ALTURA OU LARGURA
 
 //IMPROVEMENTS:
 /*
