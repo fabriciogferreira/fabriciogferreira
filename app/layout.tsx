@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="dark" themes={['light', 'dark']}>
           {children}
         </ThemeProvider>
+        <Script src="https://kit.fontawesome.com/59948feead.js"></Script>
       </body>
     </html>
   );
