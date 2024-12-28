@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 export default function Jobs(){
     return (
         <section>
-            <h3>Jobs</h3>
+            <h1>Jobs</h1>
             <Tabs defaultValue="account" className="flex">
                 <TabsList className="flex-col">
                     <TabsTrigger value="account">Account</TabsTrigger>

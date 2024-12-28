@@ -10,6 +10,7 @@ import {
 export default function Articles(){
     return (
         <section className="flex">
+            <h1>Articles</h1>
             <Card>
                 <CardHeader>
                     <div>

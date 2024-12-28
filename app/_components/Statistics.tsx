@@ -1,9 +1,7 @@
 export default function Statistics(){
     return (
         <section>
-            <h4>
-                Statistics
-            </h4>
+            <h1>Statistics</h1>
             Exercicios
             Quntidades de exercícios
             Quantidades de projetos

@@ -2,7 +2,7 @@
 export default function Contact(){
     return (
         <section>
-            <h2>Lets work together</h2>
+            <h1>Lets work together</h1>
             <div>
                 <h4>Contact me</h4>
                 TODO: FALTA O FORMULÁRIO DO CONTATO, MAS TENHO QUE TERMINAR A BRANCH QUE ESTÁ NO DESKTOP

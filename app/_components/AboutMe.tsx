@@ -3,7 +3,7 @@ import macbookIphone from '@/public/timeline.png';
 export default function AboutMe(){
     return (
         <section >
-            <h3>About me</h3>
+            <h1>About me</h1>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis placeat eius reiciendis officia. Pariatur sunt cumque adipisci quibusdam optio sit vero nemo, magni possimus, corrupti omnis quam iure corporis commodi.
             </p>

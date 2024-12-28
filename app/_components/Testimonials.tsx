@@ -11,6 +11,7 @@ import {
 export default function Testimonials(){
     return (
         <section>
+            <h1>Testimonials</h1>
             <Carousel 
                 opts={{
                     align: "start",

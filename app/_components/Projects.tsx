@@ -18,7 +18,7 @@ import {
 export default function Projects(){
     return (
         <section>
-            <h3>Projects</h3>
+            <h1>Projects</h1>
             TODO: FILTRO
             <div className="flex flex-wrap gap-2">
                 <Card>

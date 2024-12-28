@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button"
 export default function Education(){
     return (
         <section className="">
+            <h1>Education</h1>
             <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                     <AccordionTrigger>
