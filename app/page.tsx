@@ -1,5 +1,5 @@
-import { EnumSectionsIds } from "@/enums/EnumSectionsId";
 import Nav from "@/components/Nav";
+
 import HeroSection from "@/app/_components/HeroSection";
 import Skills from "@/app/_components/Skills";
 import Jobs from "@/app/_components/Jobs";
@@ -17,9 +17,15 @@ import Statistics from "@/app/_components/Statistics";
 export default function Home() {
   return (
     <>
-      <header className="sm:hidden">
-        <Nav />
-        <SwitchTheme />
+      <header className="sm:hidden fixed w-full h-screen justify-between">
+        <Nav listClass="flex-col" itemClass="text-[4.5vh]"/>
+        <div className="flex justify-around items-center">
+          <SwitchTheme/>
+          <div>
+            Change Language
+          </div>
+        </div>
+        <i className="fa-solid fa-bars absolute top-0 right-0"></i>
       </header>
       <aside className="hidden sm:flex fixed top-0 right-0 h-full flex-col justify-center">
         <Nav listClass="flex-col"/>
