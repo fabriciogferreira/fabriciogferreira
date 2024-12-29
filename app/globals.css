@@ -134,3 +134,45 @@ body {
     border: 10px solid rgba(90, 79, 136, 0.4);
   }
 }
+
+.blob {
+  position: relative;
+}
+
+.blob, .before-blob::after, .before-blob::before{
+  aspect-ratio: 1/1;
+}
+
+.before-blob::after {
+  background: url('@/public/mclovin.jpeg');
+  border-radius: 56% 32% 58% 44% / 48% 52% 46% 54%;
+  animation: animation-after-blob 5s linear infinite;
+}
+
+.before-blob::before {
+  background: url('@/public/switch-theme/dark.gif');
+  border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  animation: animation-before-blob 5s linear infinite;
+}
+
+.before-blob::after, .before-blob::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+}
+
+@keyframes animation-after-blob {
+  0%, 100% { border-radius: 56% 32% 58% 44% / 48% 52% 46% 54%; }
+  33% { border-radius: 38% 62% 48% 52% / 44% 56% 72% 28%; }
+  66% { border-radius: 72% 28% 56% 44% / 56% 44% 28% 72%; }
+}
+
+@keyframes animation-before-blob {
+  0%, 100% { border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;}
+  33% { border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;}
+  66% { border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%; }
+}
+
