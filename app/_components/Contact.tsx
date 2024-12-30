@@ -7,25 +7,10 @@ import { Button } from '@/components/ui/button';
 
 import { Textarea } from '@/components/ui/textarea';
 import { buttonVariants } from '@/components/ui/button';
-import { ReactNode } from 'react';
 
-import GitHubIcon from '@/components/icons/GitHubIcon';
-import LinkedinIcon from '@/components/icons/LinkedinIcon';
-import InstagramIcon from '@/components/icons/InstagramIcon';
+import { SOCIAL_MEDIAS } from '@/objects/contact';
 
 import { cn } from '@/lib/utils';
-
-type file = {
-    name: string
-    link: string
-    icon: ReactNode,
-}
-
-const FILES: Array<file> = [
-    {name: "GitHub", link: "https://www.github.com/fabriciogferreira", icon: <GitHubIcon rootClass="h-full"/>},
-    {name: "Linkedin", link: "https://www.linkedin.com/in/fabriciogferreira/", icon: <LinkedinIcon /> },
-    {name: "Instagram", link: "https://www.instagram.com/fabricio1103/", icon: <InstagramIcon />},
-]
 
 export default function Contact(){
     const [email, setEmail] = useState<string>("")
@@ -49,10 +34,10 @@ export default function Contact(){
             </div>
             <h4>Social medias</h4>
             <div className='flex flex-wrap justify-start border border-2 p-3 gap-4 rounded-xl'>
-                {FILES.map((file) => {
+                {SOCIAL_MEDIAS.map((socialMedia) => {
                     return (
-                        <a key={file.name} className={cn(buttonVariants({ variant: "outline" }), "text-base font-bold")} href={file.link} target="_blank" rel="noopener noreferrer">
-                            {file.icon} {file.name}
+                        <a key={socialMedia.name} className={cn(buttonVariants({ variant: "outline" }), "text-base font-bold")} href={socialMedia.link} target="_blank" rel="noopener noreferrer">
+                            {socialMedia.icon} {socialMedia.name}
                         </a>
                     )
                 })}

@@ -16,6 +16,8 @@ import Statistics from "@/app/_components/Statistics";
 
 import SwitchTheme from "@/components/SwitchTheme";
 
+import { SOCIAL_MEDIAS } from "@/objects/contact";
+
 export default function Home() {
   return (
     <>
@@ -24,40 +26,37 @@ export default function Home() {
         <Nav listClass="flex-col"/>
         <SwitchTheme />
       </aside>
-      <main>
-        <HeroSection />
-        <Skills />
-        <Statistics />
+      <main className="mx-14 flex flex-col gap-20">
+        {/* <HeroSection /> */}
+        {/* <Skills /> */}
+        {/* <Statistics /> */}
         <Jobs />
-        <Education />
+        {/* <Education /> */}
         <Projects />
-        <Downloads />
-        <Contact />
+        {/* <Downloads /> */}
+        {/* <Contact /> */}
         <Testimonials />
-        <BooksRead />
-        <Articles />
+        {/* <BooksRead /> */}
+        {/* <Articles /> */}
         <AboutMe />
       </main>
-      <footer className="flex justify-around">
-        <div className="flex gap-2">
-          <p>
-            Nome/Marca
-          </p>
-          <p>
-            Direito autorais
-          </p>
-        </div>
-
-        <div>
-          <p>
-            Develop by
-          </p>
-          <ul className="flex">
-            <li>Social </li>
-            <li>Social </li>
-            <li>Social </li>
-            <li>Social </li>
-          </ul>
+      <footer className="flex justify-around p-4 gap-4 flex-wrap">
+        <p className="flex items-center text-center">
+            ©{new Date().getFullYear()} CodeTree. Todos os direitos reservados.
+        </p>
+        <div className="flex justify-center gap-2 flex-col sm:flex-row items-center">
+          <h1>
+            Develop by <span className="font-bold">Fabrício Ferreira</span>
+          </h1>
+          <div className="flex">
+            {SOCIAL_MEDIAS.map((socialMedia) => {
+              return (
+                <div className="w-14" key={socialMedia.link}>
+                  {socialMedia.icon}
+                </div>
+              )
+            })}
+          </div>
         </div>
       </footer>
     </>
