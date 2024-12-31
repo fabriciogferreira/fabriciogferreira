@@ -5,7 +5,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-
 import {
     Card,
     CardContent,
@@ -14,6 +13,27 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+
+import { tech } from "@/app/_components/Skills"
+
+type project = {
+    name: string,
+    images: Array<string>,
+    description: string,
+    stars: number,
+    forks: number,
+    lastUpdate: string,
+    source: string,
+    site: string,
+    tags: Array<string>,
+    technologies: Array<tech>,
+}
+
+// const PROJECTS: Array<project> = [
+//     {
+//         name: ""
+//     }
+// ]
 
 export default function Projects(){
     return (

@@ -21,26 +21,26 @@ import { SOCIAL_MEDIAS } from "@/objects/contact";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <aside className="hidden sm:flex fixed top-0 right-0 h-full flex-col justify-center">
         <Nav listClass="flex-col"/>
         <SwitchTheme />
-      </aside>
+      </aside> */}
       <main className="mx-14 flex flex-col gap-20">
         {/* <HeroSection /> */}
         {/* <Skills /> */}
         {/* <Statistics /> */}
-        <Jobs />
+        {/* <Jobs /> */}
         {/* <Education /> */}
         <Projects />
         {/* <Downloads /> */}
         {/* <Contact /> */}
-        <Testimonials />
+        {/* <Testimonials /> */}
         {/* <BooksRead /> */}
         {/* <Articles /> */}
         <AboutMe />
       </main>
-      <footer className="flex justify-around p-4 gap-4 flex-wrap">
+      {/* <footer className="flex justify-around p-4 gap-4 flex-wrap">
         <p className="flex items-center text-center">
             ©{new Date().getFullYear()} CodeTree. Todos os direitos reservados.
         </p>
@@ -58,7 +58,7 @@ export default function Home() {
             })}
           </div>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 }
