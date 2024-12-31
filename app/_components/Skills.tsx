@@ -25,7 +25,7 @@ import HTMLIcon from "@/components/icons/HTMLIcon"
 import USAIcon from "@/components/icons/USAIcon"
 
 import { ReactNode } from "react"
-type tech = {
+export type tech = {
     name: string
     icon: ReactNode
     progress: number
