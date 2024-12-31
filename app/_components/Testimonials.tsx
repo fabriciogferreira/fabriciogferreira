@@ -5,8 +5,27 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-  } from "@/components/ui/carousel"
-  
+} from "@/components/ui/carousel"
+
+import Link from "next/link"
+
+type testimonial = {
+    quote: string,
+    name: string,
+    position: string,
+    enterprise: string,
+    siteLink: string
+}
+
+const TESTIMONIALS: Array<testimonial> = [
+    {
+        quote: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quasi quis vitae unde neque omnis incidunt harum quas a, assumenda pariatur voluptate est itaque qui sint. Veniam vitae libero vero.",
+        name: "Guilherme",
+        position: "Dev Pleno",
+        enterprise: "Olie",
+        siteLink: "https://olie.ai/"
+    },
+]
 
 export default function Testimonials(){
     return (
@@ -14,62 +33,41 @@ export default function Testimonials(){
             <h1>Testimonials</h1>
             <Carousel 
                 opts={{
-                    align: "start",
+                    align: "center",
                     loop: true,
+                    axis: "y",
+                    dragFree: false,
                 }}
+                className="mx-[3rem]"
             >
-                <CarouselContent className="-ml-4">
-                    <CarouselItem className="basis-1/2">
-                        <q>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, laborum vel eius quam possimus iure! Adipisci voluptate alias corporis omnis, blanditiis unde nulla est molestiae ea neque perferendis autem. Fugiat?
-                        </q>
-                        <div className="flex">
-                            <Avatar>
-                                <AvatarImage src="https://github.com/shadcn.png" />
-                                <AvatarFallback>CN</AvatarFallback>
-                            </Avatar>
-                            <div>
-                                <h4>Nome</h4>
-                                <h4>Cargo</h4>
-                            </div>
-                        </div>
-                    </CarouselItem>
-                    <CarouselItem className="basis-1/2">
-                        <q>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, laborum vel eius quam possimus iure! Adipisci voluptate alias corporis omnis, blanditiis unde nulla est molestiae ea neque perferendis autem. Fugiat?
-                        </q>
-                        <div className="flex">
-                            <Avatar>
-                                <AvatarImage src="https://github.com/shadcn.png" />
-                                <AvatarFallback>CN</AvatarFallback>
-                            </Avatar>
-                            <div>
-                                <h4>Nome</h4>
-                                <h4>Cargo</h4>
-                            </div>
-                        </div>
-                    </CarouselItem>
-                    <CarouselItem className="basis-1/2">
-                        <q>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, laborum vel eius quam possimus iure! Adipisci voluptate alias corporis omnis, blanditiis unde nulla est molestiae ea neque perferendis autem. Fugiat?
-                        </q>
-                        <div className="flex">
-                            <Avatar>
-                                <AvatarImage src="https://github.com/shadcn.png" />
-                                <AvatarFallback>CN</AvatarFallback>
-                            </Avatar>
-                            <div>
-                                <h4>Nome</h4>
-                                <h4>Cargo, Data</h4>
-                            </div>
-                        </div>
-                    </CarouselItem>
+                <CarouselContent className="ml-0">
+                    {TESTIMONIALS.map((testimonial, index) => {
+                        return (
+                            <CarouselItem key={index} className={`basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border rounded-lg gap-4 mx-4 pl-0 p-4`}>
+                                <q>{index} - {testimonial.quote}</q>
+                                <div className="flex gap-2 items-center">
+                                    <Avatar>
+                                        <AvatarImage src="https://github.com/shadcn.png" />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                        {/* Imagem (pedir permissao) */}
+                                    </Avatar>
+                                    <div className="">
+                                        <h4>{testimonial.name}</h4>
+                                        <Link href={testimonial.siteLink} target="_blank">
+                                            <h4>
+                                                {testimonial.enterprise}
+                                            </h4>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </CarouselItem>
+                        )
+                    })}
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
             </Carousel>
 
-            {/* Imagem (pedir permissao) */}
         </section>
     )
 }
