@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button"
 
 export default function HeroSection(){
     return (
-        <section className="h-dvh p-10 flex flex-col justify-evenly">
+        <>
             <div className="flex gap-5 items-center justify-around flex-col md:flex-row md:gap-20">
                 <div className="w-full max-w-sm">
                     <div className="blob before-blob after-blob"/>
@@ -45,6 +45,6 @@ export default function HeroSection(){
                     </p>
                 </div>
             </div>
-        </section>
+        </>
     )
 }

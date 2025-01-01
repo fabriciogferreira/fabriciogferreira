@@ -4,7 +4,6 @@ import Nav from "@/components/Nav";
 import {
     Sheet,
     SheetContent,
-    SheetDescription,
     SheetHeader,
     SheetTitle,
     SheetTrigger,

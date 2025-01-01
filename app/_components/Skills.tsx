@@ -46,8 +46,7 @@ const TECHS: Array<tech> = [
 
 export default function Skills(){
     return (
-        <section className="flex flex-col">
-            <h1>Skills</h1>
+        <>
             <h3 className="text-center">Tecnologias</h3>
             <div className="flex flex-wrap justify-around p-5 text-center gap-5">
                 {TECHS.map((tech) => {
@@ -88,6 +87,6 @@ export default function Skills(){
                     </TableRow>
                 </TableBody>
             </Table>
-        </section>
+        </>
     )
 }

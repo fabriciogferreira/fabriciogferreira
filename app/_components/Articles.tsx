@@ -40,43 +40,40 @@ const ARTICLES: Array<article> = [
 
 export default function Articles(){
     return (
-        <section>
-            <h1>Articles</h1>
-            <div className="flex flex-wrap justify-around gap-4">
-                {ARTICLES.map((article) => {
-                    return (
-                        <Card key={article.title} className="max-w-sm flex flex-col ">
-                            <CardHeader>
-                                <div>
-                                    wallpaaper
-                                </div>
-                                <CardTitle>{article.title}</CardTitle>
-                                <CardDescription>{article.published_at}</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p>{article.description}</p>
-                            </CardContent>
-                            <CardFooter className="flex justify-between mt-auto self-end">
+        <div className="flex flex-wrap justify-around gap-4">
+            {ARTICLES.map((article) => {
+                return (
+                    <Card key={article.title} className="max-w-sm flex flex-col ">
+                        <CardHeader>
+                            <div>
+                                wallpaaper
+                            </div>
+                            <CardTitle>{article.title}</CardTitle>
+                            <CardDescription>{article.published_at}</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <p>{article.description}</p>
+                        </CardContent>
+                        <CardFooter className="flex justify-between mt-auto self-end">
+                            <span>
+                                Atualizado em {article.updated_at}
+                            </span>
+                            <div className="flex gap-2">
                                 <span>
-                                    Atualizado em {article.updated_at}
+                                    {article.likes}
+                                    &nbsp;
+                                    <i className="fa-solid fa-thumbs-up"></i>
                                 </span>
-                                <div className="flex gap-2">
-                                    <span>
-                                        {article.likes}
-                                        &nbsp;
-                                        <i className="fa-solid fa-thumbs-up"></i>
-                                    </span>
-                                    <span>
-                                        {article.comments}
-                                        &nbsp;
-                                        <i className="fa-solid fa-comments"></i>
-                                    </span>
-                                </div>
-                            </CardFooter>
-                        </Card>
-                    )
-                })}
-            </div>
-        </section>
+                                <span>
+                                    {article.comments}
+                                    &nbsp;
+                                    <i className="fa-solid fa-comments"></i>
+                                </span>
+                            </div>
+                        </CardFooter>
+                    </Card>
+                )
+            })}
+        </div>
     )
 }

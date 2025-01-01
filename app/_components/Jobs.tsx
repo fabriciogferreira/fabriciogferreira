@@ -172,44 +172,41 @@ export default function Jobs(){
     }
 
     return (
-        <section>
-            <h1>Jobs</h1>
-            <Tabs defaultValue={buildId(lastJob)} className="flex flex-col md:flex-row">
-                <TabsList className="flex flex-col h-fit md:mr-4">
-                    {JOBS.map((job) => {
-                        return (
-                            <TabsTrigger key={buildId(job)} value={buildId(job)} className="w-full justify-start">{buildId(job)}</TabsTrigger>
-                        )
-                    })}
-                </TabsList>
+        <Tabs defaultValue={buildId(lastJob)} className="flex flex-col md:flex-row">
+            <TabsList className="flex flex-col h-fit md:mr-4">
                 {JOBS.map((job) => {
                     return (
-                        <TabsContent key={buildId(job)} value={buildId(job)} className="flex flex-col gap-3 mt-0">
-                            <div>
-                                <h4>{job.position}</h4>
-                                <span>{job.started_at} - {job.finished_at ? job.finished_at : "Presente"}</span>
-                            </div>
-                            <div>
-                                {job.paragraphs.map((paragraph) => {
-                                    return <p key={paragraph}>{paragraph}</p>
-                                })}
-                            </div>
-                            <div className="flex flex-wrap gap-3">
-                                {job.technologies.map((technologie) => {
-                                    return (
-                                        <div key={technologie.name} className="border rounded-lg flex gap-1 px-2 py-1 text-lg font-bold">
-                                            <div className="w-6">
-                                                {technologie.icon}
-                                            </div>
-                                            {technologie.name}
-                                        </div>
-                                    )
-                                })}
-                            </div>
-                        </TabsContent>
+                        <TabsTrigger key={buildId(job)} value={buildId(job)} className="w-full justify-start">{buildId(job)}</TabsTrigger>
                     )
                 })}
-            </Tabs>
-        </section>
+            </TabsList>
+            {JOBS.map((job) => {
+                return (
+                    <TabsContent key={buildId(job)} value={buildId(job)} className="flex flex-col gap-3 mt-0">
+                        <div>
+                            <h4>{job.position}</h4>
+                            <span>{job.started_at} - {job.finished_at ? job.finished_at : "Presente"}</span>
+                        </div>
+                        <div>
+                            {job.paragraphs.map((paragraph) => {
+                                return <p key={paragraph}>{paragraph}</p>
+                            })}
+                        </div>
+                        <div className="flex flex-wrap gap-3">
+                            {job.technologies.map((technologie) => {
+                                return (
+                                    <div key={technologie.name} className="border rounded-lg flex gap-1 px-2 py-1 text-lg font-bold">
+                                        <div className="w-6">
+                                            {technologie.icon}
+                                        </div>
+                                        {technologie.name}
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </TabsContent>
+                )
+            })}
+        </Tabs>
     )
 }

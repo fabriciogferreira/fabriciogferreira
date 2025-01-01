@@ -42,8 +42,7 @@ const EVENTS: Array<event> = [
 
 export default function AboutMe(){
     return (
-        <section className='flex flex-col gap-4'>
-            <h1>About me</h1>
+        <>
             <div>
                 <p>
                     Olá, Fabrício aqui! Se você chegou até este ponto, provavelmente está considerando a possibilidade de me contratar (obrigado, Deus!). Quero aproveitar para compartilhar um pouco da minha história até o meu primeiro contato com a programação.
@@ -95,6 +94,6 @@ export default function AboutMe(){
                     </TooltipProvider>
                 </div>
             </div>
-        </section>
+        </>
     )
 }

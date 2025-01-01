@@ -18,8 +18,7 @@ export default function Contact(){
     const [message, setMessage] = useState<string>("")
 
     return (
-        <section className='text-center'>
-            <h1 className='text-start'>Lets work together</h1>
+        <>
             <h4>Contact me</h4>
             <div className='flex flex-col gap-4'>
                 <div className='flex gap-4 flex-col sm:flex-row'>
@@ -42,6 +41,6 @@ export default function Contact(){
                     )
                 })}
             </div>
-        </section>
+        </>
     )
 }
