@@ -6,7 +6,7 @@ export default function Main() {
             {SECTIONS.map((section, index) => {
                 return (
                     <section id={section.title} key={section.title} className={SECTIONS[index].class}>
-                        {section.showTitle && <h1>{section.title}</h1>}
+                        {section.showTitle && <h1 className="text-4xl">{section.title}</h1>}
                         <section.component />
                     </section>
                 )

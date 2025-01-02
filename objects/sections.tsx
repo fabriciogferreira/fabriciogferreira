@@ -18,17 +18,17 @@ type sectionType = {
 }
 
 const SECTIONS: Array<sectionType> = [
-    {showTitle: false, title: "hero-section", component: HeroSection, class: "h-dvh p-10 flex flex-col justify-evenly", icon: "home"},
+    {showTitle: false, title: "hero-section", component: HeroSection, class: "h-screen p-10 flex flex-col justify-evenly", icon: "home"},
     {showTitle: true, title: "skills", component: Skills, class: "flex flex-col", icon: "toolbox"},
-    {showTitle: true, title: "statistics", component: Statistics, class: "bg-red-300", icon: "chart-line"},
-    {showTitle: true, title: "jobs", component: Jobs, class: "bg-red-400", icon: "briefcase"},
-    {showTitle: true, title: "education", component: Education, class: "bg-red-500", icon: "school"},
-    {showTitle: true, title: "projects", component: Projects, class: "bg-red-600", icon: "diagram-project"},
-    {showTitle: true, title: "downloads", component: Downloads, class: "bg-red-700", icon: "download"},
+    {showTitle: true, title: "statistics", component: Statistics, class: "", icon: "chart-line"},
+    {showTitle: true, title: "jobs", component: Jobs, class: "", icon: "briefcase"},
+    {showTitle: true, title: "education", component: Education, class: "", icon: "school"},
+    {showTitle: true, title: "projects", component: Projects, class: "", icon: "diagram-project"},
+    {showTitle: true, title: "downloads", component: Downloads, class: "", icon: "download"},
     {showTitle: true, title: "contact", component: Contact, class: "text-center", icon: "phone"},
-    {showTitle: true, title: "testimonials", component: Testimonials, class: "bg-red-900", icon: "message"},
-    {showTitle: true, title: "books-read", component: BooksRead, class: "bg-red-200", icon: "book"},
-    {showTitle: true, title: "articles", component: Articles, class: "bg-red-300", icon: "newspaper"},
+    {showTitle: true, title: "testimonials", component: Testimonials, class: "", icon: "message"},
+    {showTitle: true, title: "books-read", component: BooksRead, class: "", icon: "book"},
+    {showTitle: true, title: "articles", component: Articles, class: "", icon: "newspaper"},
     {showTitle: true, title: "about-me", component: AboutMe, class: "flex flex-col gap-4", icon: "address-book"},
 ]
 
