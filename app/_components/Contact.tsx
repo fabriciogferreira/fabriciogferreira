@@ -26,13 +26,13 @@ export default function Contact(){
                     <Input placeholder='Subject' onChange={(value) => setSubject(value.target.value)}/>
                 </div>
                 <Textarea placeholder="Digite sua mensagem aqui." onChange={(value) => setMessage(value.target.value)}/>
-                <Button type="submit" onClick={() => window.location.href = `mailto:${email}?subject=${subject}&body=${message}`}>
+                <Button type="submit" variant="secondary" onClick={() => window.location.href = `mailto:${email}?subject=${subject}&body=${message}`}>
                     <i className="fa-solid fa-envelope"></i>
                     Submit
                 </Button>
             </div>
             <h4>Social medias</h4>
-            <div className='flex flex-wrap justify-start border border-2 p-3 gap-4 rounded-xl'>
+            <div className='flex flex-wrap justify-start gap-4 border p-3 rounded-lg'>
                 {SOCIAL_MEDIAS.map((socialMedia) => {
                     return (
                         <a key={socialMedia.name} className={cn(buttonVariants({ variant: "outline" }), "text-base font-bold")} href={socialMedia.link} target="_blank" rel="noopener noreferrer">

@@ -13,10 +13,10 @@ const FILES: Array<file> = [
 
 export default function Downloads(){
     return (
-        <div className='flex flex-wrap gap-2 justify-start border border-4 p-5 rounded-xl'>
+        <div className='flex flex-wrap gap-2 justify-start border p-3 rounded-lg'>
             {FILES.map((file) => {
                 return (
-                    <a key={file.name} className={buttonVariants({ variant: "outline" })} download href={file.path} target="_blank" rel="noopener noreferrer">
+                    <a key={file.name} className={buttonVariants({ variant: "secondary" })} download href={file.path} target="_blank" rel="noopener noreferrer">
                         <i className="fa-solid fa-download"></i> |
                         <i className={`fa-solid fa-${file.icon}`}></i> 
                         {file.name}

@@ -2,7 +2,7 @@ import { SOCIAL_MEDIAS } from "@/objects/contact"
 
 export default function Footer() {
     return (
-        <footer className="flex justify-around p-4 gap-4 flex-wrap">
+        <footer className="flex justify-around p-4 gap-4 flex-wrap bg-slate-800">
             <p className="flex items-center text-center">
                 ©{new Date().getFullYear()} CodeTree. Todos os direitos reservados.
             </p>

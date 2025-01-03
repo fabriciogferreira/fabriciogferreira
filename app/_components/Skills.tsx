@@ -25,6 +25,7 @@ import HTMLIcon from "@/components/icons/HTMLIcon"
 import USAIcon from "@/components/icons/USAIcon"
 
 import { ReactNode } from "react"
+
 export type tech = {
     name: string
     icon: ReactNode
@@ -51,12 +52,17 @@ export default function Skills(){
             <div className="flex flex-wrap justify-around p-5 text-center gap-5">
                 {TECHS.map((tech) => {
                     return (
-                        <div key={tech.name}  className="w-36 p-4 border border-4 rounded">
+                        <div key={tech.name}  className="w-32 p-4 border border rounded-lg">
                             <div>
                                 {tech.icon}
                                 <h4>{tech.name}</h4>
                             </div>
-                            <Progress value={tech.progress} />
+                            <div className="flex gap-2 items-center relative">
+                                <Progress indicatorClass="bg-green-500" value={tech.progress}/>
+                                <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-sm font-bold">
+                                    {tech.progress}%
+                                </span>
+                            </div>
                         </div>
                     )
                 })}

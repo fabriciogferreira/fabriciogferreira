@@ -14,22 +14,27 @@ import Articles from "@/app/_components/Articles";
 import AboutMe from "@/app/_components/AboutMe";
 
 type sectionType = {
-    showTitle: boolean, title: string, component: () => ReactNode, class: string, icon: string
+    hide: boolean,
+    showTitle: boolean,
+    title: string,
+    component: () => ReactNode,
+    class: string,
+    icon: string
 }
 
 const SECTIONS: Array<sectionType> = [
-    {showTitle: false, title: "hero-section", component: HeroSection, class: "h-screen p-10 flex flex-col justify-evenly", icon: "home"},
-    {showTitle: true, title: "skills", component: Skills, class: "flex flex-col", icon: "toolbox"},
-    {showTitle: true, title: "statistics", component: Statistics, class: "", icon: "chart-line"},
-    {showTitle: true, title: "jobs", component: Jobs, class: "", icon: "briefcase"},
-    {showTitle: true, title: "education", component: Education, class: "", icon: "school"},
-    {showTitle: true, title: "projects", component: Projects, class: "", icon: "diagram-project"},
-    {showTitle: true, title: "downloads", component: Downloads, class: "", icon: "download"},
-    {showTitle: true, title: "contact", component: Contact, class: "text-center", icon: "phone"},
-    {showTitle: true, title: "testimonials", component: Testimonials, class: "", icon: "message"},
-    {showTitle: true, title: "books-read", component: BooksRead, class: "", icon: "book"},
-    {showTitle: true, title: "articles", component: Articles, class: "", icon: "newspaper"},
-    {showTitle: true, title: "about-me", component: AboutMe, class: "flex flex-col gap-4", icon: "address-book"},
+    {hide: false, showTitle: false, title: "hero-section", component: HeroSection, class: "h-screen p-10 flex flex-col justify-evenly", icon: "home"},
+    {hide: false, showTitle: true, title: "skills", component: Skills, class: "flex flex-col", icon: "toolbox"},
+    {hide: false, showTitle: true, title: "statistics", component: Statistics, class: "", icon: "chart-line"},
+    {hide: false, showTitle: true, title: "jobs", component: Jobs, class: "", icon: "briefcase"},
+    {hide: false, showTitle: true, title: "education", component: Education, class: "", icon: "school"},
+    {hide: true, showTitle: true, title: "projects", component: Projects, class: "", icon: "diagram-project"},
+    {hide: false, showTitle: true, title: "downloads", component: Downloads, class: "", icon: "download"},
+    {hide: false, showTitle: true, title: "contact", component: Contact, class: "text-center", icon: "phone"},
+    {hide: false, showTitle: true, title: "testimonials", component: Testimonials, class: "", icon: "message"},
+    {hide: true, showTitle: true, title: "books-read", component: BooksRead, class: "", icon: "book"},
+    {hide: true, showTitle: true, title: "articles", component: Articles, class: "", icon: "newspaper"},
+    {hide: false, showTitle: true, title: "about-me", component: AboutMe, class: "flex flex-col gap-4", icon: "address-book"},
 ]
 
 export default SECTIONS;

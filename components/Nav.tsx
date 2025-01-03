@@ -20,6 +20,8 @@ export default function Nav({menuClass, listClass, itemClass}: props){
         <NavigationMenu className={cn("grow-0", menuClass)}>
             <NavigationMenuList className={cn("items-start space-x-0 gap-2", listClass)}>
                 {SECTIONS.map((section, index) =>{
+                    if (section.hide) return
+                    
                     return (
                         <NavigationMenuItem key={index} className={cn({'backdrop-blur-3xl bg-white/30 w-full rounded': currentPath == section.title}, itemClass)}>
                             <Link 
