@@ -1,13 +1,12 @@
 import SECTIONS from "@/objects/sections";
-
 export default function Main() {
     return (
-        <main className="mx-14 flex flex-col gap-20 pb-20">
+        <main className="pb-20 [&>*:nth-child(even)]:bg-slate-900">
             {SECTIONS.map((section, index) => {
                 if (section.hide) return
 
                 return (
-                    <section id={section.title} key={section.title} className={SECTIONS[index].class}>
+                    <section id={section.title} key={section.title} className={`${SECTIONS[index].class} px-[10vw] py-10`}>
                         {section.showTitle && 
                             <div className="flex items-center mb-5">
                                 <i className={`fa-solid fa-${section.icon} fa-fw mr-2 fa-xl`}></i>

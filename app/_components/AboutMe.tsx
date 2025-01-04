@@ -43,30 +43,36 @@ const EVENTS: Array<event> = [
 export default function AboutMe(){
     return (
         <>
-            <div>
-                <p>
-                    Olá, Fabrício aqui! Se você chegou até este ponto, provavelmente está considerando a possibilidade de me contratar (obrigado, Deus!). Quero aproveitar para compartilhar um pouco da minha história até o meu primeiro contato com a programação.
-                </p>
-                <p>
-                    Minha relação com a tecnologia começou com um PlayStation 2 que minha mãe comprou. Fiquei fascinado com a ideia de como um aparelho podia conter tantos jogos incríveis. Esse foi o início da minha paixão por tecnologia e jogos, mesmo que eu jogasse apenas alguns deles.
-                </p>
-                <p>
-                    Essa adoração pela tecnologia cresceu ainda mais com os filmes de super-heróis, especialmente por causa do Homem de Ferro, cujo uso criativo e inovador da tecnologia me inspirou profundamente.
-                </p>
-                <p>
-                    Certo dia, enquanto ia para a igreja, encontrei um futuro professor distribuindo panfletos sobre as Escolas Técnicas Estaduais (ETEC). Por coincidência, eu já havia me inscrito para o processo seletivo, graças à indicação do meu irmão.
-                </p>
-                <p>
-                    No curso de Informática para Internet (INFONET) da ETEC, tive meu primeiro contato com a programação. Foi lá que aprendi sobre linguagens de programação, frameworks, e como os computadores realmente funcionam. Essa experiência abriu um novo mundo de possibilidades para mim.
-                </p>
-                <p>
-                    Desde então, venho trilhando uma carreira na área de tecnologia. Meu próximo passo educacional foi cursar Análise e Desenvolvimento de Sistemas na UNIFUNEC, onde me graduei. Agora, estou considerando ingressar em uma pós-graduação em Ciência da Computação para continuar expandindo meus conhecimentos e habilidades.
-                </p>
-            </div>
-            <div className="space-y-4 columns-2 sm:columns-3 md:columns-4 lg:columns-5 2xl:columns-7">
-                {IMAGES.map((image) => <img key={image} className="w-full rounded-xl shadow" src={`/about-me/${image}`} />)}          
-            </div>
-            <div>
+            <article>
+                <h2>history</h2>
+                <div className="flex flex-col gap-4">
+                    <p>
+                        Olá, Fabrício aqui! Se você chegou até este ponto, provavelmente está considerando a possibilidade de me contratar (obrigado, Deus!). Quero aproveitar para compartilhar um pouco da minha história até o meu primeiro contato com a programação.
+                    </p>
+                    <p>
+                        Minha relação com a tecnologia começou com um PlayStation 2 que minha mãe comprou. Fiquei fascinado com a ideia de como um aparelho podia conter tantos jogos incríveis. Esse foi o início da minha paixão por tecnologia e jogos, mesmo que eu jogasse apenas alguns deles.
+                    </p>
+                    <p>
+                        Essa adoração pela tecnologia cresceu ainda mais com os filmes de super-heróis, especialmente por causa do Homem de Ferro, cujo uso criativo e inovador da tecnologia me inspirou profundamente.
+                    </p>
+                    <p>
+                        Certo dia, enquanto ia para a igreja, encontrei um futuro professor distribuindo panfletos sobre as Escolas Técnicas Estaduais (ETEC). Por coincidência, eu já havia me inscrito para o processo seletivo, graças à indicação do meu irmão.
+                    </p>
+                    <p>
+                        No curso de Informática para Internet (INFONET) da ETEC, tive meu primeiro contato com a programação. Foi lá que aprendi sobre linguagens de programação, frameworks, e como os computadores realmente funcionam. Essa experiência abriu um novo mundo de possibilidades para mim.
+                    </p>
+                    <p>
+                        Desde então, venho trilhando uma carreira na área de tecnologia. Meu próximo passo educacional foi cursar Análise e Desenvolvimento de Sistemas na UNIFUNEC, onde me graduei. Agora, estou considerando ingressar em uma pós-graduação em Ciência da Computação para continuar expandindo meus conhecimentos e habilidades.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h2>Galeria</h2>
+                <div className="space-y-4 columns-2 sm:columns-3 md:columns-4 lg:columns-5 2xl:columns-7">
+                    {IMAGES.map((image) => <img key={image} className="w-full rounded-xl shadow" src={`/about-me/${image}`} />)}          
+                </div>
+            </article>
+            <article>
                 <h2>timeline</h2>
                 <div className='flex justify-between overflow-auto'>
                     <TooltipProvider>
@@ -93,7 +99,7 @@ export default function AboutMe(){
                         })}
                     </TooltipProvider>
                 </div>
-            </div>
+            </article>
         </>
     )
 }

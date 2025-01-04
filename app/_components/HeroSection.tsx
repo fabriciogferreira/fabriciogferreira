@@ -3,14 +3,14 @@ import { buttonVariants } from "@/components/ui/button"
 export default function HeroSection(){
     return (
         <>
-            <div className="flex gap-5 items-center justify-around flex-col md:flex-row md:gap-20">
+            <div className="flex gap-5 items-center justify-around flex-col lg:flex-row lg:gap-20">
                 <div className="w-full max-w-sm">
                     <div className="blob before-blob after-blob"/>
                     {/* https://github.com/hosseinnabi-ir/Image-Blob-Animation-using-CSS/tree/AngularProject */}
                 </div>
-                <div className='grow'>
-                    <h1 className="text-[8vw]">Fabrício Ferreira</h1>
-                    <h2 className="text-[6vw]">Desenvolvedor Java</h2>
+                <div className='grow text-nowrap text-center lg:text-start'>
+                    <h1 className="text-[7vw] lg:text-[5vw]">Fabrício Ferreira</h1>
+                    <h2 className="text-[6vw] lg:text-[4vw]">Desenvolvedor Java</h2>
                 </div>
             </div>
             <div className="flex flex-col items-stretch md:flex-row md:items-center md:justify-around gap-5">
