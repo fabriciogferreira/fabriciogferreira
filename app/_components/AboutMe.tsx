@@ -74,26 +74,27 @@ export default function AboutMe(){
             </article>
             <article>
                 <h2>timeline</h2>
-                <div className='flex justify-between overflow-auto'>
+                <div className='flex overflow-x-auto h-32 items-center *:px-4 pl-5'>
                     <TooltipProvider>
                         {EVENTS.map((event) => {
                             return (
                                 <>
                                     <Tooltip key={event.text}>
-                                        <TooltipTrigger className='flex flex-col items-center gap-2 hover:text-blue-500 [&:hover>*:nth-child(even)]:border-blue-500 [&:hover>*:nth-child(even)]:h-16'>
-                                            <div>{event.year}</div>
-                                            <div className='border h-10'></div>
-                                            <i className={`fa-solid fa-2xl fa-${event.icon}`}></i>
+                                        <TooltipTrigger className='flex flex-col items-center hover:text-blue-500 relative '>
+                                            <div className="absolute -top-5">{event.year}</div>
+                                            <div>|</div>
+                                            <div className="absolute -bottom-10">
+                                                <i className={`fa-solid fa-2xl fa-${event.icon}`}></i>
+                                            </div>
                                         </TooltipTrigger>
                                         <TooltipContent>
                                             <p>{event.text}</p>
                                         </TooltipContent>
                                     </Tooltip>
                                     <div>|</div>
-                                    <div>|</div>
-                                    <div>|</div>
-                                    <div>|</div>
-                                    <div>|</div>
+                                    <div className="hidden lg:flex">|</div>
+                                    <div className="hidden xl:flex">|</div>
+                                    <div className="hidden 2xl:flex">|</div>
                                 </>
                             )
                         })}
