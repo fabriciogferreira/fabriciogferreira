@@ -69,7 +69,7 @@ export default function Skills(){
                     })}
                 </div>
             </article>
-            <article>
+            {/* <article>
                 <h3>languages</h3>
                 <Table>
                     <TableHeader>
@@ -96,7 +96,7 @@ export default function Skills(){
                         </TableRow>
                     </TableBody>
                 </Table>
-            </article>
+            </article> */}
         </>
     )
 }
