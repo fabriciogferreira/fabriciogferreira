@@ -145,13 +145,13 @@ body {
 }
 
 .before-blob::after {
-  background: url('@/public/mclovin.jpeg');
+  background: url('@/public/photos/profile.jpeg');
   border-radius: 56% 32% 58% 44% / 48% 52% 46% 54%;
   animation: animation-after-blob 5s linear infinite;
 }
 
 .before-blob::before {
-  background: url('@/public/switch-theme/dark.gif');
+  background-color: hsl(var(--primary));
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
   animation: animation-before-blob 5s linear infinite;
 }
