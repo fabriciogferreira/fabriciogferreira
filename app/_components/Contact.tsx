@@ -8,9 +8,10 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { buttonVariants } from '@/components/ui/button';
 
-import { SOCIAL_MEDIAS } from '@/objects/contact';
+import { socialMedias } from '@/types/social-medias';
 
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 export default function Contact(){
     const [email, setEmail] = useState<string>("")
@@ -36,13 +37,11 @@ export default function Contact(){
             <article className='grow'>
                 <h4>Social medias</h4>
                 <div className='flex flex-wrap justify-start gap-4'>
-                    {SOCIAL_MEDIAS.map((socialMedia) => {
-                        return (
-                            <a key={socialMedia.name} className={cn(buttonVariants({ variant: "outline" }), "text-base font-bold")} href={socialMedia.link} target="_blank" rel="noopener noreferrer">
-                                {socialMedia.icon} {socialMedia.name}
-                            </a>
-                        )
-                    })}
+                    {socialMedias.map((socialMedia) => 
+                        <Link key={socialMedia.name} className={cn(buttonVariants({ variant: "outline" }), "text-base font-bold")} href={socialMedia.link} target="_blank" rel="noopener noreferrer">
+                            <socialMedia.icon /> {socialMedia.name}
+                        </Link>
+                    )}
                 </div>
             </article>
         </div>
