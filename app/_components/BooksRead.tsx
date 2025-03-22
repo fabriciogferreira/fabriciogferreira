@@ -1,8 +1,5 @@
 import Image, { StaticImageData } from "next/image"
 
-import path from "@/public/mclovin.jpeg"
-import timeline from "@/public/timeline.png"
-
 type image = {
     name: string,
     description: string,
@@ -10,16 +7,16 @@ type image = {
 }
 
 const IMAGES: Array<image> = [
-    {
-        name: "livro 1 aklddas asd asdkn aslsd ds ad",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti nihil quam nostrum ab voluptatum minima accusamus, assumenda atque earum obcaecati. Atque, aut? Sequi optio nesciunt quae, sit animi quis.",
-        path: path
-    },
-    {
-        name: "livro 1 aklddas asd asdkn aslsd ds ad",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti nihil quam nostrum ab voluptatum minima accusamus, assumenda atque earum obcaecati. Atque, aut? Sequi optio nesciunt quae, sit animi quis.",
-        path: timeline
-    },
+    // {
+    //     name: "livro 1 aklddas asd asdkn aslsd ds ad",
+    //     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti nihil quam nostrum ab voluptatum minima accusamus, assumenda atque earum obcaecati. Atque, aut? Sequi optio nesciunt quae, sit animi quis.",
+    //     path: path
+    // },
+    // {
+    //     name: "livro 1 aklddas asd asdkn aslsd ds ad",
+    //     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corrupti nihil quam nostrum ab voluptatum minima accusamus, assumenda atque earum obcaecati. Atque, aut? Sequi optio nesciunt quae, sit animi quis.",
+    //     path: timeline
+    // },
 ]
 
 export default function BooksRead(){
