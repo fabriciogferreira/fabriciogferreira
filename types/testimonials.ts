@@ -3,6 +3,7 @@ export type tTestimonial = {
     name: string,
     position: string,
     enterprise: string,
+    profile: string
     siteLink: string
     createdAt: string
 }
