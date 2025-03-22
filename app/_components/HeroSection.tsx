@@ -1,4 +1,5 @@
 import { buttonVariants } from "@/components/ui/button"
+import { projects } from "@/types/projects"
 
 export default function HeroSection(){
     return (
@@ -39,7 +40,7 @@ export default function HeroSection(){
                     </p>
                     <p className="text-[3vw] leading-[0.75]">
                         <span className="block text-[5vw]">
-                            +26   
+                            +{projects.length}
                         </span>
                         projects
                     </p>
