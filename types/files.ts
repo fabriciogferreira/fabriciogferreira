@@ -7,6 +7,6 @@ export type tFile = {
 export type tFiles = Array<tFile>
 
 export const files = {
-    resume: {name: "Currículo", icon: "address-card", path: "curriculo.pdf"},
-    garduationTCC: {name: "TCC da Graduação", icon: "newspaper", path: "tcc-graduation.pdf"},
+    resume: {name: "Currículo", icon: "address-card", path: "about-me/curriculo.pdf"},
+    garduationTCC: {name: "TCC da Graduação", icon: "newspaper", path: "education/unifunec/tcc.pdf"},
 } as const satisfies Record<string, tFile>;

@@ -1,43 +1,15 @@
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip"
+// import {
+//     Tooltip,
+//     TooltipContent,
+//     TooltipProvider,
+//     TooltipTrigger,
+// } from "@/components/ui/tooltip"
+import Image from "next/image"
+
 import React from "react"
-const IMAGES: Array<string> = [
-    "1-moto.jpg",
-    "2-aniversario.jpg",
-    "3-bravo.jpg",
-    "4-rei.jpg",
-    "5-fantasia.jpg",
-    "6-tcc.jpg",
-    "7-serio.jpg",
-    "8-davizao.jpg",
-    "9-tcc-unifunec.jpg",
-    "10-fotos-unifunec.jpg",
-    "11-formado.jpg",
-]
 
-type event = {
-    icon: string,
-    text: string,
-    year: number,
-}
-
-const EVENTS: Array<event> = [
-    {icon: "baby", text: "nascimento", year: 2002},
-    {icon: "gamepad", text: "Primeiro contato com tecnologia: ps2", year: 2010},
-    {icon: "computer", text: "primeiro computador", year: 2012},
-    {icon: "mobile", text: "Primeiro contato com tecnologia movel: ps2", year: 2013},
-    {icon: "burger", text: "primeiro emprego", year: 2017},
-    {icon: "laptop", text: "primeiro notebook", year: 2017},
-    {icon: "school", text: "ensino médio", year: 2021},
-    {icon: "school", text: "ensino técnico", year: 2021},
-    {icon: "graduation-cap", text: "Faculdade", year: 2021},
-    {icon: "computer", text: "Segundo computador", year: 2022},
-    {icon: "code", text: "First JOb Dev", year: 2023},
-]
+import { images } from "@/types/images"
+// import { events } from "@/types/events"
 
 export default function AboutMe(){
     return (
@@ -66,12 +38,21 @@ export default function AboutMe(){
             </article>
             <article>
                 <div className="space-y-4 columns-2 sm:columns-3 md:columns-4 lg:columns-5 2xl:columns-7">
-                    {IMAGES.map((image) => <img key={image} className="w-full rounded-xl shadow" src={`/about-me/${image}`} />)}          
+                    {Object
+                        .values(images.aboutMe)
+                        .map((image, index) => 
+                            <Image
+                                key={index}
+                                src={image}
+                                alt={`${index}`}
+                                className="w-full rounded-xl shadow"
+                            />
+                    )}
                 </div>
             </article>
             <article>
-                <h2>timeline</h2>
-                <div className='flex overflow-x-auto h-32 items-center *:px-4 pl-5'>
+                {/* <h2>timeline</h2> */}
+                {/* <div className='flex overflow-x-auto h-32 items-center *:px-4 pl-5'> */}
                     {/* <TooltipProvider>
                         {EVENTS.map((event) => {
                             return (
@@ -94,7 +75,7 @@ export default function AboutMe(){
                             )
                         })}
                     </TooltipProvider> */}
-                </div>
+                {/* </div> */}
             </article>
         </>
     )

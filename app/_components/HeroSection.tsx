@@ -1,5 +1,6 @@
 import { buttonVariants } from "@/components/ui/button"
 import { projects } from "@/types/projects"
+import { files } from "@/types/files"
 
 export default function HeroSection(){
     return (
@@ -20,7 +21,7 @@ export default function HeroSection(){
                         <i className="fa-solid fa-envelope"></i>
                         fabriciof481@mail.com
                     </a>
-                    <a className={buttonVariants({ variant: "outline" })} download href="curriculo.pdf" target="_blank" rel="noopener noreferrer">
+                    <a className={buttonVariants({ variant: "outline" })} download href={files.resume.path} target="_blank" rel="noopener noreferrer">
                         <i className="fa-solid fa-download"></i>
                         Baixar currículo
                     </a>

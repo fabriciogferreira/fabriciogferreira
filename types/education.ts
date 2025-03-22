@@ -1,8 +1,11 @@
+import { images } from "@/types/images"
+import { StaticImageData } from "next/image"
+
 export type tEducation = {
     isCourse: boolean
     name: string
-    logoSrc: string
-    certificateSrc: string
+    logoSrc: StaticImageData | string
+    certificateSrc: StaticImageData | string
     siteLink: string
     address: string
     course: string
@@ -27,8 +30,8 @@ export const educations: tEducations = [
     {
         isCourse: false,
         name: 'ETEC - Escolas Técnicas Estaduais',
-        logoSrc: "education/logo/logo-etec-sfs.png",
-        certificateSrc: "",
+        logoSrc: images.education.etec.logo,
+        certificateSrc: images.education.etec.certificate,
         siteLink: 'https://etecsantafedosul.cps.sp.gov.br/',
         address: 'Av. Conselheiro Antônio Prado, s/n - São Francisco, Santa Fé do Sul - SP, 15775-000',
         course: 'INFONET - Informática para internet',
