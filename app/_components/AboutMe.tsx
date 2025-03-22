@@ -4,20 +4,19 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
-
+import React from "react"
 const IMAGES: Array<string> = [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.jpg",
-    "5.jpg",
-    "6.png",
-    "7.jpg",
-    "8.jpg",
-    "9.png",
-    "10.png",
-    "11.jpg",
-    "12.png",
+    "1-moto.jpg",
+    "2-aniversario.jpg",
+    "3-bravo.jpg",
+    "4-rei.jpg",
+    "5-fantasia.jpg",
+    "6-tcc.jpg",
+    "7-serio.jpg",
+    "8-davizao.jpg",
+    "9-tcc-unifunec.jpg",
+    "10-fotos-unifunec.jpg",
+    "11-formado.jpg",
 ]
 
 type event = {
@@ -44,7 +43,6 @@ export default function AboutMe(){
     return (
         <>
             <article>
-                <h2>history</h2>
                 <div className="flex flex-col gap-4">
                     <p>
                         Olá, Fabrício aqui! Se você chegou até este ponto, provavelmente está considerando a possibilidade de me contratar (obrigado, Deus!). Quero aproveitar para compartilhar um pouco da minha história até o meu primeiro contato com a programação.
@@ -67,7 +65,6 @@ export default function AboutMe(){
                 </div>
             </article>
             <article>
-                <h2>Galeria</h2>
                 <div className="space-y-4 columns-2 sm:columns-3 md:columns-4 lg:columns-5 2xl:columns-7">
                     {IMAGES.map((image) => <img key={image} className="w-full rounded-xl shadow" src={`/about-me/${image}`} />)}          
                 </div>
@@ -75,10 +72,9 @@ export default function AboutMe(){
             <article>
                 <h2>timeline</h2>
                 <div className='flex overflow-x-auto h-32 items-center *:px-4 pl-5'>
-                    <TooltipProvider>
+                    {/* <TooltipProvider>
                         {EVENTS.map((event) => {
                             return (
-                                <>
                                     <Tooltip key={event.text}>
                                         <TooltipTrigger className='flex flex-col items-center hover:text-blue-500 relative '>
                                             <div className="absolute -top-5">{event.year}</div>
@@ -91,14 +87,13 @@ export default function AboutMe(){
                                             <p>{event.text}</p>
                                         </TooltipContent>
                                     </Tooltip>
-                                    <div>|</div>
-                                    <div className="hidden lg:flex">|</div>
-                                    <div className="hidden xl:flex">|</div>
-                                    <div className="hidden 2xl:flex">|</div>
-                                </>
+                                    <div key={`fogo1${event.text}`}>|</div>
+                                    <div key={`fogo2${event.text}`} className="hidden lg:flex">|</div>
+                                    <div key={`fogo3${event.text}`} className="hidden xl:flex">|</div>
+                                    <div key={`fogo4${event.text}`} className="hidden 2xl:flex">|</div>
                             )
                         })}
-                    </TooltipProvider>
+                    </TooltipProvider> */}
                 </div>
             </article>
         </>
