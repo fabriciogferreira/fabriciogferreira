@@ -1,4 +1,7 @@
-import { SOCIAL_MEDIAS } from "@/objects/contact"
+import { socialMedias } from "@/types/social-medias"
+import Link from "next/link"
+import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 
 export default function Footer() {
     return (
@@ -10,12 +13,12 @@ export default function Footer() {
                 <h1>
                     Develop by <span className="font-bold">Fabrício Ferreira</span>
                 </h1>
-                <div className="flex">
-                    {SOCIAL_MEDIAS.map((socialMedia) => {
+                <div className="flex gap-2">
+                    {socialMedias.map((socialMedia) => {
                         return (
-                            <div className="w-14" key={socialMedia.link}>
-                                {socialMedia.icon}
-                            </div>
+                            <Link key={socialMedia.name} href={socialMedia.link} className={cn(buttonVariants({variant: "link"}), "p-1")}>
+                                <socialMedia.icon size={30} />
+                            </Link>
                         )
                     })}
                 </div>
