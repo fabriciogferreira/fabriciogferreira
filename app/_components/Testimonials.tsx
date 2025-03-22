@@ -9,23 +9,7 @@ import {
 
 import Link from "next/link"
 
-type testimonial = {
-    quote: string,
-    name: string,
-    position: string,
-    enterprise: string,
-    siteLink: string
-}
-
-const TESTIMONIALS: Array<testimonial> = [
-    {
-        quote: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quasi quis vitae unde neque omnis incidunt harum quas a, assumenda pariatur voluptate est itaque qui sint. Veniam vitae libero vero.",
-        name: "Guilherme",
-        position: "Dev Pleno",
-        enterprise: "Olie",
-        siteLink: "https://olie.ai/"
-    },
-]
+import { testimonials } from "@/types/testimonials"
 
 export default function Testimonials(){
     return (
@@ -39,23 +23,35 @@ export default function Testimonials(){
             className="mx-[3rem]"
         >
             <CarouselContent className="ml-0">
-                {TESTIMONIALS.map((testimonial, index) => {
+                {testimonials.map((testimonial, index) => {
+                    const date = new Date(testimonial.createdAt);
+                    const [year, month, day] = date.toISOString().split("T")[0].split("-");
+
                     return (
                         <CarouselItem key={index} className={`basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border rounded-lg gap-4 mx-4 pl-0 p-4`}>
-                            <q>{index} - {testimonial.quote}</q>
-                            <div className="flex gap-2 items-center">
-                                <Avatar>
-                                    <AvatarImage src="https://github.com/shadcn.png" />
-                                    <AvatarFallback>CN</AvatarFallback>
-                                    {/* Imagem (pedir permissao) */}
-                                </Avatar>
-                                <div className="">
-                                    <h4>{testimonial.name}</h4>
-                                    <Link href={testimonial.siteLink} target="_blank">
-                                        <h4>
-                                            {testimonial.enterprise}
-                                        </h4>
-                                    </Link>
+                            <q>{testimonial.quote}</q>
+                            <div className="flex justify-between">
+                                <div className="flex items-center gap-2">
+                                    <Avatar>
+                                        <AvatarImage src={testimonial.profile} />
+                                        <AvatarFallback>CN</AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <h4>{testimonial.name}</h4>
+                                        <Link href={testimonial.siteLink} target="_blank">
+                                            <h4>
+                                                {testimonial.enterprise}
+                                            </h4>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="text-center">
+                                    <div>
+                                        {year}
+                                    </div>
+                                    <div>
+                                        {day}/{month}
+                                    </div>
                                 </div>
                             </div>
                         </CarouselItem>
