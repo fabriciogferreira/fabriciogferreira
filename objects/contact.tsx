@@ -1,17 +1,15 @@
-import { ReactNode } from 'react';
-
-import GitHubIcon from '@/components/icons/GitHubIcon';
-import LinkedinIcon from '@/components/icons/LinkedinIcon';
-import InstagramIcon from '@/components/icons/InstagramIcon';
+import { GithubOriginal } from 'devicons-react';
+import { LinkedinOriginal } from 'devicons-react';
+import InstagramOriginal from '@/components/icons/InstagramOriginal';
 
 export type file = {
     name: string
     link: string
-    icon: ReactNode,
+    icon: React.FC,
 }
 
 export const SOCIAL_MEDIAS: Array<file> = [
-    {name: "GitHub", link: "https://www.github.com/fabriciogferreira", icon: <GitHubIcon rootClass="h-full"/>},
-    {name: "Linkedin", link: "https://www.linkedin.com/in/fabriciogferreira/", icon: <LinkedinIcon /> },
-    {name: "Instagram", link: "https://www.instagram.com/fabricio1103/", icon: <InstagramIcon />},
+    {name: "GitHub", link: "https://www.github.com/fabriciogferreira", icon: GithubOriginal},
+    {name: "Linkedin", link: "https://www.linkedin.com/in/fabriciogferreira/", icon: LinkedinOriginal },
+    {name: "Instagram", link: "https://www.instagram.com/fabricio1103/", icon: InstagramOriginal},
 ]

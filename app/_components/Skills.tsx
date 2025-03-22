@@ -10,6 +10,7 @@ import { Progress } from "@/components/ui/progress"
 // import { Button } from "@/components/ui/button"
 
 // import LanguageLevel from "@/components/LanguageLevel"
+// import US from 'country-flag-icons/react/3x2/US'
 
 import { technologies } from "@/types/technology"
 
@@ -50,7 +51,7 @@ export default function Skills(){
                     <TableBody>
                         <TableRow>
                             <TableCell className="text-2xl">
-                                <USAIcon rootClass=""/>
+                                <US/>
                                 English
                             </TableCell>
                             <TableCell>
