@@ -13,10 +13,10 @@ export default function Footer() {
                 <h1>
                     Develop by <span className="font-bold">Fabrício Ferreira</span>
                 </h1>
-                <div className="flex gap-2">
+                <div className="flex gap-1">
                     {socialMedias.map((socialMedia) => {
                         return (
-                            <Link key={socialMedia.name} href={socialMedia.link} className={cn(buttonVariants({variant: "link"}), "p-1")}>
+                            <Link key={socialMedia.name} href={socialMedia.link} className={cn(buttonVariants({variant: "link"}), "p-0")} target="_blank">
                                 <socialMedia.icon size={30} />
                             </Link>
                         )

@@ -19,7 +19,7 @@ export const jobs: tJobs = [
         link: "https://olie.ai/",
         enterprise: "Olie",
         position: "Trainne",
-        started_at: "28/08/2023",
+        started_at: "2023/08/28",
         finished_at: "",
         paragraphs: [
             "A empresa Olie foi o meu primeiro emprego, e com ela pude compreender a grande diferença entre programar para o mercado e programar para estudos." ,

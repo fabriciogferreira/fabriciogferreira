@@ -1,4 +1,3 @@
-import { Progress } from "@/components/ui/progress"
 // import {
 //     Table,
 //     TableBody,
@@ -18,21 +17,13 @@ export default function Skills(){
     return (
         <>
             <article>
-                <h3>Tecnologias</h3>
-                <div className="flex flex-wrap justify-around p-5 text-center gap-5">
+                {/* <h3>Tecnologias</h3> */}
+                <div className="flex flex-wrap justify-around p-2 text-center gap-5">
                     {Object.values(technologies).map((tech) => {
                         return (
-                            <div key={tech.name}  className="w-32 p-4 border border rounded-lg">
-                                <div className="flex flex-col items-center">
-                                    <tech.icon size={90} />
-                                    <h4>{tech.name}</h4>
-                                </div>
-                                <div className="flex gap-2 items-center relative">
-                                    <Progress indicatorClass="bg-green-500" value={tech.progress}/>
-                                    <span className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-sm font-bold">
-                                        {tech.progress}%
-                                    </span>
-                                </div>
+                            <div key={tech.name}  className="w-32 py-4 border rounded-lg flex flex-col items-center">
+                                <tech.icon size={90}/>
+                                <h4>{tech.name}</h4>
                             </div>
                         )
                     })}

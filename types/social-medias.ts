@@ -3,11 +3,15 @@ import {
     LinkedinOriginal
 } from 'devicons-react';
 import InstagramOriginal from '@/components/icons/InstagramOriginal';
+interface IconProps extends React.SVGProps<SVGElement> {
+    size?: number | string;
+    color?: string;
+}
 
 export type tFile = {
     name: string
     link: string
-    icon: React.FC,
+    icon: React.ComponentType<IconProps>,
 }
 
 export type tFiles = Array<tFile>
