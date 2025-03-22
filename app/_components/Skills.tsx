@@ -22,8 +22,8 @@ export default function Skills(){
                     {Object.values(technologies).map((tech) => {
                         return (
                             <div key={tech.name}  className="w-32 p-4 border border rounded-lg">
-                                <div>
-                                    <tech.icon />
+                                <div className="flex flex-col items-center">
+                                    <tech.icon size={90} />
                                     <h4>{tech.name}</h4>
                                 </div>
                                 <div className="flex gap-2 items-center relative">
