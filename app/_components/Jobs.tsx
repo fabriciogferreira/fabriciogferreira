@@ -38,16 +38,17 @@ export default function Jobs(){
                             })}
                         </div>
                         <div className="flex flex-wrap gap-3">
-                            {job.technologies.map((technologie) => {
-                                return (
+                            {job
+                                .technologies
+                                .sort((a, b) => a.order - b.order)
+                                .map((technologie) => 
                                     <div key={technologie.name} className="border rounded-lg flex gap-2 px-2 py-1 text-lg font-bold">
                                         <div className="w-6">
                                             <technologie.icon />
                                         </div>
                                         {technologie.name}
                                     </div>
-                                )
-                            })}
+                            )}
                         </div>
                     </TabsContent>
                 )

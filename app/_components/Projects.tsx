@@ -60,11 +60,14 @@ export default function Projects(){
                     <CardContent className="flex flex-col gap-2">
                         <p>{project.description}</p>
                         <div className="flex gap-2 flex-wrap">
-                            {project.technologies.map(tech => 
-                                <Badge key={tech.name} className="p-1.5 rounded">
-                                    <tech.icon/>
-                                    <span className="ms-1">{tech.name}</span>
-                                </Badge>
+                            {project
+                                .technologies
+                                .sort((a, b) => a.order - b.order)
+                                .map(tech => 
+                                    <Badge key={tech.name} className="p-1.5 rounded">
+                                        <tech.icon/>
+                                        <span className="ms-1">{tech.name}</span>
+                                    </Badge>
                             )}
                         </div>
                         <div className="flex flex-wrap gap-2 ">

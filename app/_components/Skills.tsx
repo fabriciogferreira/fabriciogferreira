@@ -19,14 +19,15 @@ export default function Skills(){
             <article>
                 {/* <h3>Tecnologias</h3> */}
                 <div className="flex flex-wrap justify-around p-2 text-center gap-5">
-                    {Object.values(technologies).map((tech) => {
-                        return (
+                    {Object
+                        .values(technologies)
+                        .sort((a, b) => a.order - b.order)
+                        .map((tech) => 
                             <div key={tech.name}  className="w-32 py-4 border rounded-lg flex flex-col items-center">
                                 <tech.icon size={90}/>
                                 <h4>{tech.name}</h4>
                             </div>
-                        )
-                    })}
+                    )}
                 </div>
             </article>
             {/* <article>
