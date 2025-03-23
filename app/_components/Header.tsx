@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import SwitchTheme from "@/components/SwitchTheme";
 import Nav from "@/components/Nav";
+import { ChevronLeft } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 import {
     Sheet,
@@ -12,6 +14,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button";
 
 export default function Header(){
 
@@ -19,25 +22,29 @@ export default function Header(){
 
     return (
         <header>
-            {/*
-            TODO: FECHAR AO AUMENTAR A TELA
-            TODO: TROCAR X POR HAMBURGUER
-            */}
             <Sheet open={state} onOpenChange={(state) =>  setState(state)}>
-                <SheetTrigger className="sm:hidden">
-                    <i className="fa-solid fa-bars  top-0 right-0"></i>
+                <SheetTrigger asChild>
+                    <Button className="fixed -right-3 top-1/2 rounded-full" onClick={() => setState(!state)} variant={"default"} size={"icon"}>    
+                        <ChevronLeft/>
+                    </Button>
                 </SheetTrigger>
-                <SheetContent side="top" className="teste">
-                    <SheetHeader>
-                        <SheetTitle>Fabrício Ferreira</SheetTitle>
-                    </SheetHeader>
-                    <Nav listClass="flex-col" itemClass="text-[4.5vh]" onClickLink={() => setState(!state)}/>
-                    <div className="flex justify-around items-center">
-                        <SwitchTheme/>
-                        <div>
-                            Change Language
+                <SheetContent side="right" className="p-0 flex items-center border-l border-2 border-l-neutral-500">
+                    <Button className="-ml-5 rounded-full" onClick={() => setState(!state)} variant={"default"} size={"sm"}>
+                        <ChevronRight />
+                    </Button>
+                    <div>
+                        <SheetHeader>
+                            <SheetTitle>Fabrício Ferreira</SheetTitle>
+                        </SheetHeader>
+                        <Nav listClass="flex-col" itemClass="text-[4.5vh]" onClickLink={() => setState(!state)}/>
+                        <div className="flex justify-around items-center">
+                            <SwitchTheme/>
+                            <div>
+                                Change Language
+                            </div>
                         </div>
                     </div>
+
                 </SheetContent>
             </Sheet>
         </header>
