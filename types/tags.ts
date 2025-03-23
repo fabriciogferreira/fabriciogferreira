@@ -1,13 +1,16 @@
-export type tTag = string
+export type tTag = {
+    name: string,
+    order: number,
+}
 
 export type tTags = Array<tTag>
 
-export const tags = [
-    'Backend',
-    'Frontend',
-    'Fullstack'
-] as const satisfies tTags
+export type rTags = Record<string, tTag>
 
-export type tUnionTag = (typeof tags)[number];
+export const rTags = {
+    fullstack: {name: 'Fullstack', order: 1},
+    frontend: {name: 'Frontend', order: 2},
+    backend: {name: 'Backend', order: 2},
+} as const satisfies rTags
 
-export type tUnionTags = Array<tUnionTag>
+export const tags = Object.values(rTags)

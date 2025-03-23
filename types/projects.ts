@@ -1,5 +1,5 @@
 import { tTechnologies, technologies } from "@/types/technologies"
-import { tTags } from "@/types/tags"
+import { tTags, rTags } from "@/types/tags"
 import { tRepositories } from "@/types/repositories"
 
 export type tProject = {
@@ -23,7 +23,7 @@ export const projects: tProjects = [
         repositories: [],
         isPersonal: true,
         site: "https://opbed.com",
-        tags: ["Fullstack", "Backend", "Frontend"],
+        tags: [rTags.fullstack, rTags.frontend, rTags.backend],
         technologies: [
             technologies.CSS,
             technologies.Git,
@@ -43,7 +43,7 @@ export const projects: tProjects = [
         repositories: [],
         isPersonal: false,
         site: "https://adrianoveiculosjales.com.br/",
-        tags: ["Fullstack", "Backend", "Frontend"],
+        tags: [rTags.backend, rTags.frontend, rTags.fullstack],
         technologies: [
             technologies.Docker,
             technologies.Javascript,

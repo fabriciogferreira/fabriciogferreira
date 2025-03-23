@@ -26,7 +26,7 @@ const SECTIONS: Array<sectionType> = [
     {hide: false, showTitle: true, title: "statistics", component: Statistics, class: "", icon: "chart-line"},
     {hide: true, showTitle: true, title: "jobs", component: Jobs, class: "", icon: "briefcase"},
     {hide: true, showTitle: true, title: "education", component: Education, class: "", icon: "school"},
-    {hide: true, showTitle: true, title: "projects", component: Projects, class: "", icon: "diagram-project"},
+    {hide: false, showTitle: true, title: "projects", component: Projects, class: "", icon: "diagram-project"},
     {hide: true, showTitle: true, title: "downloads", component: Downloads, class: "", icon: "download"},
     {hide: true, showTitle: true, title: "contact", component: Contact, class: "", icon: "phone"},
     {hide: true, showTitle: true, title: "testimonials", component: Testimonials, class: "", icon: "message"},

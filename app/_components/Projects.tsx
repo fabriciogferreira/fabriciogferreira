@@ -24,7 +24,7 @@ import Image from "next/image"
 import { useTranslations } from 'next-intl';
 
 export default function Projects(){
-    const t = useTranslations('HeroSection');
+    const t = useTranslations('Projects');
     
     return (
         <div className="flex flex-wrap gap-2">
@@ -74,8 +74,11 @@ export default function Projects(){
                             )}
                         </div>
                         <div className="flex flex-wrap gap-2 ">
-                            {project.tags.map(tag => 
-                                <Badge key={tag}>{tag}</Badge>)
+                            {project
+                                .tags
+                                .sort((a, b) => a.order - b.order)
+                                .map(tag => 
+                                <Badge key={tag.name}>{tag.name}</Badge>)
                             }
                         </div>
                     </CardContent>
