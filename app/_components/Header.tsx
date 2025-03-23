@@ -37,7 +37,7 @@ export default function Header(){
                         <SheetHeader>
                             <SheetTitle>Fabrício Ferreira</SheetTitle>
                         </SheetHeader>
-                        <Nav listClass="flex-col" itemClass="text-[4.5vh]" onClickLink={() => setState(!state)}/>
+                        <Nav listClass="flex-col" itemClass="text-[4.5vh]" />
                         <div className="flex justify-around items-center">
                             <SwitchTheme/>
                             <LocaleSwitcher />

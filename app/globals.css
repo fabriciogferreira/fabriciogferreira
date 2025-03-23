@@ -82,7 +82,7 @@ body {
 .switch-theme-label {
   position: relative;
   display: block;
-  background: url('@/public/switch-theme/light.gif') center center;
+  background: url('/public/switch-theme/light.gif') center center;
   background-size: cover;
   border: 10px solid rgba(198, 247, 253, 0.3);
   aspect-ratio: 8/3;
@@ -118,7 +118,7 @@ body {
 
 [data-theme='dark'] {
   .switch-theme-label {
-    background: url('@/public/switch-theme/dark.gif') center center;
+    background: url('/public/switch-theme/dark.gif') center center;
     background-size: cover;
   }
 
@@ -145,7 +145,7 @@ body {
 }
 
 .before-blob::after {
-  background: url('@/public/hero-section/profile.jpeg');
+  background: url('/public/hero-section/profile.jpeg');
   border-radius: 56% 32% 58% 44% / 48% 52% 46% 54%;
   animation: animation-after-blob 5s linear infinite;
 }

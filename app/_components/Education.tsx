@@ -39,8 +39,13 @@ export default function Education(){
                         </AccordionTrigger>
                         <AccordionContent>
                             <div>
-                                <Link href={education.siteLink}>
-                                    <img src={education.logoSrc} width={300} />
+                                <Link href={education.siteLink} className="w-2xs">
+                                    <Image
+                                        src={education.logoSrc}
+                                        alt=""
+                                        objectFit="contain"
+                                        fill
+                                    />
                                 </Link>
                                 <div>
                                     <div className="flex gap-1 items-center">
