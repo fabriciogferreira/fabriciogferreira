@@ -15,6 +15,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 export default function Header(){
 
@@ -39,9 +40,7 @@ export default function Header(){
                         <Nav listClass="flex-col" itemClass="text-[4.5vh]" onClickLink={() => setState(!state)}/>
                         <div className="flex justify-around items-center">
                             <SwitchTheme/>
-                            <div>
-                                Change Language
-                            </div>
+                            <LocaleSwitcher />
                         </div>
                     </div>
 

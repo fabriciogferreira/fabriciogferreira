@@ -15,7 +15,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link";
 import Image from "next/image"
 
-import { educations } from "@/types/education";
+import { educations } from "@/types/educations";
+import { useTranslations } from 'next-intl';
 
 import {
     Map,
@@ -24,6 +25,8 @@ import {
 } from 'lucide-react';
 
 export default function Education(){
+    const t = useTranslations('Education');
+    
     return (
         <Accordion type="single" collapsible>
             {educations.map((education, index) => {
@@ -56,13 +59,13 @@ export default function Education(){
                             </div>
                             <div className="flex gap-2">
                                 <Button>
-                                    <i className="fa-solid fa-download"></i>Certificate
+                                    <i className="fa-solid fa-download"></i>{t('resume')}
                                 </Button>
                                 {/* PROVAVEL ERRO DE NESTED TAG AQUI */}
                                 <Drawer>
                                     <DrawerTrigger asChild>
                                         <Button>
-                                            <i className="fa-solid fa-eye"></i>Certificate
+                                            <i className="fa-solid fa-eye"></i>{t('resume')}
                                         </Button>
                                     </DrawerTrigger>
                                     <DrawerContent>

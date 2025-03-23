@@ -1,4 +1,4 @@
-import { technologies, tTechnologies } from "@/types/technology"
+import { technologies, tTechnologies } from "@/types/technologies"
 
 export type tJob = {
     logo: string,

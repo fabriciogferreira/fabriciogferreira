@@ -1,6 +1,6 @@
-import { tTechnologies, technologies } from "@/types/technology"
-import { tTags } from "@/types/tag"
-import { tRepositories } from "@/types/repository"
+import { tTechnologies, technologies } from "@/types/technologies"
+import { tTags } from "@/types/tags"
+import { tRepositories } from "@/types/repositories"
 
 export type tProject = {
     name: string,

@@ -1,0 +1,41 @@
+{
+    "HeroSection": {
+        "subtitle": "Backend Developer",
+        "download_resume": "Download Resume",
+        "years": {
+            "experience": "<span>+{years} years </span> de experience",
+            "clients": "Clients",
+            "projects": "Projects"
+        }
+    },
+    "Skills": {},
+    "Statistics": {},
+    "Jobs": {
+        "current": "Actual"
+    },
+    "Education": {
+        "resume": "Resume"
+    },
+    "Projects": {
+        "visit": "Visit",
+        "test_as_admin": "Visit as admin"
+    },
+    "Downloads": {},
+    "Contact": {
+        "placeholder": {
+            "email": "Email...",
+            "subject": "Subject...",
+            "message": "Message..."
+        },
+        "submit": "Submit",
+        "social_medias": "Social medias"
+    },
+    "Testimonials": {},
+    "BooksRead": {},
+    "Articles": {},
+    "AboutMe": {},
+    "Footer": {
+        "all_rights_reserved": "All rights reserved.",
+        "developed_by": "Developed by <strong>{name}</strong>"
+    }
+}

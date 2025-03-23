@@ -4,8 +4,10 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { jobs, tJob } from "@/types/jobs"
+import { useTranslations } from 'next-intl';
 
 export default function Jobs(){
+    const t = useTranslations('Jobs');
 
     const lastJob = jobs[0]
 
@@ -26,7 +28,7 @@ export default function Jobs(){
                 return (
                     <TabsContent key={buildId(job)} value={buildId(job)} className="flex flex-col gap-3 mt-0">
                         <h4>
-                            {job.position} | {job.started_at} - {job.finished_at ? job.finished_at : "Presente"}
+                            {job.position} | {job.started_at} - {job.finished_at ? job.finished_at : t('current')}
                         </h4>
 
                         <div>

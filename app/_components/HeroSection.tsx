@@ -2,7 +2,11 @@ import { buttonVariants } from "@/components/ui/button"
 import { projects } from "@/types/projects"
 import { files } from "@/types/files"
 import { jobs } from "@/types/jobs";
+import { useTranslations } from 'next-intl';
+
 export default function HeroSection() {
+    const t = useTranslations('HeroSection');
+    
 
     function getYearsDiffRoundedUp(startDate: Date, endDate: Date): number {
         const diffMs = endDate.getTime() - startDate.getTime();
@@ -21,7 +25,7 @@ export default function HeroSection() {
                 </div>
                 <div className='grow text-nowrap text-center lg:text-start'>
                     <h1 className="text-[7vw] lg:text-[5vw]">Fabrício Ferreira</h1>
-                    <h2 className="text-[6vw] lg:text-[4vw]">Desenvolvedor FullStack</h2>
+                    <h2 className="text-[6vw] lg:text-[4vw]">{ t('subtitle') }</h2>
                 </div>
             </div>
             <div className="flex flex-col items-stretch md:flex-row md:items-center md:justify-around gap-5">
@@ -32,27 +36,27 @@ export default function HeroSection() {
                     </a>
                     <a className={buttonVariants({ variant: "outline" })} download href={files.resume.path} target="_blank" rel="noopener noreferrer">
                         <i className="fa-solid fa-download"></i>
-                        Baixar currículo
+                        { t('download_resume') }
                     </a>
                 </div>
                 <div className="flex grow justify-around text-center">
                     <p className="text-[3vw] leading-[0.9]">
-                        <span className="block text-[5vw]">
-                            +{years} anos
-                        </span>
-                        Experiência
+                        {t.rich('years.experience', {
+                            span: (chunks) => <span className="block text-[5vw]">{chunks}</span>,
+                            years: years
+                        })}
                     </p>
                     <p className="text-[3vw] leading-[0.9]">
                         <span className="block text-[5vw]">
                             +{projects.filter(project => project.isPersonal == false).length}
                         </span>
-                        Clientes
+                        { t('years.clients') }
                     </p>
                     <p className="text-[3vw] leading-[0.9]">
                         <span className="block text-[5vw]">
                             +{projects.length}
                         </span>
-                        Projetos
+                        { t('years.projects') }
                     </p>
                 </div>
             </div>

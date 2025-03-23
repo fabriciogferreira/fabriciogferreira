@@ -21,8 +21,11 @@ import { Star } from 'lucide-react';
 import { GitFork } from 'lucide-react';
 import { ExternalLink } from 'lucide-react';
 import Image from "next/image"
+import { useTranslations } from 'next-intl';
 
-export default function Projects(){    
+export default function Projects(){
+    const t = useTranslations('HeroSection');
+    
     return (
         <div className="flex flex-wrap gap-2">
             {/* TODO: FILTRO */}
@@ -79,10 +82,10 @@ export default function Projects(){
                     <CardFooter className="flex flex-col items-stretch">
                         <div className="flex justify-between mb-2">
                             <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"})}>
-                                Visitar
+                                {t('visit')}
                             </Link>
                             <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"})}>
-                                Testar como admin
+                                {t('test_as_admin')}
                             </Link>
                         </div>
                         {project.repositories.map(repository => 

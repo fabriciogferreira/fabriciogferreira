@@ -1,0 +1,41 @@
+{
+    "HeroSection": {
+        "subtitle": "Desenvolvedor Backend",
+        "download_resume": "Baixar Currículo",
+        "years": {
+            "experience": "<span>+{years} anos </span> de experiência",
+            "clients": "Clientes",
+            "projects": "Projetos"
+        }
+    },
+    "Skills": {},
+    "Statistics": {},
+    "Jobs": {
+        "current": "Present"
+    },
+    "Education": {
+        "resume": "Currículo"
+    },
+    "Projects": {
+        "visit": "Visitar",
+        "test_as_admin": "Testar como administrador"
+    },
+    "Downloads": {},
+    "Contact": {
+        "placeholder": {
+            "email": "Email...",
+            "subject": "Assunto...",
+            "message": "Mensagem..."
+        },
+        "submit": "Enviar",
+        "social_medias": "Redes sociais"
+    },
+    "Testimonials": {},
+    "BooksRead": {},
+    "Articles": {},
+    "AboutMe": {},
+    "Footer": {
+        "all_rights_reserved": "Todos os direitos reservados.",
+        "developed_by": "Desenvolvido por <strong>{name}</strong>"
+    }
+}

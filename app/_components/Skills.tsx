@@ -11,7 +11,7 @@
 // import LanguageLevel from "@/components/LanguageLevel"
 // import US from 'country-flag-icons/react/3x2/US'
 
-import { technologies } from "@/types/technology"
+import { technologies } from "@/types/technologies"
 
 export default function Skills(){
     return (
