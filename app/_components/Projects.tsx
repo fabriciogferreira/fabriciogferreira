@@ -68,8 +68,8 @@ export default function Projects(){
                                 .sort((a, b) => a.order - b.order)
                                 .map(tech => 
                                     <Badge key={tech.name} className="p-1.5 rounded">
-                                        <tech.icon/>
-                                        <span className="ms-1">{tech.name}</span>
+                                        <tech.icon size={18} className="me-1"/>
+                                        {tech.name}
                                     </Badge>
                             )}
                         </div>

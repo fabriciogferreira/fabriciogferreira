@@ -23,7 +23,7 @@ type sectionType = {
 const SECTIONS: Array<sectionType> = [
     {hide: false, showTitle: false, title: "hero-section", component: HeroSection, class: "h-screen p-10 flex flex-col justify-center", icon: "home"},
     {hide: false, showTitle: true, title: "skills", component: Skills, class: "", icon: "toolbox"},
-    {hide: false, showTitle: true, title: "statistics", component: Statistics, class: "", icon: "chart-line"},
+    {hide: true, showTitle: true, title: "statistics", component: Statistics, class: "", icon: "chart-line"},
     {hide: false, showTitle: true, title: "jobs", component: Jobs, class: "", icon: "briefcase"},
     {hide: false, showTitle: true, title: "education", component: Education, class: "", icon: "school"},
     {hide: false, showTitle: true, title: "projects", component: Projects, class: "", icon: "diagram-project"},

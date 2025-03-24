@@ -3,6 +3,7 @@ import { projects } from "@/types/projects"
 import { files } from "@/types/files"
 import { jobs } from "@/types/jobs";
 import { useTranslations } from 'next-intl';
+import Link from "next/link";
 
 export default function HeroSection() {
     const t = useTranslations('HeroSection');
@@ -30,19 +31,20 @@ export default function HeroSection() {
             </div>
             <div className="flex flex-col items-stretch md:flex-row md:items-center md:justify-around gap-5">
                 <div className="flex justify-around w-full flex-wrap md:flex-nowrap md:max-w-sm">
-                    <a className={buttonVariants({ variant: "outline" })} href="mailto:fabriciof481@gmail.com?subject=Assunto do email&body=Conteúdo do email que será preenchido automaticamente" >
+                    <Link className={buttonVariants({ variant: "outline" })} href="mailto:fabriciof481@gmail.com?subject=Assunto do email&body=Conteúdo do email que será preenchido automaticamente" >
                         <i className="fa-solid fa-envelope"></i>
                         fabriciof481@mail.com
-                    </a>
-                    <a className={buttonVariants({ variant: "outline" })} download href={files.resume.path} target="_blank" rel="noopener noreferrer">
+                    </Link>
+                    <Link className={buttonVariants({ variant: "outline" })} download href={files.resume.path} target="_blank" rel="noopener noreferrer">
                         <i className="fa-solid fa-download"></i>
                         { t('download_resume') }
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex grow justify-around text-center">
                     <p className="text-[3vw] leading-[0.9]">
                         {t.rich('years.experience', {
-                            span: (chunks) => <span className="block text-[5vw]">{chunks}</span>,
+                            span: (chunks) => <span className="text-[5vw]">{chunks}</span>,
+                            br: () => <br/>,
                             years: years
                         })}
                     </p>

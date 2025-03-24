@@ -5,6 +5,7 @@ import Image from "next/image"
 
 import { jobs, tJob } from "@/types/jobs"
 import { useTranslations } from 'next-intl';
+import { Badge } from "@/components/ui/badge";
 
 export default function Jobs(){
     const t = useTranslations('Jobs');
@@ -44,12 +45,10 @@ export default function Jobs(){
                                 .technologies
                                 .sort((a, b) => a.order - b.order)
                                 .map((technologie) => 
-                                    <div key={technologie.name} className="border rounded-lg flex gap-2 px-2 py-1 text-lg font-bold">
-                                        <div className="w-6">
-                                            <technologie.icon />
-                                        </div>
+                                    <Badge variant={"secondary"} key={technologie.name} className="rounded p-1.5">
+                                        <technologie.icon size={18} className="me-1" />
                                         {technologie.name}
-                                    </div>
+                                    </Badge>
                             )}
                         </div>
                     </TabsContent>

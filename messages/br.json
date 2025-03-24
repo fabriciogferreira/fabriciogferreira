@@ -3,7 +3,7 @@
         "subtitle": "Desenvolvedor Backend",
         "download_resume": "Baixar Currículo",
         "years": {
-            "experience": "<span>+{years} anos </span> de experiência",
+            "experience": "<span>+{years}</span> anos de <br></br> experiência",
             "clients": "Clientes",
             "projects": "Projetos"
         }
