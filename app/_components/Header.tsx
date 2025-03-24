@@ -4,8 +4,7 @@ import { useState } from "react";
 
 import SwitchTheme from "@/components/SwitchTheme";
 import Nav from "@/components/Nav";
-import { ChevronLeft } from 'lucide-react';
-import { ChevronRight } from 'lucide-react';
+import { icons } from "@/types/icons";
 
 import {
     Sheet,
@@ -25,13 +24,13 @@ export default function Header(){
         <header>
             <Sheet open={state} onOpenChange={(state) =>  setState(state)}>
                 <SheetTrigger asChild>
-                    <Button className="fixed -right-3 top-1/2 rounded-full" onClick={() => setState(!state)} variant={"default"} size={"icon"}>    
-                        <ChevronLeft/>
+                    <Button className="fixed -right-3 top-1/2 rounded-full" onClick={() => setState(!state)} variant={"default"} size={"icon"}>
+                        <icons.chevronLeft />
                     </Button>
                 </SheetTrigger>
                 <SheetContent side="right" className="p-0 flex items-center border-l border-2 border-l-neutral-500">
                     <Button className="-ml-5 rounded-full" onClick={() => setState(!state)} variant={"default"} size={"sm"}>
-                        <ChevronRight />
+                        <icons.chevronRight />
                     </Button>
                     <div>
                         <SheetHeader>

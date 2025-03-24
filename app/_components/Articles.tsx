@@ -38,6 +38,8 @@ const ARTICLES: Array<article> = [
     },
 ]
 
+import { icons } from "@/types/icons";
+
 export default function Articles(){
     return (
         <div className="flex flex-wrap justify-around gap-4">
@@ -54,20 +56,18 @@ export default function Articles(){
                         <CardContent>
                             <p>{article.description}</p>
                         </CardContent>
-                        <CardFooter className="flex justify-between mt-auto self-end">
+                        <CardFooter className="flex justify-between mt-auto">
                             <span>
                                 Atualizado em {article.updated_at}
                             </span>
                             <div className="flex gap-2">
-                                <span>
+                                <span className="flex items-center gap-1">
                                     {article.likes}
-                                    &nbsp;
-                                    <i className="fa-solid fa-thumbs-up"></i>
+                                    <icons.likes size={20} />
                                 </span>
-                                <span>
+                                <span className="flex items-center gap-1">
                                     {article.comments}
-                                    &nbsp;
-                                    <i className="fa-solid fa-comments"></i>
+                                    <icons.testimonials size={20} />
                                 </span>
                             </div>
                         </CardFooter>

@@ -14,6 +14,8 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
+import { icons } from '@/types/icons';
+
 export default function Contact(){
     const t = useTranslations('Contact');
     
@@ -32,7 +34,7 @@ export default function Contact(){
                     </div>
                     <Textarea placeholder={t('placeholder.message')} onChange={(value) => setMessage(value.target.value)}/>
                     <Button type="submit" variant="secondary" onClick={() => window.location.href = `mailto:${email}?subject=${subject}&body=${message}`}>
-                        <i className="fa-solid fa-envelope"></i>
+                        <icons.mail />
                         {t('submit')}
                     </Button>
                 </div>

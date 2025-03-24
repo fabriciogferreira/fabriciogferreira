@@ -18,11 +18,7 @@ import Image from "next/image"
 import { educations } from "@/types/educations";
 import { useTranslations } from 'next-intl';
 
-import {
-    Map,
-    BookA,
-    CalendarCheck
-} from 'lucide-react';
+import { icons } from "@/types/icons";
 
 export default function Education(){
     const t = useTranslations('Education');
@@ -34,7 +30,7 @@ export default function Education(){
                     <AccordionItem key={index} value={`index-${index}`}>
                         <AccordionTrigger>
                             <div>
-                                <i className="fa-solid  fa-graduation-cap"></i> - {education.name} 
+                                <icons.graduationCap /> - {education.name} 
                             </div>
                         </AccordionTrigger>
                         <AccordionContent>
@@ -49,28 +45,28 @@ export default function Education(){
                                 </Link>
                                 <div>
                                     <div className="flex gap-1 items-center">
-                                        <Map size={15}/>
+                                        <icons.map size={15}/>
                                         {education.address},
                                     </div>
                                     <div className="flex gap-1 items-center">
-                                        <BookA size={15}/>
+                                        <icons.course size={15}/>
                                         {education.course}
                                     </div>
                                 </div>
                             </div>
                             <div className="flex gap-1 items-center">
-                                <CalendarCheck size={15}/>
+                                <icons.calendarCheck size={15} />
                                 {education.started_at} - {education.finished_at}
                             </div>
                             <div className="flex gap-2">
                                 <Button>
-                                    <i className="fa-solid fa-download"></i>{t('resume')}
+                                    <icons.downloads />{t('resume')}
                                 </Button>
                                 {/* PROVAVEL ERRO DE NESTED TAG AQUI */}
                                 <Drawer>
                                     <DrawerTrigger asChild>
                                         <Button>
-                                            <i className="fa-solid fa-eye"></i>{t('resume')}
+                                            <icons.eye />{t('resume')}
                                         </Button>
                                     </DrawerTrigger>
                                     <DrawerContent>

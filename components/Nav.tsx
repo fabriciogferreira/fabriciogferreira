@@ -25,14 +25,12 @@ export default function Nav({menuClass, listClass, itemClass}: props){
                     return (
                         <NavigationMenuItem key={index} className={cn({'backdrop-blur-3xl bg-white/30 w-full rounded': currentPath == section.title}, itemClass)}>
                             <Link 
-                                className={cn("p-2 gap-3")}
+                                className={cn("p-2 gap-3 flex items-center")}
                                 href={"#" + section.title}
                                 onClick={() => setPath(section.title)}
                             >
-                                <i className={`fa-solid fa-${section.icon} fa-fw mr-2`}></i>
-                                <span>
-                                    {section.title}
-                                </span>
+                                <section.icon size={35}/>
+                                {section.title}
                             </Link>
                         </NavigationMenuItem>
                     )

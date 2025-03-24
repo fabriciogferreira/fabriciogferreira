@@ -61,7 +61,6 @@ export default function AboutMe(){
                                             <div className="absolute -top-5">{event.year}</div>
                                             <div>|</div>
                                             <div className="absolute -bottom-10">
-                                                <i className={`fa-solid fa-2xl fa-${event.icon}`}></i>
                                             </div>
                                         </TooltipTrigger>
                                         <TooltipContent>

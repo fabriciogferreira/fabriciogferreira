@@ -12,15 +12,15 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import { buttonVariants } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+
+import { icons } from "@/types/icons"
+import { projects } from "@/types/projects"
 
 import Link from "next/link"
-import { buttonVariants } from "@/components/ui/button"
-import { projects } from "@/types/projects"
-import { Badge } from "@/components/ui/badge"
-import { Star } from 'lucide-react';
-import { GitFork } from 'lucide-react';
-import { ExternalLink } from 'lucide-react';
 import Image from "next/image"
+
 import { useTranslations } from 'next-intl';
 
 export default function Projects(){
@@ -94,16 +94,16 @@ export default function Projects(){
                         {project.repositories.map(repository => 
                             <div key={repository.link} className="flex justify-between">
                                 <Link href={repository.link} className="flex items-center gap-1">
-                                    <ExternalLink size={15}/>
+                                    <icons.externalLink size={15}/>
                                     {repository.name}
                                 </Link>
                                 <div className="flex gap-2">
                                     <span className="flex items-center gap-1">
-                                        <Star size={15}/>
+                                        <icons.star size={15}/>
                                         {repository.stars}
                                     </span>
                                     <span className="flex items-center gap-1">
-                                        <GitFork size={15}/>
+                                        <icons.gitFork size={15}/>
                                         {repository.forks}
                                     </span>
                                     <span>

@@ -5,6 +5,8 @@ import { jobs } from "@/types/jobs";
 import { useTranslations } from 'next-intl';
 import Link from "next/link";
 
+import { icons } from "@/types/icons";
+
 export default function HeroSection() {
     const t = useTranslations('HeroSection');
     
@@ -32,11 +34,11 @@ export default function HeroSection() {
             <div className="flex flex-col items-stretch md:flex-row md:items-center md:justify-around gap-5">
                 <div className="flex justify-around w-full flex-wrap md:flex-nowrap md:max-w-sm">
                     <Link className={buttonVariants({ variant: "outline" })} href="mailto:fabriciof481@gmail.com?subject=Assunto do email&body=Conteúdo do email que será preenchido automaticamente" >
-                        <i className="fa-solid fa-envelope"></i>
+                        <icons.mail />
                         fabriciof481@mail.com
                     </Link>
                     <Link className={buttonVariants({ variant: "outline" })} download href={files.resume.path} target="_blank" rel="noopener noreferrer">
-                        <i className="fa-solid fa-download"></i>
+                        <icons.downloads />
                         { t('download_resume') }
                     </Link>
                 </div>
