@@ -43,12 +43,12 @@ export default function Projects(){
                                 className="mx-[3rem]"
                             >
                                 <CarouselContent>
-                                    {project.images.map(image => 
-                                        <CarouselItem key={image} className="basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border rounded-lg gap-4 mx-4 pl-0 p-1 h-40 relative">
+                                    {project.images.map((image, index) => 
+                                        <CarouselItem key={index} className="basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border border-neutral-500 rounded-lg gap-4 mx-4 pl-0 p-1 h-40 relative">
                                             <Image
-                                                objectFit="contain"
+                                                className="object-contain"
                                                 src={image}
-                                                alt={image}
+                                                alt={""}
                                                 fill
                                             />
                                         </CarouselItem>
@@ -87,9 +87,9 @@ export default function Projects(){
                             <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"})}>
                                 {t('visit')}
                             </Link>
-                            <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"})}>
+                            {project.testable && <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"})}>
                                 {t('test_as_admin')}
-                            </Link>
+                            </Link>}
                         </div>
                         {project.repositories.map(repository => 
                             <div key={repository.link} className="flex justify-between">

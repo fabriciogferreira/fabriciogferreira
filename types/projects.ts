@@ -1,13 +1,18 @@
 import { tTechnologies, technologies } from "@/types/technologies"
 import { tTags, rTags } from "@/types/tags"
 import { tRepositories } from "@/types/repositories"
+import { images, tImages } from "@/types/images"
 
 export type tProject = {
     name: string,
-    images: Array<string>,
+    images: tImages,
     description: string,
     site: string,
     tags: tTags,
+    testable?: {
+        email: string,
+        password: string
+    }
     technologies: tTechnologies,
     repositories: tRepositories,
     isPersonal: boolean
@@ -38,7 +43,13 @@ export const projects: tProjects = [
     },
     {
         name: "Adriano Veículos",
-        images: [],
+        images: [
+            images.projects.adrianoveiculosjales.brands,
+            images.projects.adrianoveiculosjales.home,
+            images.projects.adrianoveiculosjales.localization,
+            images.projects.adrianoveiculosjales.login,
+            images.projects.adrianoveiculosjales.stock,
+        ],
         description: "O adriano veículos jales é um site desenvolvido por mim e um amigo, ele foi desenvolvido no começo da minha carreira na programação, 5 meses após eu entrar no mercado. nele é possível que você veja os carros cadastrados pelo dono da concessinária.",
         repositories: [],
         isPersonal: false,

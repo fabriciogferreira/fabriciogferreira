@@ -16,12 +16,20 @@ import highSchoolCertificate from "@/public/education/high-school/certificate.jp
 
 import profile from "@/public/hero-section/profile.jpeg"
 
+import adrianoVeiculosJalesBrands from "@/public/projects/adrianoveiculosjales/brands.png"
+import adrianoVeiculosJalesHome from "@/public/projects/adrianoveiculosjales/home.png"
+import adrianoVeiculosJalesLocalization from "@/public/projects/adrianoveiculosjales/localization.png"
+import adrianoVeiculosJalesLogin from "@/public/projects/adrianoveiculosjales/login.png"
+import adrianoVeiculosJalesStock from "@/public/projects/adrianoveiculosjales/stock.png"
+
 import { StaticImageData } from "next/image"
 
 export type tImage = StaticImageData
 
-export type tImages = {
-    [key: string]: tImage | tImages
+export type tImages = Array<tImage>
+
+export type rImages = {
+    [key: string]: tImage | rImages
 }
 
 export const images = {
@@ -49,5 +57,14 @@ export const images = {
             logo: etecLogo,
             certificate: etecCertificate
         },
+    },
+    projects: {
+        adrianoveiculosjales: {
+            brands: adrianoVeiculosJalesBrands,
+            home: adrianoVeiculosJalesHome,
+            localization: adrianoVeiculosJalesLocalization,
+            login: adrianoVeiculosJalesLogin,
+            stock: adrianoVeiculosJalesStock
+        }
     }
-} as const satisfies tImages
+} as const satisfies rImages

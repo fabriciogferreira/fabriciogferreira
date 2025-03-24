@@ -15,7 +15,7 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
 export default function Contact(){
-    const t = useTranslations('contact');
+    const t = useTranslations('Contact');
     
     const [email, setEmail] = useState<string>("")
     const [subject, setSubject] = useState<string>("")
