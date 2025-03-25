@@ -1,18 +1,4 @@
-import { 
-    BootstrapOriginal,
-    Css3Original,
-    DockerOriginal,
-    GithubOriginal,
-    GitOriginal,
-    Html5Original,
-    JavascriptOriginal,
-    LaravelOriginal,
-    MysqlOriginal,
-    PhpOriginal,
-    PostgresqlOriginal,
-    VuejsOriginal
-} from 'devicons-react';
-
+import { icons } from '@/types/icons';
 
 interface IconProps extends React.SVGProps<SVGElement> {
     size?: number | string;
@@ -34,16 +20,19 @@ export type tOTechnologies = {
 export type tUnionTechnologies = keyof typeof technologies;
 
 export const technologies = {
-    VueJs: { name: "VueJs", icon: VuejsOriginal, order: 2 },
-    Docker: { name: "Docker", icon: DockerOriginal, order: 3 },
-    GitHub: { name: "GitHub", icon: GithubOriginal, order: 4 },
-    PostgreSQL: { name: "PostgreSQL", icon: PostgresqlOriginal, order: 5 },
-    Bootstrap: { name: "Bootstrap", icon: BootstrapOriginal, order: 6 },
-    Javascript: { name: "Javascript", icon: JavascriptOriginal, order: 7 },
-    PHP: { name: "PHP", icon: PhpOriginal, order: 8 },
-    MySQL: { name: "MySQL", icon: MysqlOriginal, order: 9 },
-    Git: { name: "Git", icon: GitOriginal, order: 10 },
-    CSS: { name: "CSS", icon: Css3Original, order: 11 },
-    HTML: { name: "HTML", icon: Html5Original, order: 12 },
-    Laravel: { name: "Laravel", icon: LaravelOriginal, order: 1 },
+    Laravel: { name: "Laravel", icon: icons.laravel, order: 1 },
+    NextJS: { name: "NextJs", icon: icons.nextJS, order: 2 },
+    TailwindCSS: { name: "Tailwind CSS", icon: icons.tailwindCSS, order: 3 },
+    React: { name: "React", icon: icons.react, order: 4 },
+    VueJs: { name: "VueJs", icon: icons.vuejs, order: 5 },
+    Docker: { name: "Docker", icon: icons.docker, order: 6 },
+    GitHub: { name: "GitHub", icon: icons.github, order: 7 },
+    PostgreSQL: { name: "PostgreSQL", icon: icons.postgresql, order: 8 },
+    Bootstrap: { name: "Bootstrap", icon: icons.bootstrap, order: 9 },
+    Javascript: { name: "Javascript", icon: icons.javascript, order: 10 },
+    PHP: { name: "PHP", icon: icons.php, order: 11 },
+    MySQL: { name: "MySQL", icon: icons.mysql, order: 12 },
+    Git: { name: "Git", icon: icons.git, order: 13 },
+    CSS: { name: "CSS", icon: icons.css3, order: 14 },
+    HTML: { name: "HTML", icon: icons.html5, order: 15 },
 } as const satisfies Record<string, tTechnology>;

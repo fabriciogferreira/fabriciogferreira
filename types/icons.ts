@@ -1,8 +1,31 @@
+//Flags
 import {
     BR,
     US
 } from 'country-flag-icons/react/3x2'
 
+//Technologies and social medias
+import { 
+    BootstrapOriginal,
+    Css3Original,
+    DockerOriginal,
+    GithubOriginal,
+    GitOriginal,
+    Html5Original,
+    JavascriptOriginal,
+    LaravelOriginal,
+    MysqlOriginal,
+    PhpOriginal,
+    PostgresqlOriginal,
+    VuejsOriginal,
+    LinkedinOriginal,
+    ReactOriginal,
+    NextjsOriginal,
+    TailwindcssOriginal
+} from 'devicons-react';
+import InstagramOriginal from '@/components/icons/InstagramOriginal';
+
+//Icons
 import {
     House,
     Drill,
@@ -74,4 +97,21 @@ export const icons = {
     star: Star,
     gitFork: GitFork,
     externalLink: ExternalLink,
+    bootstrap: BootstrapOriginal,
+    css3: Css3Original,
+    docker: DockerOriginal,
+    github: GithubOriginal,
+    git: GitOriginal,
+    html5: Html5Original,
+    javascript: JavascriptOriginal,
+    laravel: LaravelOriginal,
+    mysql: MysqlOriginal,
+    php: PhpOriginal,
+    postgresql: PostgresqlOriginal,
+    vuejs: VuejsOriginal,
+    linkedin: LinkedinOriginal,
+    instagram: InstagramOriginal,
+    react: ReactOriginal,
+    nextJS: NextjsOriginal,
+    tailwindCSS: TailwindcssOriginal
 } as const satisfies tIcons
