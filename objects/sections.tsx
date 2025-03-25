@@ -23,7 +23,7 @@ type sectionType = {
 }
 
 const SECTIONS: Array<sectionType> = [
-    {hide: false, showTitle: false, title: "hero-section", component: HeroSection, class: "h-screen p-10 flex flex-col justify-center", icon: icons.heroSection},
+    {hide: false, showTitle: false, title: "hero_section", component: HeroSection, class: "h-screen p-10 flex flex-col justify-center", icon: icons.heroSection},
     {hide: false, showTitle: true, title: "skills", component: Skills, class: "", icon: icons.skills},
     {hide: false, showTitle: true, title: "statistics", component: Statistics, class: "", icon: icons.statistics},
     {hide: false, showTitle: true, title: "jobs", component: Jobs, class: "", icon: icons.jobs},
@@ -31,10 +31,10 @@ const SECTIONS: Array<sectionType> = [
     {hide: false, showTitle: true, title: "projects", component: Projects, class: "", icon: icons.projects},
     {hide: false, showTitle: true, title: "downloads", component: Downloads, class: "", icon: icons.downloads},
     {hide: false, showTitle: true, title: "contact", component: Contact, class: "", icon: icons.contact},
-    {hide: false, showTitle: true, title: "testimonials", component: Testimonials, class: "", icon: icons.testimonials},
-    {hide: false, showTitle: true, title: "books-read", component: BooksRead, class: "", icon: icons.booksRead},
-    {hide: false, showTitle: true, title: "articles", component: Articles, class: "", icon: icons.articles},
-    {hide: false, showTitle: true, title: "about-me", component: AboutMe, class: "flex flex-col gap-4", icon: icons.aboutMe},
+    {hide: true, showTitle: true, title: "testimonials", component: Testimonials, class: "", icon: icons.testimonials},
+    {hide: true, showTitle: true, title: "books_read", component: BooksRead, class: "", icon: icons.booksRead},
+    {hide: true, showTitle: true, title: "articles", component: Articles, class: "", icon: icons.articles},
+    {hide: false, showTitle: true, title: "about_me", component: AboutMe, class: "flex flex-col gap-4", icon: icons.aboutMe},
 ]
 
 export default SECTIONS;
