@@ -15,6 +15,32 @@ export type tJobs = Array<tJob>
 
 export const jobs: tJobs = [
     {
+        logo: "https://enterscience.com.br/static/media/main_white.5845bdf67c4895284e98.png",
+        link: "https://enterscience.com.br/",
+        enterprise: "Enterscience",
+        position: "Trainne",
+        started_at: "2025/3/17",
+        finished_at: "",
+        paragraphs: [
+            "A Enterscience é o meu segundo emprego, advindo de uma parceria entre a mesma e a Olie, isso foi devido a uma oportunidade que surgiu na Enterscience em que fui requisitado." ,
+            "Como trabalhei nas duas empresas ao mesmo tempo, tive que ter destreza de me organizar entre as duas empresas. Pois, apesar da responsabilidade ser a mesma, elas trablhavam de forma diferente e com algumas tecnolgias diferenets.",
+            "Na empresa, pude aprender algumas tecnologias novas, como React, Nexts, Tailwind e outros. Isso aprimorou meu leque de tecnologias conhecidas e permitiu fazer novas conexões"
+        ],
+        technologies: [
+            technologies.Laravel,
+            technologies.React,
+            technologies.NextJS,
+            technologies.TailwindCSS,
+            technologies.Docker,
+            technologies.MySQL,
+            technologies.GitHub,
+            technologies.PHP,
+            technologies.Git,
+            technologies.CSS,
+            technologies.HTML,
+        ]
+    },
+    {
         logo: "https://olie.ai/assets/logo-olie-landing-light-symbol-0e5bf777.png",
         link: "https://olie.ai/",
         enterprise: "Olie",
