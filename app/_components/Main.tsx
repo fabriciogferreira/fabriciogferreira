@@ -1,6 +1,9 @@
 import SECTIONS from "@/objects/sections";
+import { useTranslations } from 'next-intl';
 
 export default function Main() {
+    const t = useTranslations('Main');
+    
     return (
         <main className="[&>*:nth-child(even)]:bg-slate-900 [&>*:nth-child(even)]:text-neutral-100">
             {SECTIONS.map((section) => {
@@ -11,7 +14,7 @@ export default function Main() {
                         {section.showTitle && 
                             <div className="flex items-center mb-5 gap-2">
                                 <section.icon size={35}/>
-                                <h1 className="text-4xl text-start">{section.title.charAt(0).toUpperCase() + section.title.slice(1)}</h1>
+                                <h1 className="text-4xl text-start">{t(section.title)}</h1>
                             </div>
                         }
                         <section.component />

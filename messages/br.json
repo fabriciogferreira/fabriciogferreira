@@ -1,4 +1,18 @@
 {
+    "Main":{
+        "hero_section": "Hero Section",
+        "skills": "Habilidades",
+        "statistics": "Estatisticas",
+        "jobs": "Trabalhos",
+        "education": "Educação",
+        "projects": "Projetos",
+        "downloads": "Downloads",
+        "contact": "Contato",
+        "testimonials": "Relatos",
+        "books_read": "Livros lidos",
+        "articles": "Artigos",
+        "about_me": "Sobre mim"
+    },
     "HeroSection": {
         "subtitle": "Desenvolvedor Backend",
         "download_resume": "Baixar Currículo",

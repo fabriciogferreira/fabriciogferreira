@@ -1,4 +1,18 @@
 {
+    "Main":{
+        "section": "Section",
+        "skills": "Skills",
+        "statistics": "Statistics",
+        "jobs": "Jobs",
+        "education": "Education",
+        "projects": "Projects",
+        "downloads": "Downloads",
+        "contact": "Contact",
+        "testimonials": "Testimonials",
+        "books_read": "Books read",
+        "articles": "Articles",
+        "about_me": "About me"
+    },
     "HeroSection": {
         "subtitle": "Backend Developer",
         "download_resume": "Download Resume",
