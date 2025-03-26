@@ -6,6 +6,7 @@ export type tTestimonial = {
     profile: string
     siteLink: string
     createdAt: string
+    linkedinLink: string
 }
 
 export type tTestimonials = Array<tTestimonial>
@@ -18,6 +19,7 @@ export const testimonials: tTestimonials = [
         profile: "https://media.licdn.com/dms/image/v2/D4D03AQHQudJvNednGw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667403204862?e=1748476800&v=beta&t=_EUPJxYcv5XHDiyI8lD-1Aib5b2wsaGDDXA_-coTP8w",
         siteLink: "https://olie.ai/",
         enterprise: "Olie",
-        position: "Trainee"
+        position: "Trainee",
+        linkedinLink: "https://www.linkedin.com/in/viniciuscruz7/"
     }
 ]

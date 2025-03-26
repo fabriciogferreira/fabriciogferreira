@@ -33,10 +33,15 @@ export default function Testimonials(){
                             <q>{testimonial.quote}</q>
                             <div className="flex justify-between">
                                 <div className="flex items-center gap-2">
-                                    <Avatar>
-                                        <AvatarImage src={testimonial.profile} />
-                                        <AvatarFallback>CN</AvatarFallback>
-                                    </Avatar>
+                                    <Link
+                                        href={testimonial.linkedinLink}
+                                        target="_blank"
+                                    >
+                                        <Avatar>
+                                            <AvatarImage src={testimonial.profile} />
+                                            <AvatarFallback>CN</AvatarFallback>
+                                        </Avatar>
+                                    </Link>
                                     <div>
                                         <h4>{testimonial.name}</h4>
                                         <Link 
