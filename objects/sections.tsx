@@ -31,7 +31,7 @@ const SECTIONS: Array<sectionType> = [
     {hide: false, showTitle: true, title: "projects", component: Projects, class: "", icon: icons.projects},
     {hide: false, showTitle: true, title: "downloads", component: Downloads, class: "", icon: icons.downloads},
     {hide: false, showTitle: true, title: "contact", component: Contact, class: "", icon: icons.contact},
-    {hide: true, showTitle: true, title: "testimonials", component: Testimonials, class: "", icon: icons.testimonials},
+    {hide: false, showTitle: true, title: "testimonials", component: Testimonials, class: "", icon: icons.testimonials},
     {hide: true, showTitle: true, title: "books_read", component: BooksRead, class: "", icon: icons.booksRead},
     {hide: true, showTitle: true, title: "articles", component: Articles, class: "", icon: icons.articles},
     {hide: false, showTitle: true, title: "about_me", component: AboutMe, class: "flex flex-col gap-4", icon: icons.aboutMe},

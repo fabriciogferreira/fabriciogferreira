@@ -7,6 +7,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import { icons } from "@/types/icons"
 import Link from "next/link"
 
 import { testimonials } from "@/types/testimonials"
@@ -38,10 +39,13 @@ export default function Testimonials(){
                                     </Avatar>
                                     <div>
                                         <h4>{testimonial.name}</h4>
-                                        <Link href={testimonial.siteLink} target="_blank">
-                                            <h4>
-                                                {testimonial.enterprise}
-                                            </h4>
+                                        <Link 
+                                            href={testimonial.siteLink}
+                                            target="_blank"
+                                            className="flex items-center gap-1"
+                                        >
+                                            {testimonial.enterprise}
+                                            <icons.externalLink size={15}/>
                                         </Link>
                                     </div>
                                 </div>
