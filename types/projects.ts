@@ -6,7 +6,7 @@ import { images, tImages } from "@/types/images"
 export type tProject = {
     name: string,
     images: tImages,
-    description: string,
+    description: tTranslatable<string>,
     site: string,
     tags: tTags,
     testable?: {
@@ -20,11 +20,16 @@ export type tProject = {
 
 export type tProjects = Array<tProject>
 
+import { tTranslatable } from "@/types/languages"
+
 export const projects: tProjects = [
     {
         name: "1% Melhor a Cada Dia",
         images: [],
-        description: "Uma iniciativa totalmente pessoal, afim de resolver os problemas que eu tinha de organizas meu afazeres, gastos, treino, estudos e outros. Ele permite que você gerencie sua vida dentro dele, dividido em diversas partes para que você tenha independência entre as partes.",
+        description: {
+            br: "Uma iniciativa totalmente pessoal, afim de resolver os problemas que eu tinha para organizar meus afazeres, gastos, treinos, estudos e outros. Ele permite que você gerencie sua vida dentro dele, dividida em diversas partes para que você tenha independência entre elas.",
+            en: "It's a totally personal initiative, aimed at solving the problems I had in organizing my affairs, expenses, training, studies and so on. It allows you to manage your life within it, divided into several parts so that you have independence between them."
+        },
         repositories: [],
         isPersonal: true,
         site: "https://opbed.com",
@@ -50,7 +55,10 @@ export const projects: tProjects = [
             images.projects.adrianoveiculosjales.login,
             images.projects.adrianoveiculosjales.stock,
         ],
-        description: "O adriano veículos jales é um site desenvolvido por mim e um amigo, ele foi desenvolvido no começo da minha carreira na programação, 5 meses após eu entrar no mercado. nele é possível que você veja os carros cadastrados pelo dono da concessinária.",
+        description: {
+            br: "O adriano veículos jales é um site desenvolvido por mim e um amigo, ele foi desenvolvido no começo da minha carreira na programação, 5 meses após eu entrar no mercado. nele é possível que você veja os carros cadastrados pelo dono da concessinária.",
+            en: "Adriano Veículos Jales is a website developed by me and a friend. It was created at the beginning of my programming career, five months after I entered the market. On it, you can see the cars registered by the owner of the dealership."
+        },
         repositories: [],
         isPersonal: false,
         site: "https://adrianoveiculosjales.com.br/",

@@ -22,10 +22,14 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { useTranslations } from 'next-intl';
+import { uLanguages } from "@/types/languages"
+import {useLocale} from 'next-intl';
 
 export default function Projects(){
     const t = useTranslations('Projects');
-    
+
+    const language = useLocale()
+
     return (
         <div className="flex flex-wrap gap-2">
             {/* TODO: FILTRO */}
@@ -61,7 +65,7 @@ export default function Projects(){
                         <CardTitle>{project.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-2">
-                        <p>{project.description}</p>
+                        <p>{project.description[language as uLanguages]}</p>
                         <div className="flex gap-2 flex-wrap">
                             {project
                                 .technologies
