@@ -29,8 +29,8 @@ export default function Education(){
                 return (
                     <AccordionItem key={index} value={`index-${index}`}>
                         <AccordionTrigger>
-                            <div>
-                                <icons.graduationCap /> - {education.name} 
+                            <div className="flex gap-2">
+                                <icons.graduationCap/>{education.name} 
                             </div>
                         </AccordionTrigger>
                         <AccordionContent>

@@ -26,7 +26,6 @@ export default function Contact(){
     return (
         <div className='flex flex-col justify-between gap-10 xl:flex-row xl:gap-20'>
             <article className='grow'>
-                <h4>Contact me</h4>
                 <div className='flex flex-col gap-4'>
                     <div className='flex gap-4 flex-col sm:flex-row'>
                         <Input type='email' placeholder={t('placeholder.email')} onChange={(value) => setEmail(value.target.value)}/>
@@ -44,7 +43,7 @@ export default function Contact(){
                 <div className='flex flex-wrap justify-start gap-4'>
                     {socialMedias.map((socialMedia) => 
                         <Link key={socialMedia.name} className={cn(buttonVariants({ variant: "link" }), "text-base font-bold")} href={socialMedia.link} target="_blank" rel="noopener noreferrer">
-                            <socialMedia.icon /> {socialMedia.name}
+                            <socialMedia.icon size={25} /> {socialMedia.name}
                         </Link>
                     )}
                 </div>
