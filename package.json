@@ -24,11 +24,12 @@
     "devicons-react": "^1.4.0",
     "embla-carousel-react": "^8.5.1",
     "lucide-react": "^0.469.0",
-    "next": "15.1.2",
+    "next": "^15.2.4",
     "next-intl": "^4.0.2",
     "next-themes": "^0.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-github-calendar": "^4.5.6",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2"

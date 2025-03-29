@@ -51,5 +51,28 @@
     "Footer": {
         "all_rights_reserved": "Todos os direitos reservados.",
         "developed_by": "Desenvolvido por <strong>{name}</strong>"
+    },
+    "WeekDays": {
+        "sunday": "Dom",
+        "monday": "Seg",
+        "tuesday": "Ter",
+        "wednesday": "Qua",
+        "thursday": "Qui",
+        "friday": "Sex",
+        "saturday": "Sáb"
+    },
+    "Months": {
+        "january": "Jan",
+        "february": "Fev",
+        "march": "Mar",
+        "april": "Abr",
+        "may": "Mai",
+        "june": "Jun",
+        "july": "Jul",
+        "august": "Ago",
+        "september": "Set",
+        "october": "Out",
+        "november": "Nov",
+        "december": "Dez"
     }
 }
