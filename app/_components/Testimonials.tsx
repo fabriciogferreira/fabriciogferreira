@@ -33,7 +33,7 @@ export default function Testimonials(){
                     const [year, month, day] = date.toISOString().split("T")[0].split("-");
 
                     return (
-                        <CarouselItem key={index} className={`basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border rounded-lg gap-4 mx-4 pl-0 p-4`}>
+                        <CarouselItem key={index} className={`basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border rounded-lg gap-4 mx-4 pl-0 p-4 justify-between`}>
                             <q>{testimonial.quote[language as uLanguages]}</q>
                             <div className="flex justify-between">
                                 <div className="flex items-center gap-2">
@@ -42,7 +42,7 @@ export default function Testimonials(){
                                         target="_blank"
                                     >
                                         <Avatar>
-                                            <AvatarImage src={testimonial.profile} />
+                                            <AvatarImage src={testimonial.profile as string} className="object-cover"/>
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
                                     </Link>

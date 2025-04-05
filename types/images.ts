@@ -24,7 +24,7 @@ import adrianoVeiculosJalesStock from "@/public/projects/adrianoveiculosjales/st
 
 import { StaticImageData } from "next/image"
 
-export type tImage = StaticImageData
+export type tImage = StaticImageData | string
 
 export type tImages = Array<tImage>
 
@@ -66,5 +66,9 @@ export const images = {
             login: adrianoVeiculosJalesLogin,
             stock: adrianoVeiculosJalesStock
         }
+    },
+    testimonials: {
+        daviTorelli: "/testimonials/davi-torelli.jpeg",
+        viniciusCruz: "https://media.licdn.com/dms/image/v2/D4D03AQHQudJvNednGw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667403204862?e=1748476800&v=beta&t=_EUPJxYcv5XHDiyI8lD-1Aib5b2wsaGDDXA_-coTP8w"
     }
 } as const satisfies rImages
