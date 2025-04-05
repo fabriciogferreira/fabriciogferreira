@@ -11,7 +11,8 @@
         "testimonials": "Relatos",
         "books_read": "Livros lidos",
         "articles": "Artigos",
-        "about_me": "Sobre mim"
+        "about_me": "Sobre mim",
+        "credits": "Créditos"
     },
     "HeroSection": {
         "subtitle": "Desenvolvedor Backend",

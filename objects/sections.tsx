@@ -10,6 +10,7 @@ import Testimonials from "@/app/_components/Testimonials";
 import BooksRead from "@/app/_components/BooksRead";
 import Articles from "@/app/_components/Articles";
 import AboutMe from "@/app/_components/AboutMe";
+import Credits from "@/app/_components/Credits";
 
 import { icons, tIcon } from "@/types/icons";
 
@@ -35,6 +36,7 @@ const SECTIONS: Array<sectionType> = [
     {hide: true, showTitle: true, title: "books_read", component: BooksRead, class: "", icon: icons.booksRead},
     {hide: true, showTitle: true, title: "articles", component: Articles, class: "", icon: icons.articles},
     {hide: false, showTitle: true, title: "about_me", component: AboutMe, class: "flex flex-col gap-4", icon: icons.aboutMe},
+    {hide: false, showTitle: true, title: "credits", component: Credits, class: "", icon: icons.credits},
 ]
 
 export default SECTIONS;

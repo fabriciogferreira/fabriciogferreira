@@ -52,7 +52,7 @@ import {
     Star,
     GitFork,
     ExternalLink,
-
+    Copyright,
     LucideProps
 } from 'lucide-react'
 
@@ -113,5 +113,6 @@ export const icons = {
     instagram: InstagramOriginal,
     react: ReactOriginal,
     nextJS: NextjsOriginal,
-    tailwindCSS: TailwindcssOriginal
+    tailwindCSS: TailwindcssOriginal,
+    credits: Copyright
 } as const satisfies tIcons
