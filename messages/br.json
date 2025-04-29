@@ -15,7 +15,7 @@
         "credits": "Créditos"
     },
     "HeroSection": {
-        "subtitle": "Desenvolvedor Backend",
+        "subtitle": "Desenvolvedor Fullstack",
         "download_resume": "Baixar Currículo",
         "years": {
             "experience": "<span>+{years}</span> anos de <br></br> experiência",
@@ -26,14 +26,27 @@
     "Skills": {},
     "Statistics": {},
     "Jobs": {
-        "current": "Present"
+        "current": "Presente",
+        "type": {
+            "personal": "Pessoa Fisica",
+            "enterprise": "Pessoa Juridica",
+            "freelancer": "Freelancer"
+        }
     },
     "Education": {
         "resume": "Currículo"
     },
     "Projects": {
         "visit": "Visitar",
-        "test_as_admin": "Testar como administrador"
+        "testable": {
+            "test_as": "Testar como",
+            "admin": "Administrador",
+            "user": "Usuário"
+        },
+        "status": {
+            "developing": "Desenvolvendo",
+            "finished": "Finalizado"
+        }
     },
     "Downloads": {},
     "Contact": {

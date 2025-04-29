@@ -29,7 +29,7 @@ export default function Jobs(){
                 return (
                     <TabsContent key={buildId(job)} value={buildId(job)} className="flex flex-col gap-3 mt-0">
                         <h4>
-                            {job.position} | {job.started_at} - {job.finished_at ? job.finished_at : t('current')}
+                            {job.position} | {job.started_at} - {job.finished_at ? job.finished_at : t('current')} - <Badge>{t('type.' + job.type)}</Badge>
                         </h4>
 
                         <div>

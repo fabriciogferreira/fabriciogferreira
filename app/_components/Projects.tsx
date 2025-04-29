@@ -62,7 +62,12 @@ export default function Projects(){
                                 <CarouselNext />
                             </Carousel>
                         }
-                        <CardTitle>{project.name}</CardTitle>
+                        <CardTitle className="flex items-center gap-2">
+                            {project.name}
+                            <Badge variant={"secondary"}>
+                                {t('status.' + project.status)}
+                            </Badge>
+                        </CardTitle>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-2">
                         <p>{project.description[language as uLanguages]}</p>
@@ -86,14 +91,34 @@ export default function Projects(){
                             }
                         </div>
                     </CardContent>
-                    <CardFooter className="flex flex-col items-stretch">
-                        <div className="flex justify-between mb-2">
-                            <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"})}>
+                    <CardFooter className="flex flex-col gap-2">
+                        <div className="flex flex-col items-start w-full gap-4">
+                            <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"}) + " shrink"}>
                                 {t('visit')}
                             </Link>
-                            {project.testable && <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"})}>
-                                {t('test_as_admin')}
-                            </Link>}
+                            {project.testable?.length && 
+                                <div className="text-start">
+                                    {t('testable.test_as')}:
+                                    <div className="flex flex-wrap gap-2">
+                                        {project.testable.map((item) => 
+                                            <div
+                                                key={item.role}
+                                                className="bg-yellow-500 rounded p-2 flex flex-col text-start"
+                                            >
+                                                <span className="font-bold">
+                                                    {t('testable.' + item.role)}
+                                                </span>
+                                                <span>
+                                                    {item.email}
+                                                </span>
+                                                <span>
+                                                    {item.password}
+                                                </span>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                            }
                         </div>
                         {project.repositories.map(repository => 
                             <div key={repository.link} className="flex justify-between">

@@ -8,14 +8,17 @@ export type tProject = {
     images: tImages,
     description: tTranslatable<string>,
     site: string,
+    siteTest?: string,
     tags: tTags,
-    testable?: {
+    testable?: Array<{
+        role: string,
         email: string,
         password: string
-    }
+    }>
     technologies: tTechnologies,
     repositories: tRepositories,
     isPersonal: boolean
+    status: "developing" | "finished"
 }
 
 export type tProjects = Array<tProject>
@@ -24,6 +27,7 @@ import { tTranslatable } from "@/types/languages"
 
 export const projects: tProjects = [
     {
+        status: "developing",
         name: "1% Melhor a Cada Dia",
         images: [
             images.projects.opbed.mobile,
@@ -33,12 +37,13 @@ export const projects: tProjects = [
             images.projects.opbed.signin
         ],
         description: {
-            br: "Uma iniciativa totalmente pessoal, afim de resolver os problemas que eu tinha para organizar meus afazeres, gastos, treinos, estudos e outros. Ele permite que você gerencie sua vida dentro dele, dividida em diversas partes para que você tenha independência entre elas.",
-            en: "It's a totally personal initiative, aimed at solving the problems I had in organizing my affairs, expenses, training, studies and so on. It allows you to manage your life within it, divided into several parts so that you have independence between them."
+            br: "Uma iniciativa pessoal criada para resolver meus próprios desafios na organização dos treinos de musculação. A plataforma foi pensada para oferecer controle e praticidade, permitindo que você gerencie sua rotina de treino de forma segmentada e independente — ideal para quem busca evolução com mais foco e consistência.",
+            en: "A personal project born from my own struggles in organizing strength training routines. This platform is designed to give you full control and convenience, allowing you to manage your workout schedule in a structured and independent way — perfect for those aiming to stay consistent and focused on progress."
         },
         repositories: [],
         isPersonal: true,
         site: "https://opbed.com",
+        siteTest: "https://staging.opbed.com",
         tags: [rTags.fullstack, rTags.frontend, rTags.backend],
         technologies: [
             technologies.CSS,
@@ -50,9 +55,22 @@ export const projects: tProjects = [
             technologies.HTML,
             technologies.GitHub,
             technologies.Docker
+        ],
+        testable: [
+            {
+                role: "admin",
+                email: "adm@adm.com",
+                password: "123123123"
+            },
+            {
+                role: "user",
+                email: "user@user.com",
+                password: "123123123"
+            }
         ]
     },
     {
+        status: "finished",
         name: "Adriano Veículos",
         images: [
             images.projects.adrianoveiculosjales.brands,

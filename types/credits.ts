@@ -45,16 +45,16 @@ export const credits: credits  = [
             en: "A collection of SVG icons for developers."
         }
     },
-    {
-        object: {
-            br: "Componentes",
-            en: "Components"
-        },
-        product: "React Github Calendar",
-        link: "https://grubersjoe.github.io/react-github-calendar/",
-        description: {
-            br: "Um componente React para exibir um calendário de atividades do GitHub.",
-            en: "A React component to display a GitHub activity calendar."
-        },
-    }
+    // {
+    //     object: {
+    //         br: "Componentes",
+    //         en: "Components"
+    //     },
+    //     product: "React Github Calendar",
+    //     link: "https://grubersjoe.github.io/react-github-calendar/",
+    //     description: {
+    //         br: "Um componente React para exibir um calendário de atividades do GitHub.",
+    //         en: "A React component to display a GitHub activity calendar."
+    //     },
+    // }
 ]

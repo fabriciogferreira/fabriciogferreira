@@ -32,9 +32,9 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="flex flex-col items-stretch md:flex-row md:items-center md:justify-around gap-5">
-                <div className="flex justify-around w-full flex-wrap md:flex-nowrap md:max-w-sm">
+                <div className="flex justify-around w-full flex-wrap md:flex-nowrap md:max-w-sm gap-2">
                     <Link className={buttonVariants({ variant: "outline" })} href="mailto:fabriciof481@gmail.com?subject=Assunto do email&body=Conteúdo do email que será preenchido automaticamente" >
-                        <icons.mail />
+                        <icons.gmail />
                         fabriciof481@mail.com
                     </Link>
                     <Link className={buttonVariants({ variant: "outline" })} download href={files.resume.path} target="_blank" rel="noopener noreferrer">

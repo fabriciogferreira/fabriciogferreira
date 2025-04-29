@@ -21,10 +21,11 @@ import {
     LinkedinOriginal,
     ReactOriginal,
     NextjsOriginal,
-    TailwindcssOriginal
+    TailwindcssOriginal,
+
 } from 'devicons-react';
 import InstagramOriginal from '@/components/icons/InstagramOriginal';
-
+import GmailOriginal from '@/components/icons/GmailOriginal';
 //Icons
 import {
     House,
@@ -114,5 +115,6 @@ export const icons = {
     react: ReactOriginal,
     nextJS: NextjsOriginal,
     tailwindCSS: TailwindcssOriginal,
-    credits: Copyright
+    credits: Copyright,
+    gmail: GmailOriginal
 } as const satisfies tIcons

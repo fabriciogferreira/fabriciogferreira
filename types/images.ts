@@ -28,6 +28,8 @@ import opbedMobile from "@/public/projects/opbed/mobile.png"
 import opbedProgram from "@/public/projects/opbed/program.png"
 import opbedSigin from "@/public/projects/opbed/signin.png"
 
+import statisticsGithubContribuions from "@/public/statistics/github/contribuitions.png"
+
 import { StaticImageData } from "next/image"
 
 export type tImage = StaticImageData | string
@@ -78,6 +80,11 @@ export const images = {
             mobile: opbedMobile,
             program: opbedProgram,
             signin: opbedSigin
+        }
+    },
+    statistics: {
+        github: {
+            contributions: statisticsGithubContribuions
         }
     },
     testimonials: {

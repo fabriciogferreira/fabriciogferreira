@@ -15,7 +15,7 @@
         "credits": "Credits"
     },
     "HeroSection": {
-        "subtitle": "Backend Developer",
+        "subtitle": "Fullstack Developer",
         "download_resume": "Download Resume",
         "years": {
             "experience": "<span>+{years}</span> years of <br></br> experience",
@@ -33,7 +33,20 @@
     },
     "Projects": {
         "visit": "Visit",
-        "test_as_admin": "Visit as admin"
+        "testable": {
+            "test_as": "Test as",
+            "admin": "Admin",
+            "user": "User"
+        },
+        "status": {
+            "developing": "Developing",
+            "finished": "Finished",
+            "type": {
+                "personal": "Pessoa Física (equivalent to a natural person)",
+                "enterprise": "Pessoa Jurídica (equivalent to a company)",
+                "freelancer": "Freelancer"
+            }
+        }
     },
     "Downloads": {},
     "Contact": {

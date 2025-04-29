@@ -13,6 +13,7 @@ export type tFile = {
 export type tFiles = Array<tFile>
 
 export const socialMedias: tFiles = [
+    { name: "Gmail", link: "fabriciof481@gmail.com", icon: icons.gmail },
     { name: "GitHub", link: "https://www.github.com/fabriciogferreira", icon: icons.github },
     { name: "Linkedin", link: "https://www.linkedin.com/in/fabriciogferreira/", icon: icons.linkedin },
     { name: "Instagram", link: "https://www.instagram.com/fabricio1103/", icon: icons.instagram },
