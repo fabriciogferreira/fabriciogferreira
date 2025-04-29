@@ -22,6 +22,12 @@ import adrianoVeiculosJalesLocalization from "@/public/projects/adrianoveiculosj
 import adrianoVeiculosJalesLogin from "@/public/projects/adrianoveiculosjales/login.png"
 import adrianoVeiculosJalesStock from "@/public/projects/adrianoveiculosjales/stock.png"
 
+import opbedAdmin from "@/public/projects/opbed/admin.png"
+import opbedForgotPassword from "@/public/projects/opbed/forgot-password.png"
+import opbedMobile from "@/public/projects/opbed/mobile.png"
+import opbedProgram from "@/public/projects/opbed/program.png"
+import opbedSigin from "@/public/projects/opbed/signin.png"
+
 import { StaticImageData } from "next/image"
 
 export type tImage = StaticImageData | string
@@ -65,6 +71,13 @@ export const images = {
             localization: adrianoVeiculosJalesLocalization,
             login: adrianoVeiculosJalesLogin,
             stock: adrianoVeiculosJalesStock
+        },
+        opbed: {
+            admin: opbedAdmin,
+            forgotPassword: opbedForgotPassword,
+            mobile: opbedMobile,
+            program: opbedProgram,
+            signin: opbedSigin
         }
     },
     testimonials: {
