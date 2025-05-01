@@ -39,7 +39,7 @@ export const credits: credits  = [
             en: "SVGs"
         },
         product: "DevIcons",
-        link: "https://devicons.github.io/devicon/",
+        link: "https://devicons-react.vercel.app/",
         description: {
             br: "Uma coleção de ícones SVG para desenvolvedores.",
             en: "A collection of SVG icons for developers."

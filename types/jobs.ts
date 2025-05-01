@@ -46,7 +46,7 @@ export const jobs: tJobs = [
     {
         type: "freelancer",
         logo: "https://olie.ai/assets/logo-olie-landing-light-symbol-0e5bf777.png",
-        link: "https://olie.ai/",
+        link: "https://olieflow.com",
         enterprise: "Olie",
         position: "Trainne",
         started_at: "2023/08/28",

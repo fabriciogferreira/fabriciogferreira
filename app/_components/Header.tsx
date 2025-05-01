@@ -32,12 +32,12 @@ export default function Header(){
                     <Button className="-ml-5 rounded-full" onClick={() => setState(!state)} variant={"default"} size={"sm"}>
                         <icons.chevronRight />
                     </Button>
-                    <div>
+                    <div className="w-4/5">
                         <SheetHeader>
                             <SheetTitle>Fabrício Ferreira</SheetTitle>
                         </SheetHeader>
-                        <Nav listClass="flex-col" itemClass="text-[4.5vh]" />
-                        <div className="flex justify-around items-center">
+                        <Nav listClass="flex-col" itemClass="text-[2.5vh]" />
+                        <div className="flex w-full justify-between items-center">
                             <SwitchTheme/>
                             <LocaleSwitcher />
                         </div>

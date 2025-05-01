@@ -1,5 +1,6 @@
 {
     "Main":{
+        "hero_section": "Hero Section",
         "section": "Section",
         "skills": "Skills",
         "statistics": "Statistics",
@@ -26,10 +27,15 @@
     "Skills": {},
     "Statistics": {},
     "Jobs": {
-        "current": "Actual"
+        "current": "Actual",
+        "type": {
+            "personal": "Pessoa Física (equivalent to a natural person)",
+            "enterprise": "Pessoa Jurídica (equivalent to a company)",
+            "freelancer": "Freelancer"
+        }
     },
     "Education": {
-        "resume": "Resume"
+        "certificate": "Certificate"
     },
     "Projects": {
         "visit": "Visit",
@@ -40,12 +46,7 @@
         },
         "status": {
             "developing": "Developing",
-            "finished": "Finished",
-            "type": {
-                "personal": "Pessoa Física (equivalent to a natural person)",
-                "enterprise": "Pessoa Jurídica (equivalent to a company)",
-                "freelancer": "Freelancer"
-            }
+            "finished": "Finished"
         }
     },
     "Downloads": {},

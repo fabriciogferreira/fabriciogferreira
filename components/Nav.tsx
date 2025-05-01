@@ -5,6 +5,7 @@ import Link from "next/link"
 import { cn, cnType } from "@/lib/utils"
 import { useState } from 'react';
 import SECTIONS from "@/objects/sections"
+import { useTranslations } from "next-intl";
 
 type props = {
     menuClass?: cnType,
@@ -15,6 +16,8 @@ type props = {
 export default function Nav({menuClass, listClass, itemClass}: props){
 
     const [currentPath, setPath] = useState("hero-section");
+
+    const t = useTranslations('Main');
 
     return (
         <NavigationMenu className={cn("grow-0", menuClass)}>
@@ -29,8 +32,8 @@ export default function Nav({menuClass, listClass, itemClass}: props){
                                 href={"#" + section.title}
                                 onClick={() => setPath(section.title)}
                             >
-                                <section.icon size={35}/>
-                                {section.title}
+                                <section.icon size={30}/>
+                                {t(section.title)}
                             </Link>
                         </NavigationMenuItem>
                     )

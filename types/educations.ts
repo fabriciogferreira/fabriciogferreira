@@ -19,13 +19,13 @@ export const educations: tEducations = [
     {
         isCourse: false,
         name: 'UNIFUNEC - Centro Universitário de Santa Fé do Sul',
-        logoSrc: 'https://unifunec.edu.br/_next/static/media/unifunec-logo-white.48f8a543.png',
+        logoSrc: 'https://unifunec.edu.br/_next/static/media/unifunec-logo.c42cb6d5.png',
         certificateSrc: "",
         siteLink: 'https://unifunec.edu.br/',
         address: 'Av. Mangara, 477 - Jd. Mangará, Santa Fé do Sul - SP, 15775-000',
         course: 'ADS - Análise e Desenvolvimento de Sistemas',
-        started_at: '??/02/2021',
-        finished_at: '??/12/2023',
+        started_at: '01/02/2021',
+        finished_at: '30/12/2023',
     },
     {
         isCourse: false,
