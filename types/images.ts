@@ -14,6 +14,8 @@ import etecCertificate from "@/public/education/etec/certificate.jpg"
 import etecLogo from "@/public/education/etec/logo.png"
 import highSchoolCertificate from "@/public/education/high-school/certificate.jpg"
 
+import unifunecCertificate from "@/public/education/unifunec/diploma.jpeg"
+
 import profile from "@/public/hero-section/profile.jpeg"
 
 import adrianoVeiculosJalesBrands from "@/public/projects/adrianoveiculosjales/brands.png"
@@ -65,6 +67,9 @@ export const images = {
             logo: etecLogo,
             certificate: etecCertificate
         },
+        unifunec: {
+            certificate: unifunecCertificate
+        }
     },
     projects: {
         adrianoveiculosjales: {

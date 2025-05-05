@@ -20,7 +20,7 @@ export const educations: tEducations = [
         isCourse: false,
         name: 'UNIFUNEC - Centro Universitário de Santa Fé do Sul',
         logoSrc: 'https://unifunec.edu.br/_next/static/media/unifunec-logo.c42cb6d5.png',
-        certificateSrc: "",
+        certificateSrc: images.education.unifunec.certificate,
         siteLink: 'https://unifunec.edu.br/',
         address: 'Av. Mangara, 477 - Jd. Mangará, Santa Fé do Sul - SP, 15775-000',
         course: 'ADS - Análise e Desenvolvimento de Sistemas',
