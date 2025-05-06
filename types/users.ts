@@ -2,7 +2,7 @@ import { tTranslatable } from "./languages"
 type me = {
     name: string,
     birthdate: string
-    about: tTranslatable<Array<string>>
+    about: tTranslatable
     email: string
     currentPosition: string,
     expertise: string

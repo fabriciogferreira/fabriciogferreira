@@ -12,21 +12,14 @@ import { images } from "@/types/images"
 // import { events } from "@/types/events"
 
 import { me } from "@/types/users"
-import { uLanguages } from "@/types/languages"
-import {useLocale} from 'next-intl';
+import Translable from "@/components/translable"
 
 export default function AboutMe(){
-    const language = useLocale()
-    
     return (
         <>
             <article>
                 <div className="flex flex-col gap-4">
-                    {me.
-                        about[language as uLanguages]
-                        .map(p => 
-                            <p key={p}>{p}</p>
-                    )}
+                    <Translable value={me.about} callback={(p) => <p key={p}>{p}</p>}/>
                 </div>
             </article>
             <article>

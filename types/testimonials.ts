@@ -1,7 +1,7 @@
 import { tTranslatable } from "./languages"
 import { tImage, images } from "./images"
 export type tTestimonial = {
-    quote: tTranslatable<string>,
+    quote: tTranslatable,
     name: string,
     position: string,
     enterprise: string,

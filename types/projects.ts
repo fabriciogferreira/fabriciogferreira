@@ -6,7 +6,7 @@ import { images, tImages } from "@/types/images"
 export type tProject = {
     name: string,
     images: tImages,
-    description: tTranslatable<string>,
+    description: tTranslatable,
     site: string,
     siteTest?: string,
     tags: tTags,

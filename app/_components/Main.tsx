@@ -10,7 +10,7 @@ export default function Main() {
                 if (section.hide) return
 
                 return (
-                    <section id={section.title} key={section.title} className={`${section.class} px-[10vw] py-10`}>
+                    <section id={section.title} key={section.title} className={`${section.class} px-4 py-10 sm:px-[10vw]`}>
                         {section.showTitle && 
                             <div className="flex items-center mb-5 gap-2">
                                 <section.icon size={35}/>

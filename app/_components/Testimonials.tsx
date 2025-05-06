@@ -9,14 +9,11 @@ import {
 
 import { icons } from "@/types/icons"
 import Link from "next/link"
-import { uLanguages } from "@/types/languages"
-import {useLocale} from 'next-intl';
 
 import { testimonials } from "@/types/testimonials"
+import Translable from "@/components/translable"
 
 export default function Testimonials(){
-    const language = useLocale()
-    
     return (
         <Carousel 
             opts={{
@@ -34,7 +31,9 @@ export default function Testimonials(){
 
                     return (
                         <CarouselItem key={index} className={`basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border rounded-lg gap-4 mx-4 pl-0 p-4 justify-between`}>
-                            <q>{testimonial.quote[language as uLanguages]}</q>
+                            <q>
+                                <Translable value={testimonial.quote} />
+                            </q>
                             <div className="flex justify-between">
                                 <div className="flex items-center gap-2">
                                     <Link

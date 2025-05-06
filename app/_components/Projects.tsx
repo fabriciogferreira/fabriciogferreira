@@ -22,13 +22,10 @@ import Link from "next/link"
 import Image from "next/image"
 
 import { useTranslations } from 'next-intl';
-import { uLanguages } from "@/types/languages"
-import {useLocale} from 'next-intl';
+import Translable from "@/components/translable"
 
 export default function Projects(){
     const t = useTranslations('Projects');
-
-    const language = useLocale()
 
     return (
         <div className="flex flex-wrap gap-2">
@@ -46,9 +43,9 @@ export default function Projects(){
                                 }}
                                 className="mx-[3rem]"
                             >
-                                <CarouselContent>
+                                <CarouselContent className="ml-0">
                                     {project.images.map((image, index) => 
-                                        <CarouselItem key={index} className="basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border border-neutral-500 rounded-lg gap-4 mx-4 pl-0 p-1 h-40 relative">
+                                        <CarouselItem key={index} className="basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5 flex flex-col border border-neutral-500 rounded-lg gap-4 mx-4 pl-0 p-1 h-[200] relative">
                                             <Image
                                                 className="object-contain"
                                                 src={image}
@@ -70,7 +67,9 @@ export default function Projects(){
                         </CardTitle>
                     </CardHeader>
                     <CardContent className="flex flex-col gap-2">
-                        <p>{project.description[language as uLanguages]}</p>
+                        <p>
+                            <Translable value={project.description} />
+                        </p>
                         <div className="flex gap-2 flex-wrap">
                             {project
                                 .technologies

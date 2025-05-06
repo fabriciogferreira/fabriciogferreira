@@ -1,14 +1,14 @@
 import { tTranslatable } from "./languages"
 
 export type credit = {
-    object: tTranslatable<string>,
+    object: tTranslatable,
     product: string,
     link: string,
-    description: tTranslatable<string>,
+    description: tTranslatable,
 }
 
 export type credits = Array<credit>
-export const credits: credits  = [
+export const credits: credits = [
     {
         object: {
             br: "Ícones",
@@ -34,10 +34,7 @@ export const credits: credits  = [
         },
     },
     {
-        object: {
-            br: "SVGs",
-            en: "SVGs"
-        },
+        object: "SVGs",
         product: "DevIcons",
         link: "https://devicons-react.vercel.app/",
         description: {

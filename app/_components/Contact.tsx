@@ -42,7 +42,7 @@ export default function Contact(){
                 <h4>{t('social_medias')}</h4>
                 <div className='flex flex-wrap justify-start gap-4'>
                     {socialMedias.map((socialMedia) => 
-                        <Link key={socialMedia.name} className={cn(buttonVariants({ variant: "link" }), "text-base font-bold")} href={socialMedia.link} target="_blank" rel="noopener noreferrer">
+                        <Link key={socialMedia.name} className={cn(buttonVariants({ variant: "link" }), "text-base font-bold text-white")} href={socialMedia.link} target="_blank" rel="noopener noreferrer">
                             <socialMedia.icon size={25} /> {socialMedia.name}
                         </Link>
                     )}

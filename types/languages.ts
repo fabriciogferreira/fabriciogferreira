@@ -8,4 +8,4 @@ export type uLanguages = (typeof languages)[number];
 
 export const defaultLanguage: uLanguages = "en"
 
-export type tTranslatable<T> = Record<uLanguages, T>
+export type tTranslatable = Record<uLanguages, string | Array<string>> | string
