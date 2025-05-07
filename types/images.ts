@@ -93,7 +93,11 @@ export const images = {
         }
     },
     testimonials: {
-        daviTorelli: "/testimonials/davi-torelli.jpeg",
-        viniciusCruz: "https://media.licdn.com/dms/image/v2/D4D03AQHQudJvNednGw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667403204862?e=1748476800&v=beta&t=_EUPJxYcv5XHDiyI8lD-1Aib5b2wsaGDDXA_-coTP8w"
+        daviTorelli: {
+            profile: "/testimonials/davi-torelli/davi-torelli.jpeg",
+        },
+        viniciusCruz: {
+            profile: "https://media.licdn.com/dms/image/v2/D4D03AQHQudJvNednGw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667403204862?e=1748476800&v=beta&t=_EUPJxYcv5XHDiyI8lD-1Aib5b2wsaGDDXA_-coTP8w",
+        }
     }
 } as const satisfies rImages
