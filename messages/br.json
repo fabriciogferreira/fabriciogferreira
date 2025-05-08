@@ -1,6 +1,7 @@
 {
     "Main":{
         "hero_section": "Hero Section",
+        "section": "Section",
         "skills": "Habilidades",
         "statistics": "Estatisticas",
         "jobs": "Trabalhos",
@@ -24,7 +25,15 @@
         }
     },
     "Skills": {},
-    "Statistics": {},
+    "Statistics": {
+        "total_contributions": "'{{count}} contribuições no último ano'",
+        "legend": {
+            "less": "Menos",
+            "more": "Mais"
+        },
+        "contributions_in_date": "{count} contribuições em {date}",
+        "level_x": "Nível {level}"
+    },
     "Jobs": {
         "current": "Presente",
         "type": {

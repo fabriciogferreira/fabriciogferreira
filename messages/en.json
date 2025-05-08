@@ -25,7 +25,15 @@
         }
     },
     "Skills": {},
-    "Statistics": {},
+    "Statistics": {
+        "total_contributions": "'{{count}} contributions in the last year'",
+        "legend": {
+            "less": "Less",
+            "more": "More"
+        },
+        "contributions_in_date": "{count} contributions on {date}",
+        "level_x": "Level {level}"
+    },
     "Jobs": {
         "current": "Actual",
         "type": {
