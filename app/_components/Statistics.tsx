@@ -85,7 +85,7 @@ export default function Statistics() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${process.env.NEXT_CONTRIBUTION_TOKEN}`,
+                Authorization: `Bearer ${process.env.NEXT_PUBLIC_CONTRIBUTION_TOKEN}`,
             },
             body: JSON.stringify({ query }),
         });
