@@ -42,8 +42,8 @@ export const projects: tProjects = [
         },
         repositories: [],
         isPersonal: true,
-        site: "https://opbed.com/en/signin",
-        siteTest: "https://staging.opbed.com",
+        site: "https://opbed.com/pt/signin",
+        siteTest: "https://staging.opbed.com/pt/signin",
         tags: [rTags.fullstack, rTags.frontend, rTags.backend],
         technologies: [
             technologies.CSS,

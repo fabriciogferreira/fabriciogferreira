@@ -39,11 +39,14 @@ export default function Testimonials(){
                                     <Link
                                         href={testimonial.linkedinLink}
                                         target="_blank"
+																				className="relative"
                                     >
                                         <Avatar>
                                             <AvatarImage src={testimonial.profile as string} className="object-cover"/>
                                             <AvatarFallback>CN</AvatarFallback>
+																						
                                         </Avatar>
+                                        <icons.externalLink className="absolute bottom-0 right-0" size={15}/>
                                     </Link>
                                     <div>
                                         <h4>{testimonial.name}</h4>

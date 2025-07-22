@@ -47,8 +47,9 @@
     },
     "Projects": {
         "visit": "Visitar",
+        "visit_test": "Visitar Site de Teste",
         "testable": {
-            "test_as": "Testar como",
+            "test_as": "Testar como (em staging)",
             "admin": "Administrador",
             "user": "Usuário"
         },

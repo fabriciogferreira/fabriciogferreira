@@ -94,10 +94,10 @@ export const images = {
     },
     testimonials: {
         daviTorelli: {
-            profile: "/testimonials/davi-torelli/davi-torelli.jpeg",
+            profile: "/testimonials/davi-torelli/profile.jpeg",
         },
         viniciusCruz: {
-            profile: "https://media.licdn.com/dms/image/v2/D4D03AQHQudJvNednGw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1667403204862?e=1748476800&v=beta&t=_EUPJxYcv5XHDiyI8lD-1Aib5b2wsaGDDXA_-coTP8w",
+            profile: "https://media.licdn.com/dms/image/v2/D4D03AQGsafEdsXTj9A/profile-displayphoto-shrink_800_800/B4DZajT34IG8Ac-/0/1746496618404?e=1756339200&v=beta&t=8-0bUKuSN6_btPGGcUpk-kZt_BUmjAVgFhztJRTrkrE",
         }
     }
 } as const satisfies rImages

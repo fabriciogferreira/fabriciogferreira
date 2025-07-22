@@ -47,8 +47,9 @@
     },
     "Projects": {
         "visit": "Visit",
+        "visit_test": "Visit Test Site",
         "testable": {
-            "test_as": "Test as",
+            "test_as": "Test as (in staging)",
             "admin": "Admin",
             "user": "User"
         },

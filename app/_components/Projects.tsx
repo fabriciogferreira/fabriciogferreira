@@ -92,9 +92,16 @@ export default function Projects(){
                     </CardContent>
                     <CardFooter className="flex flex-col gap-2">
                         <div className="flex flex-col items-start w-full gap-4">
+													<div className="flex gap-2">
                             <Link href={project.site} target="_blank" className={buttonVariants({variant: "secondary"}) + " shrink"}>
                                 {t('visit')}
                             </Link>
+														{project.siteTest &&
+															<Link href={project.siteTest} target="_blank" className={buttonVariants({variant: "secondary"}) + " shrink"}>
+                            	    {t('visit_test')}
+                            	</Link>
+														}
+													</div>
                             {project.testable?.length && 
                                 <div className="text-start">
                                     {t('testable.test_as')}:
