@@ -3,16 +3,25 @@ description: Este repo é o site Vercel e o README de perfil GitHub — manter o
 alwaysApply: true
 ---
 
-# Duas superfícies, um repositório
+# Três superfícies, um repositório
 
-Este repo (`fabriciogferreira/fabriciogferreira`) gerencia **duas** coisas que o visitante vê:
+Este repo (`fabriciogferreira/fabriciogferreira`) gerencia **três** coisas que o visitante vê — e elas devem **se apontar**:
 
 | Superfície | Onde | Audiência |
 | --- | --- | --- |
-| **Portfólio** | https://fabriciogferreira.vercel.app/ (`src/`, deploy Vercel) | Recrutador / cliente no site |
-| **Perfil GitHub** | `README.md` na raiz (repo especial `username/username`) | Quem abre github.com/fabriciogferreira |
+| **Portfólio** | https://fabriciogferreira.vercel.app/ (`src/`, Vercel) | Recrutador / cliente no site |
+| **Perfil GitHub** | `README.md` na raiz (`username/username`) | github.com/fabriciogferreira |
+| **Currículo** | `resume/*.typ` → `public/files/curriculo-br.pdf` + `resume-en.pdf` | Anexo de vaga / download no site |
 
-Não são docs internas. São a **mesma marca** em canais diferentes. Mudança de cargo, tagline, stack principal, disponibilidade, links ou história → atualizar **as duas** (ou documentar no `IMPROVEMENTS.md` por que uma ficou para trás).
+Mudança de cargo, tagline, stack, disponibilidade, links ou história → atualizar **as três** (ou `IMPROVEMENTS.md` se uma ficar para trás).
+
+## Regras do currículo
+
+- Formato **US chronological** (contato → resumo → experiência → skills → formação → projetos). Sem foto / idade / estado civil / endereço completo.
+- EN: U.S. Letter, American English, sem 1ª pessoa no resumo, action verbs. PT-BR: mesma estrutura, A4.
+- Máximo **2 páginas** (`npm run resume:build` + `pdfinfo`).
+- Links para portfólio, perfil GitHub e `#contact`.
+- Site usa o PDF do locale ativo.
 
 ## Fonte da verdade (conteúdo)
 
@@ -20,13 +29,14 @@ Não são docs internas. São a **mesma marca** em canais diferentes. Mudança d
 | --- | --- |
 | Nome, cargo, local, disponibilidade, tagline, socials, e-mail | `src/lib/site.ts` |
 | História (Sobre) | `src/data/about.ts` |
-| Skills / stack | `src/data/skills.ts` + `src/data/technologies.ts` |
+| Skills / stack / jobs / projects | `src/data/*` + `resume/br.typ` / `en.typ` |
 | Decisões de produto/UX | `DECISIONS.md` |
-| Perfil GitHub (Markdown/HTML) | `README.md` |
+| Perfil GitHub | `README.md` |
+| Como gerar PDF | `resume/README.md` |
 
-O site é i18n (PT/EN); o README do perfil pode ficar em **PT** (padrão do perfil), desde que fatos e ênfase batam com `site.ts` / `about` / skills.
+O site é i18n (PT/EN); o README do perfil pode ficar em **PT**, desde que fatos batam. Currículo tem as duas línguas.
 
-**Ordem do README:** quem → tagline → badges/CTA → âncoras (`#projects`, `#jobs`, …) → stack → stats → história curta → um contato. Não recontar o Sobre inteiro nem listar projetos no Markdown.
+**Ordem do README:** quem → tagline → badges (portfólio + CVs + contato) → âncoras → stack → stats → história curta. Não listar projetos no Markdown.
 
 ## O que o agente deve fazer
 

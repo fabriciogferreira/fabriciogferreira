@@ -31,8 +31,15 @@ export const SITE = {
   email: "fabriciof481@gmail.com",
   mailto:
     "mailto:fabriciof481@gmail.com?subject=Contato%20via%20portf%C3%B3lio&body=Ol%C3%A1%20Fabr%C3%ADcio%2C%0A%0A",
-  resumePath: "/files/curriculo.pdf",
+  /** Locale-aware CV — source in `resume/`; regenerate with `npm run resume:build`. */
+  resumePath: {
+    br: "/files/curriculo-br.pdf",
+    en: "/files/resume-en.pdf",
+  } satisfies LocalizedString,
+  /** Legacy single path — same file as PT-BR (kept for old bookmarks). */
+  resumePathLegacy: "/files/curriculo.pdf",
   github: "https://github.com/fabriciogferreira",
+  portfolioUrl: "https://fabriciogferreira.vercel.app/",
   heroImage: {
     src: "/hero/serio.jpg",
     alt: "Fabrício Ferreira",

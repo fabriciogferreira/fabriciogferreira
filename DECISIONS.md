@@ -10,13 +10,15 @@ Registro do *porquê* — o diff mostra o *quê*. Atualizar quando uma escolha d
 
 **Env:** `.env.example` junta vars do Docker/WorkVM + Resend (`RESEND_*` / `CONTACT_*`).
 
-## Duas superfícies públicas
+## Três superfícies públicas (cruzadas)
 
-**Decisão:** este repo entrega (1) o site em https://fabriciogferreira.vercel.app/ e (2) o `README.md` de perfil no GitHub (`username/username`). Conteúdo de marca (cargo, tagline, stack, história, links, CTA) deve **ficar alinhado**; fontes: `src/lib/site.ts`, `src/data/about.ts`, `src/data/skills.ts`. Regra do agente: `.cursor/rules/portfolio-and-profile.mdc` + `AGENTS.md`.
+**Decisão:** este repo entrega (1) o **portfólio** https://fabriciogferreira.vercel.app/, (2) o **`README.md` de perfil** GitHub (`username/username`), (3) o **currículo** em PDF (PT-BR + EN-US) gerado de `resume/*.typ`. As três se **ligam por links** (portfólio ↔ README ↔ PDFs). Marca alinhada: `src/lib/site.ts`, `src/data/*`, `resume/br.typ` / `en.typ`. Regra: `.cursor/rules/portfolio-and-profile.mdc` + `AGENTS.md`.
 
-**Por quê:** quem te encontra no GitHub e quem abre o portfólio é o mesmo recrutador/cliente em canais diferentes. README genérico ou desatualizado contradiz o Hero e enfraquece a marca. O `README.md` **não** é o boilerplate create-next-app nem o README do meta-repo `~/git`.
+**Por quê:** o mesmo recrutador chega por GitHub, site ou anexo de vaga. Sem links cruzados, cada canal vira silo; PDF binário sozinho não versiona. Fonte Typst + `npm run resume:build` → `public/files/curriculo-br.pdf` e `resume-en.pdf` (máx. **2 páginas**; build falha se passar). Site baixa o PDF do locale ativo. `README.md` **não** é boilerplate create-next-app nem o README do meta-repo `~/git`.
 
-**Estrutura do README (perfil):** scan primeiro — quem / tagline / badges+CTA / âncoras do site → stack → stats GitHub → história **curta** + link `#about` → um CTA de contato. Sem duplicar “onde me encontrar” e sem espelhar projetos/experiência em Markdown (âncoras `#projects`, `#jobs`, …). Motivo: no GitHub o scroll curto manda; a prova vive no site.
+**Formato do currículo:** estilo **US chronological** (referência MyPerfectResume / padrão americano) — resumo sem 1ª pessoa, experiência em ordem inversa com verbos de ação, skills, formação, projetos opcionais; sem foto nem dados pessoais sensíveis. EN em **U.S. Letter** + American English; PT-BR na mesma estrutura com **A4**.
+
+**Estrutura do README (perfil):** scan primeiro — quem / tagline / badges (portfólio + CVs + contato) / âncoras → stack → stats → história curta + links CV/portfólio. Sem espelhar projetos em Markdown.
 
 **UI/UX em toda decisão:** custo técnico (lib, token, drawer, bundle) **não** manda sozinho. Antes de remover ou simplificar, perguntar o que o visitante perde no scan, na prova (habilidades, credenciais, stack) e no caminho até a ação. Se o trade-off for só “menos código” e a experiência piora (ex. só download para ver certificado), preferir o caminho leve que preserve UX (ex. abrir na aba) ou documentar no `IMPROVEMENTS.md` até achar a forma boa.
 

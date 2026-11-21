@@ -1,13 +1,14 @@
 # Agent guidelines — fabriciogferreira
 
-## This repository has two public surfaces
+## This repository has three public surfaces (cross-linked)
 
-1. **Portfolio site** — https://fabriciogferreira.vercel.app/ (Next.js in `src/`, Vercel + Docker/WorkVM).
-2. **GitHub profile README** — root `README.md` (special repo `fabriciogferreira/fabriciogferreira` → shown on https://github.com/fabriciogferreira).
+1. **Portfolio site** — https://fabriciogferreira.vercel.app/ (`src/`, Vercel + Docker/WorkVM).
+2. **GitHub profile README** — root `README.md` → https://github.com/fabriciogferreira.
+3. **Resume PDFs** — `resume/*.typ` → `public/files/curriculo-br.pdf` + `resume-en.pdf` (`npm run resume:build`). Max **2 pages**. Link portfolio ↔ README ↔ CVs.
 
-Keep them **aligned**: role, tagline, location/availability, primary stack, story, socials, and CTAs. Content sources: `src/lib/site.ts`, `src/data/about.ts`, `src/data/skills.ts`. Product/UX why: `DECISIONS.md`. Cursor rule: `.cursor/rules/portfolio-and-profile.mdc`.
+Keep them **aligned**: role, tagline, stack, story, socials, CTAs. Sources: `src/lib/site.ts`, `src/data/*`, `resume/`. Why: `DECISIONS.md`. Rule: `.cursor/rules/portfolio-and-profile.mdc`.
 
-Do **not** replace `README.md` with create-next-app boilerplate. Do **not** confuse this with `~/git/README.md` (meta-repo / WorkVM).
+Do **not** replace `README.md` with create-next-app boilerplate. Do **not** confuse this with `~/git/README.md` (WorkVM).
 
 ## Working here
 

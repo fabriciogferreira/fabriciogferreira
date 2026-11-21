@@ -7,11 +7,12 @@ import { DownloadLink } from "@/components/download-link"
 import { ArrowUpRightIcon, GithubIcon, GmailIcon } from "@/components/icons"
 import { buttonVariants } from "@/components/ui/button"
 import { useLocale } from "@/i18n/locale-provider"
+import { pickString } from "@/i18n/pick"
 import { SITE } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
 export function ContactSection() {
-  const { t } = useLocale()
+  const { locale, t } = useLocale()
 
   return (
     <section
@@ -43,7 +44,7 @@ export function ContactSection() {
                 {t.contact.emailCta}
               </Link>
               <DownloadLink
-                href={SITE.resumePath}
+                href={pickString(SITE.resumePath, locale)}
                 className={cn(
                   buttonVariants({ variant: "outline", size: "sm" }),
                   "justify-center gap-1.5"

@@ -71,7 +71,7 @@ export function HeroSection() {
             {t.hero.contact}
           </Link>
           <DownloadLink
-            href={SITE.resumePath}
+            href={pickString(SITE.resumePath, locale)}
             className={cn(
               buttonVariants({ variant: "outline", size: "lg" }),
               "justify-center gap-1.5 bg-background/60 backdrop-blur-sm"
