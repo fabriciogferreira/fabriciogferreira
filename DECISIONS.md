@@ -1,6 +1,14 @@
-# Decisões do novo portfólio (`subportifolio`)
+# Decisões do portfólio
 
 Registro do *porquê* — o diff mostra o *quê*. Atualizar quando uma escolha de produto/UX mudar. **Sempre** gravar decisão + motivo aqui (ou no `IMPROVEMENTS.md` se estiver só bloqueada).
+
+## Layout do repositório
+
+**Decisão:** o app Next vive na **raiz** do repo (`src/`, `public/`, `package.json`). A pasta `subportifolio/` foi promovida e apagada; o portfólio antigo (`app/`, next-intl, Tailwind 3) saiu.
+
+**Por quê:** Vercel/Docker/WorkVM já apontam para a raiz (`COMPOSE_DIR`, Root Directory). Manter um app aninhado forçava `turbopack.root`, porta 3001 e risco de deployar o site velho. Um único app na raiz = um `npm ci`, um `.env`, um wait URL `:3000`.
+
+**Env:** `.env.example` junta vars do Docker/WorkVM + Resend (`RESEND_*` / `CONTACT_*`). `README.md` da raiz continua o perfil GitHub (não o boilerplate create-next-app).
 
 **UI/UX em toda decisão:** custo técnico (lib, token, drawer, bundle) **não** manda sozinho. Antes de remover ou simplificar, perguntar o que o visitante perde no scan, na prova (habilidades, credenciais, stack) e no caminho até a ação. Se o trade-off for só “menos código” e a experiência piora (ex. só download para ver certificado), preferir o caminho leve que preserve UX (ex. abrir na aba) ou documentar no `IMPROVEMENTS.md` até achar a forma boa.
 
