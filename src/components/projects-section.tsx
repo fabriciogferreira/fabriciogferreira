@@ -2,13 +2,38 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowUpRightIcon } from "@/components/icons"
+import { ArrowUpRightIcon, GithubIcon } from "@/components/icons"
 import { TechBadgeList } from "@/components/tech-badge"
 import { buttonVariants } from "@/components/ui/button"
 import { PROJECTS, type Project } from "@/data/projects"
 import { useLocale } from "@/i18n/locale-provider"
 import { pickString } from "@/i18n/pick"
 import { cn } from "@/lib/utils"
+
+function ProjectCover({ project }: { project: Project }) {
+  const { locale } = useLocale()
+
+  if (project.cover) {
+    return (
+      <Image
+        src={project.cover.src}
+        alt={pickString(project.cover.alt, locale)}
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover object-top transition-transform duration-500 ease-out hover:scale-[1.03]"
+      />
+    )
+  }
+
+  return (
+    <div className="flex h-full flex-col items-start justify-between bg-gradient-to-br from-muted to-background p-6">
+      <GithubIcon size={28} />
+      <p className="font-heading text-xl font-semibold tracking-tight">
+        {project.name}
+      </p>
+    </div>
+  )
+}
 
 function ProjectBlock({ project, index }: { project: Project; index: number }) {
   const { locale, t } = useLocale()
@@ -26,13 +51,7 @@ function ProjectBlock({ project, index }: { project: Project; index: number }) {
           reverse && "md:order-2"
         )}
       >
-        <Image
-          src={project.cover.src}
-          alt={pickString(project.cover.alt, locale)}
-          fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover object-top transition-transform duration-500 ease-out hover:scale-[1.03]"
-        />
+        <ProjectCover project={project} />
       </div>
 
       <div className={cn("flex flex-col gap-4", reverse && "md:order-1")}>
@@ -52,15 +71,17 @@ function ProjectBlock({ project, index }: { project: Project; index: number }) {
         <TechBadgeList technologies={project.technologies} />
 
         <div className="flex flex-wrap gap-2 pt-1">
-          <Link
-            href={project.site}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(buttonVariants({ size: "sm" }), "gap-1.5")}
-          >
-            {t.projects.visit}
-            <ArrowUpRightIcon />
-          </Link>
+          {project.site && (
+            <Link
+              href={project.site}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(buttonVariants({ size: "sm" }), "gap-1.5")}
+            >
+              {t.projects.visit}
+              <ArrowUpRightIcon />
+            </Link>
+          )}
           {project.siteTest && (
             <Link
               href={project.siteTest}
@@ -73,6 +94,23 @@ function ProjectBlock({ project, index }: { project: Project; index: number }) {
             >
               {t.projects.visitTest}
               <ArrowUpRightIcon />
+            </Link>
+          )}
+          {project.repo && (
+            <Link
+              href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                buttonVariants({
+                  variant: project.site ? "outline" : "default",
+                  size: "sm",
+                }),
+                "gap-1.5"
+              )}
+            >
+              <GithubIcon size={16} />
+              {t.projects.repo}
             </Link>
           )}
         </div>

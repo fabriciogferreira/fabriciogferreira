@@ -11,11 +11,12 @@ export type SkillGroup = {
  * Skills surfaced on the portfolio — order within each group is intentional
  * (strongest / most used first). Group titles come from i18n (`t.skills[id]`).
  * Logos come from `TECHNOLOGIES` via TechBadge — not a 90px Devicons grid.
+ * HTML/CSS stay in `TECHNOLOGIES` for project chips only — too weak for Skills scan.
  */
 export const SKILL_GROUPS: SkillGroup[] = [
   {
     id: "backend",
-    items: ["Laravel", "PHP", "PostgreSQL", "MySQL"],
+    items: ["Laravel", "PHP", "PostgreSQL", "MySQL", "Redis", "MongoDB"],
   },
   {
     id: "frontend",
@@ -23,15 +24,23 @@ export const SKILL_GROUPS: SkillGroup[] = [
       "Next.js",
       "React",
       "Vue.js",
+      "Nuxt",
+      "TypeScript",
       "Tailwind CSS",
       "Bootstrap",
       "JavaScript",
-      "HTML",
-      "CSS",
     ],
   },
   {
     id: "tools",
-    items: ["Docker", "Git", "GitHub"],
+    items: [
+      "Docker",
+      "Git",
+      "GitHub",
+      "Pest",
+      "PHPStan",
+      "Playwright",
+      "WebSockets",
+    ],
   },
 ]

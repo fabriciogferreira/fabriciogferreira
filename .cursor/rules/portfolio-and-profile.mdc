@@ -30,9 +30,12 @@ Mudança de cargo, tagline, stack, disponibilidade, links ou história → atual
 | Nome, cargo, local, disponibilidade, tagline, socials, e-mail | `src/lib/site.ts` |
 | História (Sobre) | `src/data/about.ts` |
 | Skills / stack / jobs / projects | `src/data/*` + `resume/br.typ` / `en.typ` |
+| Fatos dos projetos (Olie, Opbed, Televisão, …) | `context/*.md` — packs curados; **não** clones no workspace |
 | Decisões de produto/UX | `DECISIONS.md` |
 | Perfil GitHub | `README.md` |
 | Como gerar PDF | `resume/README.md` |
+
+Ao escrever bullets de job/projeto: ler o pack em `context/` primeiro. Atualizar o pack quando o fato mudar. Multi-root com `~/git/<projeto>` só sob demanda.
 
 O site é i18n (PT/EN); o README do perfil pode ficar em **PT**, desde que fatos batam. Currículo tem as duas línguas.
 

@@ -49,6 +49,7 @@ function CredentialActions({
 
 function EducationItem({ item }: { item: Education }) {
   const { locale, t } = useLocale()
+  const period = formatEducationPeriod(item, t.jobs.present)
 
   return (
     <li className="relative">
@@ -62,6 +63,11 @@ function EducationItem({ item }: { item: Education }) {
           <h3 className="font-heading text-xl font-semibold tracking-tight">
             {pickString(item.course, locale)}
           </h3>
+          {item.level && (
+            <p className="mt-0.5 text-sm text-muted-foreground">
+              {pickString(item.level, locale)}
+            </p>
+          )}
           <p className="mt-1">
             <Link
               href={item.site}
@@ -76,23 +82,27 @@ function EducationItem({ item }: { item: Education }) {
         </div>
 
         <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-          <time dateTime={item.startedAt}>{formatEducationPeriod(item)}</time>
+          <time dateTime={item.startedAt}>{period}</time>
           <span aria-hidden>·</span>
           <span>{pickString(item.city, locale)}</span>
         </div>
 
-        <div className="flex flex-col gap-2 pt-1">
-          <CredentialActions
-            href={item.certificate.href}
-            label={t.education[item.certificate.labelKey]}
-          />
-          {item.extra && (
-            <CredentialActions
-              href={item.extra.href}
-              label={t.education[item.extra.labelKey]}
-            />
-          )}
-        </div>
+        {(item.certificate || item.extra) && (
+          <div className="flex flex-col gap-2 pt-1">
+            {item.certificate && (
+              <CredentialActions
+                href={item.certificate.href}
+                label={t.education[item.certificate.labelKey]}
+              />
+            )}
+            {item.extra && (
+              <CredentialActions
+                href={item.extra.href}
+                label={t.education[item.extra.labelKey]}
+              />
+            )}
+          </div>
+        )}
       </div>
     </li>
   )

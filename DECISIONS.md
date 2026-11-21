@@ -18,6 +18,8 @@ Registro do *porquê* — o diff mostra o *quê*. Atualizar quando uma escolha d
 
 **Formato do currículo:** estilo **US chronological** (referência MyPerfectResume / padrão americano) — resumo sem 1ª pessoa, experiência em ordem inversa com verbos de ação, skills, formação, projetos opcionais; sem foto nem dados pessoais sensíveis. EN em **U.S. Letter** + American English; PT-BR na mesma estrutura com **A4**.
 
+**Context packs (`context/`):** em vez de abrir todos os clones no workspace do portfólio, manter Markdown curado por projeto (Olie, Televisão, Locav, Opbed, da-o-play, vid2agent, use-url-query, boillerplates). Motivo: contexto útil sem vazamento de rules/IP multi-root; trabalho vs pessoal vs comunidade marcado; “Não publicar” explícito.
+
 **Estrutura do README (perfil):** scan primeiro — quem / tagline / badges (portfólio + CVs + contato) / âncoras → stack → stats → história curta + links CV/portfólio. Sem espelhar projetos em Markdown.
 
 **UI/UX em toda decisão:** custo técnico (lib, token, drawer, bundle) **não** manda sozinho. Antes de remover ou simplificar, perguntar o que o visitante perde no scan, na prova (habilidades, credenciais, stack) e no caminho até a ação. Se o trade-off for só “menos código” e a experiência piora (ex. só download para ver certificado), preferir o caminho leve que preserve UX (ex. abrir na aba) ou documentar no `IMPROVEMENTS.md` até achar a forma boa.
@@ -98,6 +100,8 @@ Sticky no topo (nav desktop + Sheet no mobile + tema + locale), no lugar do bot�
 
 **Por quê:** o grid antigo repetia a mesma informação que já aparece em Projetos e Jobs, com muito ruído visual. Depois da prova (projetos/jobs), Skills só precisa confirmar o leque de forma escaneável. Agrupar por papel no produto ajuda recrutador. Logo pequena no chip (mesmo padrão de Jobs/Projetos) melhora o scan sem voltar ao grid.
 
+**O que entra no scan:** só techs que diferenciam no recrutamento e que batem com deps reais dos repos (Olie / Opbed / Televisão / boilerplates / use-url-query). Incluídos além do núcleo: Redis, MongoDB, Nuxt, TypeScript, Pest, PHPStan, Playwright, WebSockets. HTML/CSS ficam só em chips de projeto — implícitos demais para Skills. Libs de produto (TipTap, PrimeVue, Scribe, Boost/MCP…) e formatters (Pint/CS Fixer) ficam de fora; Horizon/Passport/Octane/S3/Sentry vão em bullets de job se precisarem de prova.
+
 **Idiomas / certificados:** o bloco de English no antigo estava comentado — não migrar até haver conteúdo real.
 
 ## Logos de stack nos badges
@@ -162,7 +166,7 @@ Sticky no topo (nav desktop + Sheet no mobile + tema + locale), no lugar do bot�
 
 **Por quê:** o calendário antigo pedia `NEXT_PUBLIC_CONTRIBUTIONS_TOKEN` no browser (token exposto), mais duas libs e fetch client-side. As métricas do Hero antigo (anos/clientes/projetos) cabem melhor aqui, sem poluir a primeira dobra. Atividade real continua no perfil GitHub.
 
-**Anos:** calculados a partir do job mais antigo até `STATS_AS_OF` (constante) — evita `Date.now()` no prerender do Next 16.
+**Experiência:** desde a Olie (`2023-08` / `CAREER_START`) até `STATS_AS_OF`, em **anos + meses** (`floor`, sem `ceil` que inflava “+4 anos”). Label deixa claro “desde a Olie”. Senioridade de marca: **Junior** (Hero, jobs, currículo, README) — coerente com o início em ago/2023.
 
 ## Downloads (não vira seção)
 

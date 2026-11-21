@@ -9,7 +9,7 @@ import { useLocale } from "@/i18n/locale-provider"
 import { cn } from "@/lib/utils"
 
 export function StatsSection() {
-  const { t } = useLocale()
+  const { locale, t } = useLocale()
   const stats = getStats()
 
   return (
@@ -25,19 +25,30 @@ export function StatsSection() {
       </div>
 
       <dl className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
-        {stats.map((stat) => (
-          <div
-            key={stat.id}
-            className="flex flex-col gap-1 border-t border-border pt-4"
-          >
-            <dt className="order-2 text-sm text-muted-foreground">
-              {t.stats[stat.id]}
-            </dt>
-            <dd className="order-1 font-heading text-4xl font-semibold tracking-tight sm:text-5xl">
-              {stat.value}
-            </dd>
-          </div>
-        ))}
+        {stats.map((stat) => {
+          const value =
+            typeof stat.value === "function" ? stat.value(locale) : stat.value
+          const isExperience = stat.id === "years"
+          return (
+            <div
+              key={stat.id}
+              className="flex flex-col gap-1 border-t border-border pt-4"
+            >
+              <dt className="order-2 text-sm text-muted-foreground">
+                {t.stats[stat.id]}
+              </dt>
+              <dd
+                className={
+                  isExperience
+                    ? "order-1 font-heading text-2xl font-semibold tracking-tight sm:text-3xl"
+                    : "order-1 font-heading text-4xl font-semibold tracking-tight sm:text-5xl"
+                }
+              >
+                {value}
+              </dd>
+            </div>
+          )
+        })}
       </dl>
 
       <div className="mt-10">

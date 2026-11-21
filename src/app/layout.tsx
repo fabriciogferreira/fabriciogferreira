@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Fabrício Ferreira — Desenvolvedor Fullstack",
   description:
-    "Portfólio de Fabrício Gonçalves Ferreira. Produtos web com Laravel e Next.js.",
+    "Portfólio de Fabrício Gonçalves Ferreira. Produtos web com Laravel e Next.js/Vue.",
 }
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

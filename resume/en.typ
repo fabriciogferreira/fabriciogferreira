@@ -6,14 +6,15 @@
 #resume(
   paper: "us-letter",
   name: "Fabrício Gonçalves Ferreira",
-  role: "Fullstack Developer",
+  role: "Junior Fullstack Developer",
   location: "Santa Fé do Sul, SP, Brazil",
   summary: [
-    Fullstack developer with hands-on experience building web products in Laravel
-    and Next.js, from APIs and data models to production UI. Trainee on product
-    teams who balances parallel workstreams, ships with Docker-based workflows,
-    and grows through code review and daily collaboration. Seeking fullstack
-    roles focused on quality, maintainability, and clear delivery.
+    Junior fullstack developer with professional experience since August 2023
+    (Olie), building web products in Laravel and Next.js/Vue — from APIs and
+    data models to production UI. Works on product teams, balances parallel
+    workstreams, ships with Docker-based workflows, and grows through code
+    review and team meetings. Seeking junior fullstack roles focused on
+    quality, maintainability, and clear delivery.
   ],
   labels: (
     lang: "en",
@@ -29,7 +30,7 @@
   ),
   experience: (
     (
-      title: "Trainee — Fullstack Developer",
+      title: "Junior Fullstack Developer",
       company: "Enterscience",
       place: "Brazil (remote / hybrid)",
       period: "Mar 2025 – Present",
@@ -40,24 +41,30 @@
       ),
     ),
     (
-      title: "Trainee — Fullstack Developer",
+      title: "Junior Fullstack Developer",
       company: "Olie",
       place: "Brazil (remote / hybrid)",
       period: "Aug 2023 – Present",
       bullets: (
         [Deliver Laravel and Vue.js features for production systems used by real customers.],
-        [Take on expanding trainee responsibilities with accountability to tech-lead guidance and team standards.],
-        [Join daily syncs to surface blockers early and resolve issues with the engineering team.],
+        [Take on expanding responsibilities with accountability to tech-lead guidance and team standards.],
+        [Join team meetings to surface blockers early and resolve issues with the engineering team.],
       ),
     ),
   ),
   skills: (
-    (name: "Backend", items: "Laravel, PHP, PostgreSQL, MySQL, REST APIs"),
-    (name: "Frontend", items: "Next.js, React, Vue.js, Tailwind CSS, Bootstrap, JavaScript"),
-    (name: "Tools", items: "Docker, Git, GitHub, Linux"),
-    (name: "Practices", items: "Code review, agile dailies, cross-team collaboration"),
+    (name: "Backend", items: "Laravel, PHP, PostgreSQL, MySQL, Redis, MongoDB, REST APIs"),
+    (name: "Frontend", items: "Next.js, React, Vue.js, Nuxt, TypeScript, Tailwind CSS, Bootstrap, JavaScript"),
+    (name: "Tools", items: "Docker, Git, GitHub, Linux, Pest, PHPStan, Playwright, WebSockets"),
+    (name: "Practices", items: "Code review, team meetings, cross-team collaboration"),
   ),
   education: (
+    (
+      course: "Web Software Development — Postgraduate specialization (in progress)",
+      school: "UNIFUNEC",
+      place: "Santa Fé do Sul, SP, Brazil",
+      period: "2026 – Present",
+    ),
     (
       course: "Bachelor’s equivalent — Systems Analysis and Development",
       school: "UNIFUNEC",
@@ -79,7 +86,7 @@
         [Designed a personal training planner to structure workout routines with segmented control.],
         [Implemented with Laravel, PostgreSQL, and a Dockerized workflow for consistent local/prod parity.],
       ),
-      url: "https://opbed.com/pt",
+      url: "https://opbed.com/",
     ),
     (
       name: "Adriano Veículos",
@@ -89,6 +96,30 @@
         [Collaborated with a peer engineer early in career using Laravel, Bootstrap, and PostgreSQL.],
       ),
       url: "https://adrianoveiculosjales.com.br/",
+    ),
+    (
+      name: "use-url-query (OSS)",
+      status: "In progress",
+      bullets: (
+        [TypeScript/React npm hook syncing URL search params with Spatie Laravel Query Builder.],
+      ),
+      url: "https://github.com/fabriciogferreira/use-url-query",
+    ),
+    (
+      name: "boilerplate-laravel (OSS)",
+      status: "In progress",
+      bullets: (
+        [Open-source Laravel template with Docker, agent prompts, and mutation sandbox.],
+      ),
+      url: "https://github.com/fabriciogferreira/boilerplate-laravel",
+    ),
+    (
+      name: "boilerplate-next (OSS)",
+      status: "In progress",
+      bullets: (
+        [Open-source Next.js template with Compose (dev + standalone production).],
+      ),
+      url: "https://github.com/fabriciogferreira/boilerplate-next",
     ),
   ),
 )

@@ -1,8 +1,8 @@
 # 👋 Olá, eu sou o Fabrício Ferreira
 
-### Desenvolvedor Fullstack · Santa Fé do Sul — SP · Aberto a oportunidades
+### Desenvolvedor Fullstack Junior · Santa Fé do Sul — SP · Aberto a oportunidades
 
-Construo produtos web com **Laravel** e **Next.js** — do backend à interface que a pessoa usa.
+Construo produtos web com **Laravel** e **Next.js/Vue** — do backend à interface que a pessoa usa.
 
 [![Portfólio](https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fabriciogferreira.vercel.app/)
 [![Currículo PT](https://img.shields.io/badge/Currículo-PT--BR-009639?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://fabriciogferreira.vercel.app/files/curriculo-br.pdf)
@@ -24,8 +24,10 @@ Construo produtos web com **Laravel** e **Next.js** — do backend à interface 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vue.js](https://img.shields.io/badge/Vue.js-42b883?style=for-the-badge&logo=vue.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 

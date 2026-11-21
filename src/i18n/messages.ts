@@ -30,9 +30,11 @@ export const messages = {
     },
     projects: {
       title: "Projetos",
-      subtitle: "Trabalho recente em produto e web — do pessoal ao cliente.",
+      subtitle:
+        "Produto, cliente e open source — o que posso mostrar em público.",
       visit: "Visitar",
       visitTest: "Ambiente de teste",
+      repo: "Repositório",
       statusDeveloping: "Em desenvolvimento",
       statusFinished: "Concluído",
     },
@@ -48,7 +50,7 @@ export const messages = {
     education: {
       title: "Formação",
       subtitle:
-        "Formação técnica e superior que sustenta a trajetória profissional.",
+        "Formação técnica, superior e pós em andamento — a base da trajetória.",
       diploma: "Diploma",
       certificate: "Certificado",
       tcc: "TCC",
@@ -65,7 +67,7 @@ export const messages = {
     stats: {
       title: "Em números",
       subtitle: "Um resumo rápido da trajetória — detalhes estão nas seções acima.",
-      years: "anos de experiência",
+      years: "de experiência (desde a Olie)",
       clients: "clientes",
       projects: "projetos",
       github: "Ver atividade no GitHub",
@@ -142,9 +144,10 @@ export const messages = {
     },
     projects: {
       title: "Projects",
-      subtitle: "Recent product and web work — personal and client.",
+      subtitle: "Product, client, and open source — what I can show publicly.",
       visit: "Visit",
       visitTest: "Staging",
+      repo: "Repository",
       statusDeveloping: "In progress",
       statusFinished: "Shipped",
     },
@@ -158,7 +161,8 @@ export const messages = {
     },
     education: {
       title: "Education",
-      subtitle: "Technical and higher education behind the career path.",
+      subtitle:
+        "Technical, undergraduate, and postgraduate studies behind the career path.",
       diploma: "Diploma",
       certificate: "Certificate",
       tcc: "Thesis",
@@ -175,7 +179,7 @@ export const messages = {
     stats: {
       title: "By the numbers",
       subtitle: "A quick snapshot — details live in the sections above.",
-      years: "years of experience",
+      years: "of experience (since Olie)",
       clients: "clients",
       projects: "projects",
       github: "See GitHub activity",

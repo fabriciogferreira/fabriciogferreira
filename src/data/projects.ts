@@ -8,13 +8,18 @@ export type Project = {
   name: string
   status: ProjectStatus
   description: LocalizedString
-  cover: {
+  /** Product screenshot — omit for OSS/tooling without a product UI. */
+  cover?: {
     src: string
     alt: LocalizedString
   }
-  site: string
+  /** Public product / docs URL. */
+  site?: string
   siteTest?: string
+  /** Public GitHub (or npm) — required for closed-UI OSS. */
+  repo?: string
   technologies: TechName[]
+  /** false = client work (counts toward “clientes”). */
   isPersonal: boolean
 }
 
@@ -24,8 +29,8 @@ export const PROJECTS: Project[] = [
     name: "1% Melhor a Cada Dia",
     status: "developing",
     description: {
-      br: "Uma iniciativa pessoal criada para resolver meus próprios desafios na organização dos treinos de musculação. A plataforma foi pensada para oferecer controle e praticidade, permitindo gerenciar a rotina de treino de forma segmentada e independente — ideal para quem busca evolução com mais foco e consistência.",
-      en: "A personal project born from my own struggles organizing strength training. The platform gives structured control over workout routines — built for consistent progress.",
+      br: "Iniciativa pessoal para organizar treinos de musculação com controle segmentado da rotina — do próprio desafio à plataforma em produção.",
+      en: "Personal platform to organize strength-training routines with structured control — from my own need to a live product.",
     },
     cover: {
       src: "/projects/opbed/signin.png",
@@ -34,7 +39,7 @@ export const PROJECTS: Project[] = [
         en: "Sign-in screen of 1% Melhor a Cada Dia",
       },
     },
-    site: "https://opbed.com/pt/signin",
+    site: "https://opbed.com/",
     siteTest: "https://staging.opbed.com/pt/signin",
     technologies: [
       "Laravel",
@@ -74,5 +79,58 @@ export const PROJECTS: Project[] = [
       "CSS",
     ] satisfies TechName[],
     isPersonal: false,
+  },
+  {
+    slug: "use-url-query",
+    name: "use-url-query",
+    status: "developing",
+    description: {
+      br: "Hook TypeScript/React (npm) que sincroniza search params da URL com o Spatie Laravel Query Builder — filtros, sort e includes no padrão do ecossistema Laravel.",
+      en: "TypeScript/React npm hook that syncs URL search params with Spatie Laravel Query Builder — filters, sort, and includes in the Laravel ecosystem style.",
+    },
+    site: "https://www.npmjs.com/package/@fabriciogferreira/use-url-query",
+    repo: "https://github.com/fabriciogferreira/use-url-query",
+    technologies: [
+      "React",
+      "Next.js",
+      "JavaScript",
+      "GitHub",
+    ] satisfies TechName[],
+    isPersonal: true,
+  },
+  {
+    slug: "boilerplate-laravel",
+    name: "boilerplate-laravel",
+    status: "developing",
+    description: {
+      br: "Template Laravel open source com Docker, prompts de agente e sandbox de mutation/coverage — base reutilizável para apps novos no fluxo WorkVM.",
+      en: "Open-source Laravel template with Docker, agent prompts, and mutation/coverage sandbox — a reusable base for new apps in the WorkVM flow.",
+    },
+    repo: "https://github.com/fabriciogferreira/boilerplate-laravel",
+    technologies: [
+      "Laravel",
+      "PHP",
+      "Docker",
+      "PostgreSQL",
+      "GitHub",
+    ] satisfies TechName[],
+    isPersonal: true,
+  },
+  {
+    slug: "boilerplate-next",
+    name: "boilerplate-next",
+    status: "developing",
+    description: {
+      br: "Template Next.js open source com Compose (dev + profile de produção standalone) — DX de front alinhada ao mesmo ecossistema de VMs dos apps Laravel.",
+      en: "Open-source Next.js template with Compose (dev + standalone prod profile) — frontend DX aligned with the same VM ecosystem as the Laravel apps.",
+    },
+    repo: "https://github.com/fabriciogferreira/boilerplate-next",
+    technologies: [
+      "Next.js",
+      "React",
+      "Docker",
+      "GitHub",
+    ] satisfies TechName[],
+    isPersonal: true,
   },
 ]

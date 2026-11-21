@@ -8,7 +8,8 @@ export function TechBadge({
   tech: TechName
   className?: string
 }) {
-  const { name, Icon } = TECHNOLOGIES[tech]
+  const entry = TECHNOLOGIES[tech]
+  const Icon = "Icon" in entry ? entry.Icon : undefined
 
   return (
     <li
@@ -17,8 +18,10 @@ export function TechBadge({
         className
       )}
     >
-      <Icon size={14} aria-hidden="true" className="size-3.5 shrink-0" />
-      <span>{name}</span>
+      {Icon ? (
+        <Icon size={14} aria-hidden="true" className="size-3.5 shrink-0" />
+      ) : null}
+      <span>{entry.name}</span>
     </li>
   )
 }

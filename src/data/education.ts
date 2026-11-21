@@ -4,11 +4,14 @@ export type Education = {
   slug: string
   school: string
   course: LocalizedString
+  /** Optional level line under the course (e.g. pós-graduação). */
+  level?: LocalizedString
   site: string
   city: LocalizedString
   startedAt: string
-  finishedAt: string
-  certificate: {
+  /** `null` = still in progress. */
+  finishedAt: string | null
+  certificate?: {
     href: string
     labelKey: "diploma" | "certificate"
   }
@@ -21,7 +24,26 @@ export type Education = {
 /** Reverse chronological — most recent first. */
 export const EDUCATIONS: Education[] = [
   {
-    slug: "unifunec",
+    slug: "unifunec-pos-web",
+    school: "UNIFUNEC",
+    course: {
+      br: "Desenvolvimento de Software para Web",
+      en: "Web Software Development",
+    },
+    level: {
+      br: "Pós-graduação",
+      en: "Postgraduate specialization",
+    },
+    site: "https://unifunec.edu.br/",
+    city: {
+      br: "Santa Fé do Sul — SP",
+      en: "Santa Fé do Sul — SP, Brazil",
+    },
+    startedAt: "2026-01",
+    finishedAt: null,
+  },
+  {
+    slug: "unifunec-ads",
     school: "UNIFUNEC",
     course: {
       br: "Análise e Desenvolvimento de Sistemas",
@@ -64,8 +86,15 @@ export const EDUCATIONS: Education[] = [
   },
 ]
 
-export function formatEducationPeriod(item: Education): string {
-  return `${formatYearMonth(item.startedAt)} — ${formatYearMonth(item.finishedAt)}`
+export function formatEducationPeriod(
+  item: Education,
+  presentLabel: string
+): string {
+  const start = formatYearMonth(item.startedAt)
+  const end = item.finishedAt
+    ? formatYearMonth(item.finishedAt)
+    : presentLabel
+  return `${start} — ${end}`
 }
 
 function formatYearMonth(value: string): string {

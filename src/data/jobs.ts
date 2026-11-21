@@ -20,9 +20,9 @@ export const JOBS: Job[] = [
   {
     slug: "enterscience",
     enterprise: "Enterscience",
-    position: { br: "Trainee", en: "Trainee" },
+    position: { br: "Junior", en: "Junior" },
     type: "freelancer",
-    link: "https://enterscience.com.br/",
+    link: "https://www.enterscience.com.br/",
     startedAt: "2025-03",
     finishedAt: null,
     paragraphs: {
@@ -50,9 +50,9 @@ export const JOBS: Job[] = [
   {
     slug: "olie",
     enterprise: "Olie",
-    position: { br: "Trainee", en: "Trainee" },
+    position: { br: "Junior", en: "Junior" },
     type: "freelancer",
-    link: "https://olieflow.com",
+    link: "https://olie.ai/",
     startedAt: "2023-08",
     finishedAt: null,
     paragraphs: {
@@ -60,13 +60,13 @@ export const JOBS: Job[] = [
         "Primeiro emprego — aí ficou clara a diferença entre programar para o mercado e programar só para estudo.",
         "Compartilhei o que sabia e, principalmente, aprendi com o time: práticas e abordagens que levo para outros projetos.",
         "Recebi novas responsabilidades ao longo do programa e as assumi com dedicação.",
-        "Dailies com o tech leader para alinhar desafios do trainee e encontrar soluções em conjunto.",
+        "Reuniões com o tech leader para alinhar desafios do trainee e encontrar soluções em conjunto.",
       ],
       en: [
         "First job — where the gap between coding for production and coding for study became clear.",
         "I shared what I knew and, more importantly, learned from the team: practices I still carry.",
         "I took on new responsibilities through the trainee program and owned them.",
-        "Daily syncs with the tech lead to surface trainee challenges and solve them together.",
+        "Meetings with the tech lead to surface trainee challenges and solve them together.",
       ],
     },
     technologies: [

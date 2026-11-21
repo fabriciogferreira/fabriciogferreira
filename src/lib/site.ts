@@ -5,8 +5,8 @@ import type { LocalizedString } from "@/i18n/types"
 export const SITE = {
   name: "Fabrício Ferreira",
   role: {
-    br: "Desenvolvedor Fullstack",
-    en: "Fullstack Developer",
+    br: "Desenvolvedor Fullstack Junior",
+    en: "Junior Fullstack Developer",
   } satisfies LocalizedString,
   /** One quiet line under the role — where + openness (recruiter scan). */
   location: {
@@ -18,14 +18,14 @@ export const SITE = {
     en: "Open to opportunities",
   } satisfies LocalizedString,
   tagline: {
-    br: "Construo produtos web com Laravel e Next.js — do backend à interface que a pessoa usa.",
-    en: "I build web products with Laravel and Next.js — from the backend to the interface people use.",
+    br: "Construo produtos web com Laravel e Next.js/Vue — do backend à interface que a pessoa usa.",
+    en: "I build web products with Laravel and Next.js/Vue — from the backend to the interface people use.",
   } satisfies LocalizedString,
   /** Primary stack on the first fold — proof without a stats strip. */
   heroStack: [
     "Laravel",
     "Next.js",
-    "React",
+    "Vue.js",
     "PHP",
   ] as const satisfies readonly TechName[],
   email: "fabriciof481@gmail.com",
