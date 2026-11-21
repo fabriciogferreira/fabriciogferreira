@@ -1,0 +1,40 @@
+---
+description: Este repo é o site Vercel e o README de perfil GitHub — manter os dois alinhados.
+alwaysApply: true
+---
+
+# Duas superfícies, um repositório
+
+Este repo (`fabriciogferreira/fabriciogferreira`) gerencia **duas** coisas que o visitante vê:
+
+| Superfície | Onde | Audiência |
+| --- | --- | --- |
+| **Portfólio** | https://fabriciogferreira.vercel.app/ (`src/`, deploy Vercel) | Recrutador / cliente no site |
+| **Perfil GitHub** | `README.md` na raiz (repo especial `username/username`) | Quem abre github.com/fabriciogferreira |
+
+Não são docs internas. São a **mesma marca** em canais diferentes. Mudança de cargo, tagline, stack principal, disponibilidade, links ou história → atualizar **as duas** (ou documentar no `IMPROVEMENTS.md` por que uma ficou para trás).
+
+## Fonte da verdade (conteúdo)
+
+| Dado | Preferir |
+| --- | --- |
+| Nome, cargo, local, disponibilidade, tagline, socials, e-mail | `src/lib/site.ts` |
+| História (Sobre) | `src/data/about.ts` |
+| Skills / stack | `src/data/skills.ts` + `src/data/technologies.ts` |
+| Decisões de produto/UX | `DECISIONS.md` |
+| Perfil GitHub (Markdown/HTML) | `README.md` |
+
+O site é i18n (PT/EN); o README do perfil pode ficar em **PT** (padrão do perfil), desde que fatos e ênfase batam com `site.ts` / `about` / skills.
+
+**Ordem do README:** quem → tagline → badges/CTA → âncoras (`#projects`, `#jobs`, …) → stack → stats → história curta → um contato. Não recontar o Sobre inteiro nem listar projetos no Markdown.
+
+## O que o agente deve fazer
+
+- Ao mudar Hero, Sobre, skills, socials ou CTA de contato no app → revisar `README.md` no mesmo PR/commit (ou no commit seguinte imediato).
+- Ao editar `README.md` → conferir se não contradiz o site (cargo “fullstack”, stack Laravel/Next, link do portfólio, e-mail).
+- Não substituir o `README.md` de perfil por boilerplate create-next-app.
+- Não misturar com o README do meta-repo `~/git` (WorkVM) — outro problema, outro repo.
+
+## Contato
+
+Formulário real no site (`#contact`, Resend). No README, apontar para o portfólio (e mailto) — não inventar outro canal.

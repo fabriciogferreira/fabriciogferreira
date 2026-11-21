@@ -1,3 +1,21 @@
+# Agent guidelines — fabriciogferreira
+
+## This repository has two public surfaces
+
+1. **Portfolio site** — https://fabriciogferreira.vercel.app/ (Next.js in `src/`, Vercel + Docker/WorkVM).
+2. **GitHub profile README** — root `README.md` (special repo `fabriciogferreira/fabriciogferreira` → shown on https://github.com/fabriciogferreira).
+
+Keep them **aligned**: role, tagline, location/availability, primary stack, story, socials, and CTAs. Content sources: `src/lib/site.ts`, `src/data/about.ts`, `src/data/skills.ts`. Product/UX why: `DECISIONS.md`. Cursor rule: `.cursor/rules/portfolio-and-profile.mdc`.
+
+Do **not** replace `README.md` with create-next-app boilerplate. Do **not** confuse this with `~/git/README.md` (meta-repo / WorkVM).
+
+## Working here
+
+- Prefer smallest change; record decisions in `DECISIONS.md` (or `IMPROVEMENTS.md` if blocked).
+- UI/UX: do not strip visitor-facing proof just to “simplify” code — see `DECISIONS.md`.
+- Contact form: Resend via `src/app/actions/contact.ts`; env `RESEND_*` / `CONTACT_*` (see `.env.example`). Never commit secrets.
+- Icons: follow `.cursor/skills/icon/SKILL.md` (export via `@/components/icons`).
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 ## This is NOT the Next.js you know

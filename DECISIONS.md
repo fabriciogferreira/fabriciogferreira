@@ -8,7 +8,15 @@ Registro do *porquê* — o diff mostra o *quê*. Atualizar quando uma escolha d
 
 **Por quê:** Vercel/Docker/WorkVM já apontam para a raiz (`COMPOSE_DIR`, Root Directory). Manter um app aninhado forçava `turbopack.root`, porta 3001 e risco de deployar o site velho. Um único app na raiz = um `npm ci`, um `.env`, um wait URL `:3000`.
 
-**Env:** `.env.example` junta vars do Docker/WorkVM + Resend (`RESEND_*` / `CONTACT_*`). `README.md` da raiz continua o perfil GitHub (não o boilerplate create-next-app).
+**Env:** `.env.example` junta vars do Docker/WorkVM + Resend (`RESEND_*` / `CONTACT_*`).
+
+## Duas superfícies públicas
+
+**Decisão:** este repo entrega (1) o site em https://fabriciogferreira.vercel.app/ e (2) o `README.md` de perfil no GitHub (`username/username`). Conteúdo de marca (cargo, tagline, stack, história, links, CTA) deve **ficar alinhado**; fontes: `src/lib/site.ts`, `src/data/about.ts`, `src/data/skills.ts`. Regra do agente: `.cursor/rules/portfolio-and-profile.mdc` + `AGENTS.md`.
+
+**Por quê:** quem te encontra no GitHub e quem abre o portfólio é o mesmo recrutador/cliente em canais diferentes. README genérico ou desatualizado contradiz o Hero e enfraquece a marca. O `README.md` **não** é o boilerplate create-next-app nem o README do meta-repo `~/git`.
+
+**Estrutura do README (perfil):** scan primeiro — quem / tagline / badges+CTA / âncoras do site → stack → stats GitHub → história **curta** + link `#about` → um CTA de contato. Sem duplicar “onde me encontrar” e sem espelhar projetos/experiência em Markdown (âncoras `#projects`, `#jobs`, …). Motivo: no GitHub o scroll curto manda; a prova vive no site.
 
 **UI/UX em toda decisão:** custo técnico (lib, token, drawer, bundle) **não** manda sozinho. Antes de remover ou simplificar, perguntar o que o visitante perde no scan, na prova (habilidades, credenciais, stack) e no caminho até a ação. Se o trade-off for só “menos código” e a experiência piora (ex. só download para ver certificado), preferir o caminho leve que preserve UX (ex. abrir na aba) ou documentar no `IMPROVEMENTS.md` até achar a forma boa.
 
