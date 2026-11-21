@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { DownloadLink } from "@/components/download-link"
-import { GmailIcon } from "@/components/icons"
+import { GithubIcon, GmailIcon } from "@/components/icons"
 import { TechBadgeList } from "@/components/tech-badge"
 import { buttonVariants } from "@/components/ui/button"
 import { useLocale } from "@/i18n/locale-provider"
@@ -88,6 +88,18 @@ export function HeroSection() {
           >
             {t.hero.projects}
           </Link>
+          <a
+            href={SITE.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(
+              buttonVariants({ variant: "ghost", size: "lg" }),
+              "justify-center gap-1.5 bg-background/40 backdrop-blur-sm"
+            )}
+          >
+            <GithubIcon size={18} />
+            {t.hero.github}
+          </a>
         </div>
       </div>
     </section>

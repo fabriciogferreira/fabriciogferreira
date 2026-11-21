@@ -26,6 +26,7 @@ export const messages = {
       contact: "Entrar em contato",
       resume: "Baixar currículo",
       projects: "Ver projetos",
+      github: "GitHub",
     },
     projects: {
       title: "Projetos",
@@ -137,6 +138,7 @@ export const messages = {
       contact: "Get in touch",
       resume: "Download resume",
       projects: "See projects",
+      github: "GitHub",
     },
     projects: {
       title: "Projects",

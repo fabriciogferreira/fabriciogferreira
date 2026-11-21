@@ -34,7 +34,9 @@ Melhorias boas mas ainda bloqueadas por abordagem: ver `IMPROVEMENTS.md`.
 
 ## Hero — o que entra na primeira dobra
 
-**Decisão:** brand (nome) + cargo + linha quieta (local · disponibilidade) + tagline + **4 techs principais** (badges) + CTAs (contato → `#contact`, currículo, ver projetos → `#projects`) + imagem. Sem faixa de stats (anos / clientes / projetos) no primeiro viewport.
+**Decisão:** brand (nome) + cargo + linha quieta (local · disponibilidade) + tagline + **4 techs principais** (badges) + CTAs (contato → `#contact`, currículo, ver projetos → `#projects`, **depois** GitHub externo) + imagem. Sem faixa de stats (anos / clientes / projetos) no primeiro viewport.
+
+**CTA GitHub no Hero:** ghost, após “Ver projetos”, `target="_blank"` + `rel="noopener noreferrer"`, ícone com fundo branco. Prova de código sem empurrar o visitante para fora *antes* da prova curada do site.
 
 **Por quê:** o Hero antigo misturava blob, métricas e ruído. Só nome + frase + 2 CTAs ficou **magro demais** para o recrutador (falta onde / se está aberto / stack de um olhar). Enriquecer sem voltar ao excesso: local + disponibilidade + stack curta respondem o scan; stats/% de skills continuam fora (já há Números / Skills).
 
