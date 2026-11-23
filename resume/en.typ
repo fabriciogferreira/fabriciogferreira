@@ -102,8 +102,9 @@
       status: "In progress",
       bullets: (
         [TypeScript/React npm hook syncing URL search params with Spatie Laravel Query Builder.],
+        [Public demo (still evolving) to try filters, sort, and includes against a Laravel API.],
       ),
-      url: "https://github.com/fabriciogferreira/use-url-query",
+      url: "https://use-url-query.opbed.com/#introduction",
     ),
     (
       name: "boilerplate-laravel (OSS)",
