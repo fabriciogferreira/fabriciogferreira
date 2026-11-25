@@ -26,20 +26,20 @@ export type Project = {
 export const PROJECTS: Project[] = [
   {
     slug: "opbed",
-    name: "1% Melhor a Cada Dia",
+    name: "LaraDoc",
     status: "developing",
     description: {
-      br: "Iniciativa pessoal para organizar treinos de musculação com controle segmentado da rotina — do próprio desafio à plataforma em produção.",
-      en: "Personal platform to organize strength-training routines with structured control — from my own need to a live product.",
+      br: "Um Doc, Um Prompt, Uma Feature — espaço para descrever a feature como documento, transformá-la em prompt e entregar a mudança, mantendo documentação e produto na mesma história.",
+      en: "One Doc, One Prompt, One Feature — a place to write the feature as a document, turn it into a build prompt, and ship the change while docs and product stay the same story.",
     },
     cover: {
       src: "/projects/opbed/signin.png",
       alt: {
-        br: "Tela de login do 1% Melhor a Cada Dia",
-        en: "Sign-in screen of 1% Melhor a Cada Dia",
+        br: "Tela de login do LaraDoc",
+        en: "Sign-in screen of LaraDoc",
       },
     },
-    site: "https://opbed.com/",
+    site: "https://lara-doc.opbed.com",
     siteTest: "https://staging.opbed.com/pt/signin",
     technologies: [
       "Laravel",

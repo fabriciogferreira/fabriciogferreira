@@ -33,7 +33,7 @@
       title: "Desenvolvedor Fullstack Junior",
       company: "Enterscience",
       place: "Brasil (remoto / híbrido)",
-      period: "Mar 2025 – Presente",
+      period: "Mar 2025 – Nov 2026",
       bullets: (
         [Desenvolver e manter features fullstack com Laravel, React e Next.js em time de produto.],
         [Organizar responsabilidades compartilhadas entre Enterscience e Olie, com stacks e ritmos distintos.],
@@ -44,7 +44,7 @@
       title: "Desenvolvedor Fullstack Junior",
       company: "Olie",
       place: "Brasil (remoto / híbrido)",
-      period: "Ago 2023 – Presente",
+      period: "Ago 2023 – Nov 2026",
       bullets: (
         [Entregar features em Laravel e Vue.js para sistemas em produção com clientes reais.],
         [Assumir novas responsabilidades com alinhamento ao tech lead e padrões do time.],
@@ -80,13 +80,13 @@
   ),
   projects: (
     (
-      name: "1% Melhor a Cada Dia (Opbed)",
+      name: "LaraDoc",
       status: "Em andamento",
       bullets: (
-        [Criar um planejador pessoal de treinos com controle segmentado da rotina.],
+        [Criar um espaço para descrever uma feature como documento, prompt e mudança pronta.],
         [Implementar com Laravel, PostgreSQL e fluxo Docker para paridade local/produção.],
       ),
-      url: "https://opbed.com/",
+      url: "https://lara-doc.opbed.com",
     ),
     (
       name: "Adriano Veículos",

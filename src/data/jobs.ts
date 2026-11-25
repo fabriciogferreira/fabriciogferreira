@@ -24,7 +24,7 @@ export const JOBS: Job[] = [
     type: "freelancer",
     link: "https://www.enterscience.com.br/",
     startedAt: "2025-03",
-    finishedAt: null,
+    finishedAt: "2026-11",
     paragraphs: {
       br: [
         "Segundo emprego, via parceria com a Olie — fui requisitado para uma oportunidade que surgiu na Enterscience.",
@@ -54,7 +54,7 @@ export const JOBS: Job[] = [
     type: "freelancer",
     link: "https://olie.ai/",
     startedAt: "2023-08",
-    finishedAt: null,
+    finishedAt: "2026-11",
     paragraphs: {
       br: [
         "Primeiro emprego — aí ficou clara a diferença entre programar para o mercado e programar só para estudo.",
